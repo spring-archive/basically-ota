@@ -8,7 +8,7 @@
 	UnitName=ARM_T2_BOT_DecoyCommander;
 	Objectname=ARM_T2_BOT_DecoyCommander;
 	SoundCategory=ARM_COM;
-  IconType=kbot;
+	IconType=kbot;
 
 	Category=ARM KBOT LEVEL2 WEAPON NOTAIR NOTSUB;
 
@@ -104,4 +104,15 @@
 	ShootMe=1;
 	DefaultMissionType=Standby;
 	maneuverleashlength=640;
+	
+	//************************************************************
+	//  Custom params
+	//*****************
+	[customparams] 	
+	{
+	iscommander=1;
+	isdecoycommander=1;
+	side=arm;
+	}
+	
 	}

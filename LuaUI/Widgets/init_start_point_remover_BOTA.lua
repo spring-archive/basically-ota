@@ -25,11 +25,11 @@ function widget:Update()
   local t = Spring.GetGameSeconds()
   if (t < 0.1) then return end
 
-  local teamUnits = Spring.GetTeamUnits(Spring.GetMyTeamID())
+   local teamUnits = Spring.GetTeamUnits(Spring.GetMyTeamID())
   for _,unitID in ipairs(teamUnits) do
     local unitDefID = Spring.GetUnitDefID(unitID)
     local unitDef   = UnitDefs[unitDefID]
-    if (unitDef.isCommander) then
+    if (unitDef.customParams.iscommander) then
       local x, y, z = Spring.GetUnitPosition(unitID)
       Spring.MarkerErasePosition(x, y, z)
     end

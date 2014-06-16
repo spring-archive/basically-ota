@@ -1,15 +1,13 @@
--- $Id$
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-local versionNumber = "v3.1"
 
 function widget:GetInfo()
   return {
     name      = "Attack AoE - BOTA",
-    desc      = versionNumber .. " Cursor indicator for area of effect and scatter when giving attack command.",
+    desc      = "v3.0 Cursor indicator for area of effect and scatter when giving attack command.",
     author    = "Evil4Zerggin",
-    date      = "26 September 2008",
-    license   = "GNU LGPL, v2.1 or later",
+    date      = "14 September 2008",
+    license   = "GNU GPL, v2 or later",
     layer     = 1, 
     enabled   = true  --  loaded by default?
   }
@@ -56,7 +54,7 @@ local GetUnitRadius          = Spring.GetUnitRadius
 local GetUnitStates          = Spring.GetUnitStates
 local TraceScreenRay         = Spring.TraceScreenRay
 local CMD_ATTACK             = CMD.ATTACK
-local CMD_DGUN               = CMD.DGUN
+local CMD_DGUN               = CMD.MANUALFIRE
 local g                      = Game.gravity
 local GAME_SPEED             = 30
 local g_f                    = g / GAME_SPEED / GAME_SPEED
@@ -175,13 +173,13 @@ local function SetupUnitDef(unitDefID, unitDef)
       local weaponDef = WeaponDefs[weapon.weaponDef]
       if (weaponDef) then
         if (weaponDef.type == "DGun") then
-          dgunInfo[unitDefID] = {range = weaponDef.range, aoe = weaponDef.areaOfEffect}
+          dgunInfo[unitDefID] = {range = weaponDef.range, aoe = weaponDef.damageAreaOfEffect}
         elseif (weaponDef.canAttackGround
                 and not weaponDef.isShield 
                 and not ToBool(weaponDef.interceptor)
-                and (weaponDef.areaOfEffect > maxSpread or weaponDef.range * (weaponDef.accuracy + weaponDef.sprayAngle) > maxSpread )
+                and (weaponDef.damageAreaOfEffect > maxSpread or weaponDef.range * (weaponDef.accuracy + weaponDef.sprayAngle) > maxSpread )
                 and not string.find(weaponDef.name, "flak")) then
-          maxSpread = max(weaponDef.areaOfEffect, weaponDef.range * (weaponDef.accuracy + weaponDef.sprayAngle))
+          maxSpread = max(weaponDef.damageAreaOfEffect, weaponDef.range * (weaponDef.accuracy + weaponDef.sprayAngle))
           maxWeaponDef = weaponDef
         end
       end
@@ -192,7 +190,7 @@ local function SetupUnitDef(unitDefID, unitDef)
   
   local weaponType = maxWeaponDef.type
   local scatter = maxWeaponDef.accuracy + maxWeaponDef.sprayAngle
-  local aoe = maxWeaponDef.areaOfEffect
+  local aoe = maxWeaponDef.damageAreaOfEffect
   local cost = unitDef.cost
   local mobile = unitDef.speed > 0
   local waterWeapon = maxWeaponDef.waterWeapon
@@ -207,12 +205,8 @@ local function SetupUnitDef(unitDefID, unitDef)
     if (maxWeaponDef.tracks) then
       turnRate = maxWeaponDef.turnRate
     end
-    if (maxWeaponDef.wobble > turnRate * 1.4) then
-      scatter = (maxWeaponDef.wobble - maxWeaponDef.turnRate) * maxWeaponDef.maxVelocity * 16
-      local rangeScatter = (8 * maxWeaponDef.wobble - maxWeaponDef.turnRate)
-      aoeDefInfo[unitDefID] = {type = "wobble", scatter = scatter, rangeScatter = rangeScatter, range = maxWeaponDef.range}
-    elseif (maxWeaponDef.wobble > turnRate) then
-      scatter = (maxWeaponDef.wobble - maxWeaponDef.turnRate) * maxWeaponDef.maxVelocity * 16
+    if (maxWeaponDef.wobble > turnRate) then
+      scatter = (maxWeaponDef.wobble - maxWeaponDef.turnRate) * 10 * (maxWeaponDef.range + maxWeaponDef.maxVelocity)
       aoeDefInfo[unitDefID] = {type = "wobble", scatter = scatter}
     elseif (maxWeaponDef.tracks) then
       aoeDefInfo[unitDefID] = {type = "tracking"}
@@ -473,22 +467,10 @@ end
 --------------------------------------------------------------------------------
 --wobble
 --------------------------------------------------------------------------------
-local function DrawWobbleScatter(scatter, fx, fy, fz, tx, ty, tz, rangeScatter, range)
-  local dx = tx - fx
-  local dy = ty - fy
-  local dz = tz - fz
-  
-  local bx, by, bz, d = Normalize(dx, dy, dz)
-  
+local function DrawWobbleScatter(scatter, tx, ty, tz)
   glColor(scatterColor)
   glLineWidth(scatterLineWidthMult / mouseDistance)
-  if d and range then
-    if d <= range then
-      DrawCircle(tx, ty, tz, rangeScatter * d + scatter)
-    end
-  else
-    DrawCircle(tx, ty, tz, scatter)
-  end
+  DrawCircle(tx, ty, tz, scatter)
   glColor(1,1,1,1)
   glLineWidth(1)
 end
@@ -636,7 +618,7 @@ function widget:DrawWorld()
     DrawDroppedScatter(info.aoe, info.ee, info.scatter, info.v, fx, info.h, fz, tx, ty, tz, info.salvoSize, info.salvoDelay)
   elseif (weaponType == "wobble") then
     DrawAoE(tx, ty, tz, info.aoe, info.ee)
-    DrawWobbleScatter(info.scatter, fx, fy, fz, tx, ty, tz, info.rangeScatter, info.range)
+    DrawWobbleScatter(info.scatter, tx, ty, tz)
   elseif (weaponType == "orbital") then
     DrawAoE(tx, ty, tz, info.aoe, info.ee)
     DrawOrbitalScatter(info.scatter, tx, ty, tz)

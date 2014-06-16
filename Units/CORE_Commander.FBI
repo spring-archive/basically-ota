@@ -8,7 +8,8 @@
 	UnitName=CORE_Commander;
 	Objectname=CORE_Commander.s3o;
 	SoundCategory=CORE_COM;
-  IconType=commander;
+	IconType=commander;
+	decoyFor=ARM_Commander;
 
 	Category=CORE COMMANDER LEVEL10 WEAPON NOTAIR NOTSUB;
 
@@ -19,9 +20,11 @@
 	BuildCostMetal=23512;
 	BuildTime=97852;
 
+	// resources
 	EnergyMake=25;
 	MetalMake=1;
-
+	energystorage=1050;
+	metalstorage=1050;
 
 
 	// movement or placement
@@ -117,4 +120,14 @@
 	ImmuneToParalyzer=1;
 	norestrict=1;
 	Ovradjust=1;
+	
+	//************************************************************
+	//  Custom params
+	//*****************
+	[customparams] 	
+	{
+	iscommander=1;
+	side=core;
+	}
+	
 	}

@@ -19,8 +19,11 @@
 	BuildCostMetal=29854;
 	BuildTime=95897;
 
+	// resources
 	EnergyMake=25;
 	MetalMake=1;
+	energystorage=1050;
+	metalstorage=1050;
 
 
 
@@ -116,4 +119,13 @@
 	norestrict=1;
 	Ovradjust=1;
 	SteeringMode=2;
+	//************************************************************
+	//  Custom params
+	//*****************
+	[customparams] 	
+	{
+	iscommander=1;
+	side=arm;
+	}
+	
 	}

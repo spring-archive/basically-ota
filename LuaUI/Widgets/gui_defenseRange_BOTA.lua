@@ -292,7 +292,7 @@ function UnitDetected( unitID, allyTeam, teamId )
 	printDebug( udef.name )
 	local foundWeapons = {}
 			
-	for i=1, udef.weapons.n do
+	for i=1, #udef.weapons do
 		if ( currentModConfig["unitList"][udef.name] == nil or currentModConfig["unitList"][udef.name]["weapons"][i] == nil ) then
 			printDebug("Weapon skipped! Name: "..  udef.name .. " weaponidx: " .. i )
 		else

@@ -63,7 +63,7 @@ function IsTransportable(unitDefID)
   ud = UnitDefs[unitDefID]
   if (ud == nil) then return false end
   udc = ud.springCategories
-  return (udc~= nil and ud.speed > 0 and not ud.canFly and not ud.canHover and not ud.floater and (ud.minWaterDepth or 0) <= 0)
+  return (udc~= nil and ud.speed > 0 and not ud.canFly and not ud.floatOnWater and (ud.minWaterDepth or 0) <= 0)
 end
 
 
@@ -266,7 +266,7 @@ end
 function widget:UnitFromFactory(unitID, unitDefID, unitTeam, factID, factDefID, userOrders) 
 	if unitTeam == myTeamID then 
     local ud = UnitDefs[unitDefID]
-    if (CONST_IGNORE_BUILDERS and ud.builder and ud.canAssist) then return end
+    if (CONST_IGNORE_BUILDERS and ud.isBuilder and ud.canAssist) then return end
     if (IsTransportable(unitDefID) and not userOrders) then 
 --      Echo ("new unit from factory "..unitID)
 

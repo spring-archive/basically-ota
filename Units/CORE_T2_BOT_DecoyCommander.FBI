@@ -8,8 +8,8 @@
 	UnitName=CORE_T2_BOT_DecoyCommander;
 	Objectname=CORE_T2_BOT_DecoyCommander.s3o;
 	SoundCategory=CORE_COM;
-  IconType=kbot;
-
+	IconType=kbot;
+	decoyFor=CORE_Commander;
 	Category=CORE KBOT LEVEL2 WEAPON NOTAIR NOTSUB; 
 
 
@@ -104,4 +104,15 @@
 	ShootMe=1;
 	DefaultMissionType=Standby;
 	maneuverleashlength=640;
+	
+	//************************************************************
+	//  Custom params
+	//*****************
+	[customparams] 	
+	{
+	iscommander=1;
+	isdecoycommander=1;
+	side=core;
+	}
+	
 	}

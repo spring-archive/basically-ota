@@ -67,7 +67,7 @@ local function SpawnStartUnit(teamID)
 			or ((z>Game.mapSizeZ/2) and "north" or "south")
 		local unitID = Spring.CreateUnit(startUnit, x, y, z, facing, teamID)
 		-- set the *team's* lineage root
-		Spring.SetUnitLineage(unitID, teamID, true)
+		-- Spring.SetUnitLineage(unitID, teamID, true)
 	end
 
 	-- set start resources, either from mod options or custom team keys

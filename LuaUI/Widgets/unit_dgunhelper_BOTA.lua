@@ -34,10 +34,14 @@ local lastCo = 0
 local friendlyUnits = {}
 
 function widget:UnitFinished(unitID, unitDefID, unitTeam)
-  if UnitDefs[unitDefID].isCommander then
-    canDgun[unitID] = true
-  end
-  friendlyUnits[unitID] = true
+	local unitDef   = UnitDefs[unitDefID or -1]
+	local cp 		= unitDef.customParams or nil
+	
+	if unitDef and cp and cp.iscommander then
+		canDgun[unitID] = true
+	end
+	
+	friendlyUnits[unitID] = true
 end
 
 function widget:UnitDestroyed(unitID, unitDefID, unitTeam)

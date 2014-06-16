@@ -1,3 +1,8 @@
+---BOTA 1.7 (Beta 10.2)
+- increased waterline by 10 
+- added energystorage=1050 and metalstorage=1050 parameters to arm and core commander fbi files
+- (as default values were too high).TODO: add Dynamic Collision Volume gadget from XTA and edit its config file
+
 ---BOTA 1.7 (Beta 10.1)
 - got the mod working with newest spring version thanks to Beherith: builddistances of less than
   128 have now been changed to 128 for commander, T2 farc, constructors, and mine layer.

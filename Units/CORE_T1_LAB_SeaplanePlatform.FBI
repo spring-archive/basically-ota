@@ -58,7 +58,7 @@
 
 
 	// unit animation
-	WaterLine=33;
+	WaterLine=43;
 
 	FootprintX=7;
 	FootprintZ=7;
