@@ -1,0 +1,19 @@
+[ARM_T1_DEF_DragonsTeeth_dead]
+	{
+	world=allworld;
+	description=DragonsTeeth;
+	category=dragonteeth;
+	object=ARM_T1_DEF_DragonsTeeth;
+	footprintx=2;
+	footprintz=2;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=8;
+	damage=500;//4000
+	reclaimable=1;
+	autoreclaimable=0;
+	featurereclamate=smudge01;
+	featuredead=RockTeeth;
+	seqnamereclamate=tree1reclamate;
+	}

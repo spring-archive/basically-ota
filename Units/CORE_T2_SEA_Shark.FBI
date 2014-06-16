@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Shark;
+	Description=Submarine Killer;
+	Side=CORE;
+
+	UnitName=CORE_T2_SEA_Shark;
+	Objectname=CORE_T2_SEA_Shark;
+	Corpse=CORE_T2_SEA_Shark_dead;
+	SoundCategory=CORE_SUB;
+  IconType=ship;
+
+	Category=CORE UNDERWATER LEVEL2 WEAPON NOTAIR;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=5245;
+	BuildCostMetal=1356;
+	BuildTime=17529;
+
+
+
+	// movement or placement
+	MovementClass=SHIP_SUBMARINE;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=2.5;
+	BrakeRate=0.2;
+	Acceleration=0.03;
+	TurnRate=303;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORSMART_TORPEDO;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=376;
+  HideDamage=1;
+	Idletime=2200;
+	Idleautoheal=.5;
+
+	SightDistance=262;
+	SonarDistance=700;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+
+
+
+	// unit animation
+	WaterLine=30;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

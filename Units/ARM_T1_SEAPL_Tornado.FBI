@@ -1,0 +1,92 @@
+[UNITINFO]
+	{
+	// id
+	Name=Tornado;
+	Description=Seaplane Fighter;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEAPL_Tornado;
+	Objectname=ARM_T1_SEAPL_Tornado;
+	Corpse=ARM_T1_SEAPL_Tornado_dead;
+	SoundCategory=ARM_SEAPLN;
+  IconType=aircraft;
+
+	Category=ARM VTOL LEVEL1 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=6307;
+	BuildCostMetal=237;
+	BuildTime=14333;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=100;
+
+	MaxVelocity=14.2;
+	BrakeRate=5;
+	Acceleration=0.5;
+	TurnRate=682;
+
+	MaxWaterDepth=255;
+	MaxSlope=10;
+
+
+
+	// combat
+	Weapon1=ARM_SEAPLANE_FIGHTER_MISSILE;
+
+	Weapon2=ARM_SEAPLANE_FIGHTER_MISSILE;
+
+  BadTargetCategory=NOTAIR;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=MEDIUM_UNIT;
+
+
+
+	// properties
+	MaxDamage=200;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+  // other abilities
+	CanSubmerge=1;
+	CanLoopbackAttack=1;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	MoveRate1=8;
+	Amphibious=1;
+	}

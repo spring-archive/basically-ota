@@ -1,0 +1,93 @@
+[UNITINFO]
+	{
+	// id
+	Name=FARK;
+	Description=Fast Assist-Repair Kbot;
+	Side=ARM;
+
+	UnitName=ARM_T2_BOT_FARK;
+	Objectname=ARM_T2_BOT_FARK;
+	Corpse=ARM_T2_BOT_FARK_dead;
+	SoundCategory=ARM_KBOT;
+  IconType=kbot;
+
+	Category=ARM KBOT LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=7019;
+	BuildCostMetal=626;
+	BuildTime=16831;
+
+	EnergyStorage=100;
+	MetalStorage=100;
+
+
+
+	// movement or placement
+	MovementClass=KBOTSTANDARD;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=2.6;
+	BrakeRate=0.6;
+	Acceleration=0.22;
+	TurnRate=1010;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=130;
+	Builddistance=30;
+
+
+
+	// combat
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=830;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=507;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}
+

@@ -1,0 +1,88 @@
+[UNITINFO]
+	{
+	// id
+	Name=Penetrator;
+	Description=Mobile Energy Weapon;
+	Side=ARM;
+
+	UnitName=ARM_T2_VEH_Penetrator;
+	Objectname=ARM_T2_VEH_Penetrator;
+	Corpse=ARM_T2_VEH_Penetrator_dead;
+	SoundCategory=ARM_TANK;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=14477;
+	BuildCostMetal=2004;
+	BuildTime=35706;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=.6;
+	BrakeRate=0.07;
+	Acceleration=0.01;
+	TurnRate=230;
+
+	MaxWaterDepth=0;
+	MaxSlope=12;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=PENETRATOR_ANNIHILATOR_BEAM;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=CRAWL_BLASTEX;
+	SelfDestructAs=ATOMIC_BLAST;
+
+
+
+	// properties
+	MaxDamage=650;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=455;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=40;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

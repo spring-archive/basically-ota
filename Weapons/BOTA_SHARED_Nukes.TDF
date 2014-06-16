@@ -1,0 +1,297 @@
+[NUCLEAR_MISSILE]
+{
+  // used by units
+  // ARM_T2_DEF_Retaliator
+  // CORE_T2_DEF_Silencer
+
+
+  // type
+  WeaponType=StarburstLauncher;
+
+	Stockpile=1;
+	Targetable=1;
+	CommandFire=1;
+
+
+  // visuals
+	Model=BOTA_Nuclear_Missile;
+
+	SmokeTrail=1;
+
+
+  // sounds
+	SoundStart=misicbm1;
+	SoundHit=xplomed4;
+
+
+  // costs
+	EnergyPerShot=190000;
+	MetalPerShot=1900;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Tolerance=4000;
+	WeaponTimer=5;
+
+	WeaponVelocity=350;
+	WeaponAcceleration=50;
+	Flighttime=400;
+	Turnrate=32768;
+
+
+  // stats
+	Range=32000;
+	ReloadTime=190;
+
+	AreaOfEffect=1024;
+	EdgeEffectiveness=0.3;
+
+	[DAMAGE]
+	{
+	default=10000;
+	}
+}
+
+
+[ANTI_NUCLEAR_MISSILE]
+{
+  // used by units
+  // ARM_T2_DEF_Protector
+  // CORE_T2_DEF_FortitudeMissileDefense
+
+
+  // type
+  WeaponType=StarburstLauncher;
+
+	Stockpile=1;
+	Interceptor=1;
+	Coverage=1100;
+	Tracks=1;
+
+
+  // visuals
+	Model=BOTA_Anti_Nuclear_Missile;
+
+	SmokeTrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Tolerance=4000;
+	WeaponTimer=4;
+
+	WeaponVelocity=800;
+	WeaponAcceleration=60;
+	Flighttime=60;
+	Turnrate=32768;
+
+
+  // costs
+	EnergyPerShot=20000;
+	MetalPerShot=200;
+
+
+  // stats
+	Range=32000;
+	Reloadtime=100;
+
+	AreaOfEffect=96;
+
+	[DAMAGE]
+	{
+	default=500;
+	}
+}
+
+
+[MOBILE_ANTI_NUCLEAR_MISSILE]
+{
+  // used by units
+  // ARM_T2_VEH_Scarab
+  // CORE_T2_VEH_Hedgehog
+
+
+  // type
+  WeaponType=StarburstLauncher;
+
+	Stockpile=1;
+	Interceptor=1;
+	Coverage=600;
+	Tracks=1;
+
+
+  // visuals
+	Model=BOTA_Anti_Nuclear_Missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Tolerance=4000;
+	Weapontimer=4;
+
+	WeaponVelocity=800;
+	WeaponAcceleration=60;
+	Flighttime=60;
+	Turnrate=32768;
+
+
+  // costs
+	EnergyPerShot=20000;
+	MetalPerShot=200;
+
+
+  // stats
+	Range=25000;
+	Reloadtime=100;
+
+	AreaOfEffect=96;
+
+	[DAMAGE]
+	{
+	default=500;
+	}
+}
+
+
+[STUNNER_MISSILE]
+{
+  // used by units
+  // ARM_T2_DEF_Stunner
+
+
+  // type
+  WeaponType=StarburstLauncher;
+
+	Stockpile=1;
+	Targetable=1;
+	CommandFire=1;
+
+
+  // visuals
+	Model=BOTA_Stunner_Missile;
+
+	Smoketrail=1;
+
+	ExplosionGenerator=custom:STUNNER_Expl;
+
+
+  // sounds
+	SoundStart=misicbm1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=100;
+
+	Paralyzer=1;
+	ParalyzeTime=30;
+
+	Tolerance=4000;
+	WeaponTimer=4.2;
+
+	WeaponVelocity=500;
+	WeaponAcceleration=200;
+	Flighttime=400;
+	Turnrate=32768;
+
+
+  // costs
+	EnergyPerShot=40000;
+	MetalPerShot=400;
+
+
+  // stats
+	Range=32000;
+	ReloadTime=150;
+
+	AreaOfEffect=768;
+	EdgeEffectiveness=0.3;
+
+	[DAMAGE]
+	{
+	default=80000;
+	}
+}
+
+
+[NEUTRON_MISSILE]
+{
+  // used by units
+  // CORE_T2_DEF_Neutron
+
+
+  // type
+  WeaponType=StarburstLauncher;
+
+	Stockpile=1;
+	Targetable=1;
+	CommandFire=1;
+
+
+  // visuals
+	Model=BOTA_Neutron_Missile;
+
+	Smoketrail=1;
+
+	ExplosionGenerator=custom:NEUTRON_Expl;
+
+
+  // sounds
+	SoundStart=misicbm1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Tolerance=4000;
+	Weapontimer=4.2;
+
+	WeaponVelocity=500;
+	WeaponAcceleration=250;
+	Flighttime=400;
+	Turnrate=32768;
+
+
+  // costs
+	EnergyPerShot=70000;
+	MetalPerShot=700;
+
+
+  // stats
+	Range=32000;
+	Reloadtime=170;
+
+	AreaOfEffect=512;
+	EdgeEffectiveness=0.3;
+
+	[DAMAGE]
+	{
+	default=2000;
+	}
+}

@@ -1,0 +1,92 @@
+[UNITINFO]
+	{
+	// id
+	Name=Podger;
+	Description=Mine Layer Vehicle;
+	Side=ARM;
+
+	UnitName=ARM_T1_VEH_Podger;
+	Objectname=ARM_T1_VEH_Podger;
+	Corpse=ARM_T1_VEH_Podger_dead;
+	SoundCategory=ARM_CVEHICLE;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL1 NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1031;
+	BuildCostMetal=173;
+	BuildTime=1519;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=0;
+	CanGuard=0;
+
+	MaxVelocity=1.1;
+	BrakeRate=0.08;
+	Acceleration=0.015;
+	TurnRate=250;
+
+	MaxWaterDepth=0;
+	MaxSlope=16;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=110;
+	Builddistance=70;
+
+  CanAssist=0;
+	CanReclaim=0;
+  CanRepair=0;
+
+
+
+	// combat
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=1200;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=270;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=24;
+	trackOffset=3;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

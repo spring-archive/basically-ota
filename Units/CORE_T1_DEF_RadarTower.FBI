@@ -1,0 +1,71 @@
+[UNITINFO]
+	{
+	// id
+	Name=Radar Tower;
+	Description=Radar Tower;
+	Side=CORE;
+
+	UnitName=CORE_T1_DEF_RadarTower;
+	Objectname=CORE_T1_DEF_RadarTower;
+	Corpse=CORE_T1_DEF_RadarTower_dead;
+	SoundCategory=CORE_RADAR;
+  IconType=building_radar_sonar;
+
+	Category=CORE SPECIAL LEVEL1 NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=800;
+	BuildCostMetal=50;
+	BuildTime=1137;
+
+	EnergyUse=6;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+	ExplodeAs=SMALL_BUILDINGEX;
+	SelfDestructAs=SMALL_BUILDING;
+
+
+
+	// properties
+	MaxDamage=51;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+	RadarDistance=1740;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+	// unit animation
+	FootprintX=2;
+	FootprintZ=2;
+	YardMap=oo oo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	ShootMe=1;
+	BuildAngle=16384;
+	Ovradjust=1;
+	}

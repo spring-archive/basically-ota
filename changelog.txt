@@ -1,0 +1,403 @@
+---BOTA 1.7 (Beta 10)
+- actually got the mod working with spring version 0.82 thanks to Tobi and BrainDamage helping
+
+- Hover, Sea and Vehicle scouts now share the same laser. ARM and CORE lasers are slightly different.
+  Was in beta 9 but forgot to add in the changelog :(
+
+- replaced CORE T1 Aircraft lab model with Mr. D's remake
+
+- added Licho's Unit E-stall Disable gadget and modified for BOTA
+  (this is the one that deactivates units when a player doesn't have energy for their upkeep)
+  current list of units affected:
+
+  arm_t1_def_radartower
+  arm_t1_eco_metalextractor
+	arm_t1_seadef_sonarstation
+	arm_t1_seaeco_uwmetalextractor
+  arm_t2_air_eagle
+  arm_t2_air_seahawk
+  arm_t2_bot_decoycommander
+  arm_t2_bot_eraser
+  arm_t2_bot_marky
+  arm_t2_def_advancedradar
+  arm_t2_eco_mohomine
+  arm_t2_sea_escort
+  arm_t2_sea_fibber
+  arm_t2_seadef_advancedsonar
+  arm_t2_veh_jammer
+  arm_t2_veh_seer
+  core_t1_def_radartower
+  core_t1_eco_metalextractor
+  core_t1_seadef_sonarstation
+  core_t1_seaeco_uwmetalextractor
+  core_t2_air_hunter
+  core_t2_air_vulture
+  core_t2_bot_decoycommander
+  core_t2_bot_spectre
+  core_t2_bot_voyeur
+  core_t2_def_advancedradar
+  core_t2_eco_mohomine
+  core_t2_sea_phantom
+  core_t2_seadef_advancedsonar
+  core_t2_veh_deleter
+  core_t2_veh_informer
+
+  Units are the same for both sides except ARM has one extra unit that CORE does not have, the Fibber, a sonar jammer sub.
+  Metal makers not on this list because there is a separate widget for their handling.
+
+- increased energyuse of ARM and CORE T1 metal extractors from 3 to 4
+- increased energyuse for ARM Moho Mine from 15 to 24 and for CORE Moho Mine from 12 to 23
+- increased ARM Moho Mine metal extraction from 4.5 to 5 times of the T1 metal extractor, making it the same with CORE Moho Mine and CORE T1 metal extractor now
+- reduced ARM Moho Mine buildtime from 25750 to 23150
+
+- increased ARM Moho Metal Maker energy buildcost from 9350 to 29350
+- increased ARM Moho Metal Maker metal buildcost from 58 to 158
+- increased ARM Moho Metal Maker buildtime from 34980 to 104980
+- increased CORE Moho Metal Maker energy buildcost from 10928 to 30928
+- increased CORE Moho Metal Maker metal buildcost from 51 to 151
+- increased CORE Moho Metal Maker buildtime from 41253 to 121253
+
+- increased ARM Metal Maker energy buildcost from 687 to 1497
+- increased CORE Metal Maker energy buildcost from 700 to 1563
+
+- reduced ARM Tidal Generator energy buildcost from 768 to 468
+- reduced ARM UW Metal Extractor energy buildcost from 2074 to 1274
+- reduced ARM UW Metal Extractor metal buildcost from 130 to 97
+- reduced CORE Tidal Generator energy buildcost from 752 to 452
+- reduced CORE UW Metal Extractor energy buildcost from 2219 to 1419
+- reduced CORE UW Metal Extractor metal buildcost from 125 to 95
+
+- made lab and constructor buildpower scaling the same for ARM and CORE. This only needed that ARM bot and vehicle buildpower values to be exchanged bot<->veh
+  Order of buildpower is now for both sides: Air|Seaplane < Veh < Bot|Hover < Sea
+- advanced constructors now provide resources 5 energy and 0.1 metal for both sides
+- ARM Fark now has same buildpower as the ARM advanced constructor bot, 130, but does not provide resources
+- increased CORE Necro buildpower from 90 to 100 and resurrection speed from 180 to 200. (For comparison the CORE advanced constructor bot has buildpower of 130)
+  Necro does not provide resources either
+
+
+---BOTA 1.7 (Beta 9)
+- Added icons for units
+
+- CORE Toaster now defaults to fire-at-will
+- Apparently CORE Spoiler was missing from lab buildlist. Fixed.
+
+- Replaced CORE Ak with Beheriths remake and script by caldera
+- Replaced CORE Storm with Beheriths remake
+- Replaced CORE Crasher with Beheriths remake. (Bit bugged script. Just don't use force attack on ground and you'll be fine)
+- Replaced CORE Wind generator with bobthedinosaurs remake
+- Replaced ARM Big Bertha with cremuss' remake
+
+- Annihilator beams(meaning the large beams on Annihilator, Doomsday Machine, Penetrator and Krogoth) now do max damage at all ranges.
+- Made annihilator beams avoid firing through friendly units (beamlaser can't be set to not damage friendly units according to wiki)
+
+- Removed metal cost from Big Bertha and Intimidator firing costs
+- Increased CORE Viper buildtime from 11528 to 13528 and metal cost from 572 to 872 and energy cost from 5687 to 7787
+
+- Made reclaiming gradual instead of all at the end
+- Air constructors now collide with units to limit the effectiveness of spamming them
+
+- Removed Smart Area Reclaim widget due to possible issues with it
+
+- Submarines no longer collide with ships
+- Adjusted the moveclasses of all ships into three groups for ships and one for submarines.
+  Ships in one class have the same minimum waterdepth. Waterdepth order is: small ship < medium ship < submarine < big ship.
+  - Small ships
+	Tech 1 sea constructors, Crusader, Skeeter, Archer, Escort, Enforcer, Searcher, Phantom, Shredder
+
+  - Medium ships
+ 	Hulk, Conqueror, Ranger, Envoy, Executioner, MissileFrigate
+
+  - Submarines
+  Tech 2 sea constructors, Lurker, Fibber, Piranha, Snake, Leviathan, Shark
+
+  - Big Ships
+	Colossus, Millenium, Hive, Warlord
+
+
+---BOTA 1.7 (Beta 8)
+- Increased Big Bertha reloadtime from 10 to 20 and Intimidator from 11.5 to 23
+- Increased Big Bertha range from 4096 to 4608
+- Increased Big Bertha shot energycost from 1500 to 9000 and Intimidator from 2000 to 12000
+- Added to Big Bertha shot metalcost 30 and for Intimidator 40
+- Reduced Big Bertha damage from 2000 to 1500 and Intimidator from 2400 to 1800
+- Increased Intimidator accuracy from 1000 to 600
+- Increased Big Bertha metal buildcost from 4184 to 6184 and Intimidator from 4328 to 6328
+- Increased Big Bertha energy buildcost from 64680 to 124680 and Intimidator from 62520 to 122520
+- Reduced Big Bertha buildtime from 85185 to 65185 and Intimidator from 93237 to 73237
+
+- Reduced Vulcan buildtime from 587421 to 325185 and Buzzsaw from 634011 to 365011
+- Reduced Vulcan metal buildcost from 45198 to 30198 and Buzzsaw from 35264 to 31564
+- Increased Vulcan reloadtime from 0.25 to 1 and Buzzsaw from 0.5 to 1.2
+- Reduced Vulcan damage from 1000 to 400 and Buzzsaw from 1800 to 450
+- Increased Vulcan accuracy from 800 to 700 and Buzzsaw from 800 to 700
+- Increased Vulcan range from 3080 to 3584 and Buzzsaw from 3800 to 4096
+- Increased Vulcan shot energycost from 2000 to 4000 and Buzzsaw from 2000 to 4000
+- Vulcan and Buzzsaw no longer target aircraft
+
+- Reduced Neutron area of effect from 896 to 512 and Stunner from 896 to 768
+- Reduced Neutron damage from 3000 to 2000
+- Reduced Neutron shot metal cost from 1300 to 700 and energy cost from 130000 to 70000
+- Reduced Neutron buildtime from 100453 to 89378
+- Reduced Stunner shot metal cost from 750 to 400 and energy cost from 75000 to 40000
+- Reduced Neutron metal buildcost from 2075 to 1256 and Stunner from 2010 to 1038
+
+- Added Factory Guard widget
+- Added Unit Stats widget
+
+---BOTA 1.7 (Beta 7)
+- You can no longer see the health of enemy units
+- Changed Nuclear Missile reloadtime from 235 to 190
+- Changed ARM Stunner reloadtime from 180 to 150 and CORE Neutron reloadtime from 200 to 170
+- Anti-nuke and mobile anti-nuke reload time stays at 100
+- Anti-nuke protection range reduced from 2000 to 1100. Mobile anti-nuke from 1500 to 600
+- Nuke area of effect increased from 950 to 1024. Neutron and Stunner reduced from 1024 to 896
+- Reduced ARM Protector buildtime from 95678 to 55678 and CORE Fortitude Missile Defense from 76450 t0 56450
+- Increased both Protector and Fortitude Missile Defense metal construction cost by 200
+- Increased both Protector and Fortitude Missile Defense armor by 400
+- Both Protector and Fortitude Missile Defense now take only 40% of damage instead of 50% when closed
+- Reduced ARM Retaliator buildtime from 178453 to 118453 and CORE Silencer from 181243 to 121243
+- Increased Retaliator and Silencer metal construction cost by 50% and energy cost by 100%
+- Increased Retaliator armor from 2300 to 3079 and Silencer armor from 2560 to 3160 
+- Reduced Stunner buildtime from 111453 to 85453 and Neutron from 150453 to 100453
+- Increased Stunner and Neutron metal construction cost by 100%
+- Remembered to adjust wreckage values too :p
+- Halved all constructor build ranges
+
+---BOTA 1.7 (Beta 6)
+- ARM T1 radar tower sight range reduced from 900 to 652 to make it more even with CORE radar tower
+- reduced Ak weapon range from 291 to 271
+- added widgets: 
+    Auto First Build Facing
+    Blast Radius
+    Pause Screen
+    Ghost Radar
+    Ghost Site
+    Point Tracker
+    Prospector
+    Select And Center
+    Smart Area Reclaim
+    Start Point Remover
+    Unit Marker (BOTAfied)
+- updated widget to their latests versions:
+    Adv player list 7.3 (I think)
+    Customformations2 3.0
+    Defense Range 6.2 (BOTAfied)
+- possibly fixed widget:
+    Dgun Helper, the wait command is no longer given by the widget included in BOTA.
+                 If you have this separately in your widgets it may interfere.
+
+---BOTA 1.7 (Beta 5.1)
+- now with fixed wreckage values!
+
+---BOTA 1.7 (Beta 5)
+- changed costs of all labs and constructor followingly:
+1. In a given tech branch and level the lab now has twice the buildpower of the constructor it builds.
+2. Constructor now costs about a third of the metal the lab takes to build and has about 5-10% greater buildtime than the lab.
+3. Buildpower order for ARM is Air-Bot-Veh-Sea for both tech levels (seaplane is equivalent to T1 air and hover to T1 veh)
+3. Buildpower order for CORE is Air-Veh-Bot-Sea for both tech levels (seaplane is equivalent to T1 air and hover to T1 bot)
+4. Tech 2 lab costs increased especially for energy cost
+- compared to previous release:
+1. Constructors now build slower than they used to. 20-30% reduction or so.
+2. Seaplane and hover labs buildpower has been reduced to 65% from before. All other labs build a bit faster. 10-40% better or so.
+3. FARK has almost the buildpower of adv. con bot and cost.
+4. Necro is a bit slower builder than FARK but gains a separate greater resurrection speed than just from buildpower.
+- constructors no longer provide resources
+
+---BOTA 1.7 (Beta 4)
+- Reductions in LOS ranges for non-combat units
+- Bombers bombs no longer hit friendlies to avoid bombers from killing each other
+  (alternative is make the bombers no longer able to fly through each other)
+- T1 fighters weapon damage brought back up to their old vs. air damage values
+- Halved Maverick build time from 24850 to 12850
+- Increased The Cans build time from 7500 to 8126
+- Increased Sumo build time from 12975 to 14475
+- Made only map and allied features visible
+- ARM T2 bot Shooter no longer suicides
+- Switched to negative constructor eco. All T1 cons use 0.3 metal and 11 energy and all T2 cons need 1 metal and 30 energy
+
+
+---BOTA 1.7 (Beta 3)
+- Reduced Warlord laser range and damage because omfg
+- Mine layers can't assist other construction not started by them, reclaim or repair (cons can assist mine layers though)
+- Radars on scout vehicles set to work
+- Air lab radars removed (haven't worked for who knows how many bota versions and no one has complained of their lack)
+- T2 gunships no longer chase planes (will shoot at them if no other targets available though)
+- T2 bombers have their machine guns replaced with the original TA lasers and set to shoot aircraft only
+- Pelican missile set to shoot at aircraft only
+- Cloakable fusions are now cloaked automatically when built
+- T2 Pop-up guns no longer target aircraft. Core T1 Viper still does.
+- Diplomat, Dominator, Merl, T2 missile ships rocket no longer shoots at aircraft
+
+
+---BOTA 1.7 (Beta 2)
+-Instigator weapon range reduced from 305 to 270
+-missing units back
+
+
+---BOTA 1.7 (Beta 1)
+-lots of script error spam removed one way or other
+-added core remakes of diplomat and mobile radar vehicle. and new arm commander
+-air transports lose the machine gun as did t1 air fighters (neither existed in OTA)
+-air transport hp increased to make it survive a little better to deliver cargo under fire
+-fixed decoy commanders to look like the real ones (don't have dgun though)
+-sea scouts shoot the missile against air now properly. laser damage increased
+-fido range decreased (it still has greater range than most core units) and weapon speed decreased as well to reduce the effect beyond range
+-and various other balance changes (it's all broken anyway what with the removal of class armor)
+
+
+---BOTA 1.6 (fix 9)---
+-Inclusion of BASE-OTA Content. (It should run without OTA Dependencies now.)
+-Removal of IceUI (it was too buggy)
+
+-Fixed Arm Cloakable Fusions
+-Fixed Core Goli Crush-strength 250 --> 500
+-Fixed Krog Crush-strength 250 --> 1000
+-Fixed Core MMs (they now 'splode like the Arm ones)
+-Rebalanced the naval combat, destroyers are now less OP. Increased the Usefulness of the T2 Naval units.
+-Arm Warriors now have the Classic OTA script (1 Cannon, 1 EMG) instead of dual EMGs.
+-Peewees and AKs get an HP buff
+-Small Tanks can no longer climb hills as well as the KBots (should lead to less flash spam)
+-Flash/Gator recieve a 25% hp reduction. (From 650 to 500)
+
+Some problems, that still have not been fixed (due to difficulty, and lack of skill on the part of this particular maintainer) include;
+-Snipers still randomly suicide when firing.
+-Core Raider still invisible; went back to old 3DO model
+
+
+*
+
+
+---BOTA 1.6 (fix 8)---
+
+This mod is a modification of the OTA mod for spring.
+
+It was created as an improved OTA mod that addresses the problems caused by the move to Spring.
+While it does keep the same core gameplay of OTA, it is not an attempt to perfectly recreate OTA.
+Stats for many units have been changed either for balance or gameplay reasons.
+
+it includes the evolva models along with other models and scripts salvaged from other mods.
+
+To install drop the BOTA_16b4.sd7 file into the mods directory
+
+Changes from BOTA 1.6 (fix 7)
+*Cool Stuff*
+-Added LUA Functionality
+-Added ICEUI as default UI
+-Added Unit halos Widget
+-Added Adv. Player List Widget
+-Added Custom Formations Widget
+-Added MetalMaker Widget
+-Added Healthbars Widget
+-Added Unit AoE Widget
+
+*Balance*
+---(Naval Fixes)---
+-T1 Shipyards are now reduced in Cost and HP
+-Scoutships no longer fire their missiles at other ground units
+-Scoutships are also reduced in HP (They REALLY needed this.)
+-Destroyers are reduced in cost
+---(Ground Units)---
+-Scout Vehicles (and Flea) now have mini radar
+-Arm Spider now has increased firing range (15%)
+-Arm Spider is now buildable from both the Adv.Vehicle Plant(original) and The Adv.Kbot Lab
+     (This is a radical change, please give me feedback after a few playthroughs.)
+-Arm Fido has been nerfed; Reduced Armor by 10%, Reduced Rate of Fire by 25%
+-Fido speed has been increased by 15% however.
+-Core Gator has had a 5% armor reduction, along with a 10% general reduction in mobility, and a 5% reduction in range.
+---(Misc.)---
+-Radar Towers now have an increased LOS (by 33%)
+-Kbot labs(for both sides) are now the cheapest factories. Start spamming those bots!
+
+*General Fixes*
+-Unit min/max water depths have been increased. A lot more maps should be playable in BOTA now. Including Barracuda Bay.
+-That annoying beep has been removed.(Those who've experienced it know what I'm talking about)
+
+***The COB Errors have not been fixed yet. I need an experienced animation scripter to fix these. Until then, the ICEui will actually hide the COB flood (more or less sweeping the problem under a rug). For a more perminant solution, I need someone to rescript Mr.D's units so they stop spamming COB errors.
+
+
+*
+
+
+Changes from BOTA 1.5:
+*Cool Stuff*
+-Added NOTA Style Explosions for most units
+-Added CA Style Lasers
+-Added Custom BOTA Style Explosions for Fusion weapons, Bombs, and other High Energy Structures
+-New Cursors
+-Valkyries actually use lasers now
+-New Loading Screens again
+
+*Balance*
+-Arty units should now behave more like artillery
+-Arty weapons are more devastating
+
+
+*
+
+
+Changes from 1.4:
+*Cool Stuff*
+-Added new explosion effects
+-Added new weapon effects
+-Increased Unit speed across the board (again)
+-Added Machine Guns to the Atlas and Lasers to the Valkyrie
+-new loading screens
+
+*Balance*
+-Increased armor for the Zeus
+-Made peewees more expensive than Fleas
+-Decreased buildtime for Fleas
+-Made flashes and gators even faster
+-Reduced fire rate on lvl2 artillery (but increased damage per shot)
+-Lowered hit points to all defensive structures. 
+-Lowered build time to mohomines by 30%
+-Reduced energy cost to Solar collectors
+-Fixed slope tolerances to pelicans and gimps (they can climb hills now)
+-Increased slope tolerance to Wind Mills
+-Increased slope tolerance to Mexes
+-AA scripts for Con-Bots and Vehicles are now used to fix the sluggishness in previous versions
+-Other balance changes i can't remember
+
+*Bugs*
+-Fixed the Game-Killing crash that was caused by the CORALAB and ARMAVP
+-Bertha, Intimidator, DDM, and Annihilator can now fire at will
+
+
+*
+
+
+BOTA 1.0 - 1.3
+Changes are as follows (From OTA):
+
+- most units recieved +75% range and line of sight increase.  This amount was reduced for longer ranged units.
+- damage/hitpoints/costs for most units adjusted for balance
+- most kbots can now walk up steep slopes
+- autoheal removed (except for a tiny tiny bit)
+- mobile artillery range majorly improved
+- Veh and kbot tracks put back in
+- Heavy tanks crush trees and rubble
+- hitpoints of most rubble reduced due to spring handling damage differently
+- Stunner and Neutron missiles now work as intended, launcher made cheaper
+- core immolator fixed.  Works as anti flash/peewee/warrior weapon
+- most planes increased for speed.  
+- Level 1 fighters and turrets on lvl 2 bombers now have machine guns.
+- Lvl 1 fighters improved as bomber killers, cheap air superiority.
+- Hovercraft Platform cheaper
+- Nukes explode slightly bigger
+- subkillers fixed to kill subs
+- missile ship range and damage increased
+- battleships are better
+- transport ship is now better armored
+- most mines removed.  There are now only small, large, and nuclear mines.
+- land mine energy req for cloaking decreased
+- core levelers are good now, as long as nothing shoots them
+- peewees and flashes are now powerful early game units
+- Hammers and Thuds are now artillery/support units
+- flak is good, buildtime decreased.
+
+- Evolva models used
+- High Poly models used for some arm units
+- Arm Hammer script taken from AA.  Previous one wasn't working correctly
+- Penetrator and Warrior kbot scripts also taken from AA
+- Doomsday and Annihilator scripts taken from AA again, and made on/offable
+- weasel model borrowed from AA

@@ -1,0 +1,98 @@
+[UNITINFO]
+	{
+	// id
+	Name=Pelican;
+	Description=Amphibious Kbot;
+	Side=ARM;
+
+	UnitName=ARM_T2_BOT_Pelican;
+	Objectname=ARM_T2_BOT_Pelican;
+	Corpse=ARM_T2_BOT_Pelican_dead;
+	SoundCategory=ARM_AMPHIB;
+  IconType=kbot;
+
+	Category=ARM KBOT LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2468;
+	BuildCostMetal=255;
+	BuildTime=5582;
+
+
+
+	// movement or placement
+	MovementClass=TANKHOVER3;
+  MoveState=-1;
+
+	Floater=0;
+	CanHover=1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.9;
+	BrakeRate=0.35;
+	Acceleration=0.2;
+	TurnRate=400;
+
+	MaxSlope=25;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_PELICAN_LASER;
+  Wpri_BadTargetCategory=VTOL;
+
+	Weapon2=ARMAMPH_WEAPON2;
+  OnlyTargetCategory2=VTOL;
+
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=800;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=508;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+	Waterline=4;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	noshadow=1;
+	}

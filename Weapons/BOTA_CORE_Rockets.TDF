@@ -1,0 +1,249 @@
+[CORE_HOVER_ROCKET]
+{
+  // used by units
+  // CORE_T1_HOV_Nixer
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=4000;
+
+
+  // visuals
+	Model=cormhmsl;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+
+	WeaponVelocity=400;
+	WeaponAcceleration=40;
+	Turnrate=24384;
+
+
+  // stats
+	Range=1100;
+	Reloadtime=13;
+
+	AreaOfEffect=140;
+	EdgeEffectiveness=0.75;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}
+
+
+[CORE_KBOT_ROCKET]
+{
+  // used by units
+  // CORE_T2_BOT_Dominator
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=1000;
+
+
+  // visuals
+	Model=CorKBMissl1;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+
+	WeaponVelocity=350;
+	WeaponAcceleration=34;
+	Turnrate=28384;
+
+
+  // stats
+	Range=1000;
+	Reloadtime=12;
+
+	AreaOfEffect=140;
+	EdgeEffectiveness=0.75;
+
+	[DAMAGE]
+	{
+	Default=500;
+	}
+}
+
+
+[CORE_SHIP_ROCKET]
+{
+  // used by units
+  // CORE_T2_SEA_MissileFrigate
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=4000;
+
+
+  // visuals
+	Model=corshiprckt1;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+
+	WeaponVelocity=400;
+	WeaponAcceleration=40;
+	Turnrate=24384;
+
+
+  // stats
+	Range=1680;
+	Reloadtime=9;
+
+	AreaOfEffect=215;
+	EdgeEffectiveness=0.50;
+
+	[DAMAGE]
+	{
+	Default=900;
+	}
+}
+
+
+[CORE_VEH_ROCKET]
+{
+  // used by units
+  // CORE_T2_VEH_Diplomat
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=4000;
+
+
+  // visuals
+	Model=corvrocket;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+
+	WeaponVelocity=375;
+	WeaponAcceleration=38;
+	Turnrate=24384;
+
+
+  // stats
+	Range=1200;
+	Reloadtime=13;
+
+	AreaOfEffect=150;
+	EdgeEffectiveness=0.75;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}
+
+
+[KROGOTH_ROCKET]
+{
+  // used by units
+  // CORE_T3_BOT_Krogoth
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=9000;
+	Tracks=1;
+
+
+  // visuals
+	model=BOTA_Anti_Nuclear_Missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=rocklit1;
+	SoundHit=xplosml2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=70;
+
+	WeaponTimer=2;
+	Flighttime=7;
+
+	StartVelocity=250;
+	WeaponAcceleration=200;
+	WeaponVelocity=550;
+	Turnrate=63000;
+
+
+  // stats
+	Range=1300;
+	Reloadtime=1.4;
+
+	AreaOfEffect=120;
+
+	[DAMAGE]
+	{
+	Default=251;
+	}
+}

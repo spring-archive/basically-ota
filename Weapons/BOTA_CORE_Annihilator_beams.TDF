@@ -1,0 +1,126 @@
+[DOOMSDAY_ANNIHILATOR_BEAM]
+{
+  // used by units
+  // type
+	WeaponType=BeamLaser;
+
+	Turret=1;
+
+
+  // visuals
+  LargeBeamLaser=1;
+  PulseSpeed=10;
+  ScrollSpeed=1;
+  BeamTTL=30;
+  TileLength=100;
+  BeamBurst=1;
+
+  LaserFlareSize=10;
+
+	Thickness=20;
+  RGBColor=0.1 0.1 0.9; // blueish
+
+  CoreThickness=0.4;
+  RGBCOlor2=0.7 0.7 0.9; // white with a touch of blue
+
+	explosiongenerator=custom:FLASH1blue_LONG;
+
+
+  // sounds
+	SoundStart=annigun1;
+	SoundHit=xplosml3;
+
+
+  // behaviour
+	AvoidFriendly=1;
+	CollideFriendly=1;
+	Firestarter=90;
+
+	Beamtime=1.0;
+	TargetMoveError=0.3;
+
+	Tolerance=500;
+
+	WeaponVelocity=1000;
+
+
+  // costs
+	EnergyPerShot=800;
+
+
+  // stats
+	Range=950;
+	Reloadtime=8;
+
+	AreaOfEffect=32;
+  MinIntensity=1;
+
+	[DAMAGE]
+	{
+	default=2500;
+	}
+}
+
+
+[KROGOTH_ANNIHILATOR_BEAM]
+{
+  // used by units
+  // type
+	WeaponType=BeamLaser;
+
+	Turret=1;
+
+
+  // visuals
+  LargeBeamLaser=1;
+  PulseSpeed=10;
+  ScrollSpeed=1;
+  BeamTTL=30;
+  TileLength=100;
+  BeamBurst=1;
+
+  LaserFlareSize=10;
+
+	Thickness=10;
+  RGBColor=0.1 0.1 0.9; // blueish
+
+  CoreThickness=0.4;
+  RGBCOlor2=0.7 0.7 0.9; // white with a touch of blue
+
+	explosiongenerator=custom:FLASH1blue_LONG;
+
+
+  // sounds
+	SoundStart=annigun1;
+	SoundHit=xplolrg1;
+
+
+  // behaviour
+	AvoidFriendly=1;
+	CollideFriendly=1;
+	Firestarter=90;
+
+	Beamtime=0.3;
+  TargetMoveError=0.3;
+
+	Tolerance=500;
+
+	WeaponVelocity=1000;
+
+
+  // costs
+	EnergyPerShot=2000;
+
+
+  // stats
+	Range=1000;
+	Reloadtime=4;
+
+	AreaOfEffect=32;
+  MinIntensity=1;
+
+	[DAMAGE]
+	{
+	default=2500;
+	}
+}

@@ -1,0 +1,107 @@
+[UNITINFO]
+	{
+	// id
+	Name=Decoy;
+	Description=Commander;
+	Side=CORE;
+
+	UnitName=CORE_T2_BOT_DecoyCommander;
+	Objectname=CORE_T2_BOT_DecoyCommander.s3o;
+	SoundCategory=CORE_COM;
+  IconType=kbot;
+
+	Category=CORE KBOT LEVEL2 WEAPON NOTAIR NOTSUB; 
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=12085;
+	BuildCostMetal=705;
+	BuildTime=26941;
+
+
+
+	// movement or placement
+	MovementClass=COMMANDER;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.07;
+	BrakeRate=0.32;
+	Acceleration=0.16;
+	TurnRate=1030;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=30;
+	Builddistance=60;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon4=COMMANDER_LASER;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=DECOY_COMMANDER_BLAST;
+	SelfDestructAs=DECOY_COMMANDER_BLAST;
+
+
+
+	// properties
+	ShowPlayerName=1;
+
+	MaxDamage=1580;
+	HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=515;
+	RadarDistance=700;
+	SonarDistance=700;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+  OnOffable=1;
+
+	CloakCost=50;
+	CloakCostMoving=250;
+	MinCloakDistance=40;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

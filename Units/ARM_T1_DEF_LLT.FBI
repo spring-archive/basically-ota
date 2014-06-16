@@ -1,0 +1,71 @@
+[UNITINFO]
+	{
+	// id
+	Name=L.L.T.;
+	Description=Light Laser Tower;
+	Side=ARM;
+
+	UnitName=ARM_T1_DEF_LLT;
+	Objectname=ARM_T1_DEF_LLT;
+  Script=ARM_T1_DEF_LLT.lua;
+
+	Corpse=ARM_T1_DEF_LLT_dead;
+	SoundCategory=LLT;
+  IconType=turret;
+
+	Category=ARM LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1946;
+	BuildCostMetal=190;
+	BuildTime=4662;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=14;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_TOWER_LIGHT_LASER;
+
+	BadTargetCategory=VTOL;
+
+	ExplodeAs=MEDIUM_BUILDINGEX;
+	SelfDestructAs=MEDIUM_BUILDING;
+
+
+
+	// properties
+	MaxDamage=550;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=665;
+
+
+
+  // unit animation
+	FootprintX=2;
+	FootprintZ=2;
+	YardMap=oooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	buildangle=32768;
+	Ovradjust=1;
+	}

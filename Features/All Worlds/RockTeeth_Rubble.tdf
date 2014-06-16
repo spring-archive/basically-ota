@@ -1,0 +1,25 @@
+[RockTeeth]
+	{
+	world=allworld;
+	description=Rubble;
+	category=rocks;
+	animating=0;
+	footprintx=2;
+	footprintz=2;
+	height=20;
+	filename=rockshurt2;
+	seqname=rock4b;
+	seqnameshad=rock4bshad;
+	seqnamereclamate=rock04brec;
+	metal=6;
+
+	featurereclamate=rock04recscar;
+	featuredead=scar09;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=600;//2000
+	}

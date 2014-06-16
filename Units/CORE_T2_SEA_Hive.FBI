@@ -1,0 +1,95 @@
+[UNITINFO]
+	{
+	// id
+	Name=Hive;
+	Description=Light Carrier;
+	Side=CORE;
+
+	UnitName=CORE_T2_SEA_Hive;
+	Objectname=CORE_T2_SEA_Hive;
+	Corpse=CORE_T2_SEA_Hive_dead;
+	SoundCategory=CORE_SHIP;
+  IconType=ship;
+
+	Category=CORE SHIP LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=11715;
+	BuildCostMetal=1379;
+	BuildTime=25271;
+
+	EnergyMake=380;
+
+
+
+	// movement or placement
+	MovementClass=BIG_SHIP;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	Floater=1;
+
+	MaxVelocity=2.2;
+	BrakeRate=0.02;
+	Acceleration=0.02;
+	TurnRate=128;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=800;
+
+  CanAssist=0;
+	CanReclaim=0;
+
+
+
+	// combat
+	ExplodeAs=CRAWL_BLAST;
+	SelfDestructAs=CRAWL_BLAST;
+
+
+
+	// properties
+	MaxDamage=3500;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+	RadarDistance=2400;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+	IsAirBase=1;
+
+
+
+	// unit animation
+	FootprintX=8;
+	FootprintZ=8;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	buildangle=16384;
+	Ovradjust=1;
+	}

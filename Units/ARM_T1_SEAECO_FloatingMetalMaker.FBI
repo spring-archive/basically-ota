@@ -1,0 +1,75 @@
+[UNITINFO]
+	{
+	// id
+	Name=Floating Metal Maker;
+	Description=Converts Energy into Metal;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEAECO_FloatingMetalMaker;
+	Objectname=ARM_T1_SEAECO_FloatingMetalMaker;
+	Script=ARM_T1_SEAECO_FloatingMetalMaker.lua;
+	
+  Corpse=ARM_T1_SEAECO_FloatingMetalMaker_dead;
+	SoundCategory=ARM_MAKER;
+  IconType=building;
+
+	Category=ARM LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1480;
+	BuildTime=2958;
+
+	MakesMetal=1;
+
+	EnergyUse=60;
+
+
+
+	// movement or placement
+  MaxWaterDepth=0;
+	MinWaterDepth=11;
+	MaxSlope=10;
+
+
+
+	// combat
+	ExplodeAs=SMALL_BUILDINGEX;
+	SelfDestructAs=SMALL_BUILDING;
+
+
+
+	// properties
+	MaxDamage=110;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=367;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+	// unit animation
+	Waterline=4;
+
+	FootprintX=3;
+	FootprintZ=3;
+	YardMap=wwww;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	noshadow=1;
+	Buildangle=8192;
+	}

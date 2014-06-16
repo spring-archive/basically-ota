@@ -1,0 +1,37 @@
+[ARM_T2_BOT_Eraser_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ARM_T2_BOT_Eraser_dead;
+	featuredead=ARM_T2_BOT_Eraser_heap;
+	footprintx=1;
+	footprintz=1;
+	height=40;
+	blocking=1;
+	hitdensity=100;
+	metal=48;
+	damage=36;//144
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ARM_T2_BOT_Eraser_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=1x1a;
+	footprintx=1;
+	footprintz=1;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=24;
+	damage=36;//144
+	reclaimable=1;
+
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

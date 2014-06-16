@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	// id
+	Name=Luger;
+	Description=Mobile Artillery;
+	Side=ARM;
+
+	UnitName=ARM_T2_VEH_Luger;
+	Objectname=ARM_T2_VEH_Luger;
+	Corpse=ARM_T2_VEH_Luger_dead;
+	SoundCategory=ARM_TANK;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2621;
+	BuildCostMetal=314;
+	BuildTime=4530;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.3;
+	BrakeRate=0.04;
+	Acceleration=0.02;
+	TurnRate=350;
+
+	MaxWaterDepth=0;
+	MaxSlope=12;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_ARTILLERY;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=525;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=385;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=32;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

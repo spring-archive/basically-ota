@@ -1,0 +1,75 @@
+[UNITINFO]
+	{
+	// id
+	Name=EG-5;
+	Description=Large Mine;
+	Side=ARM;
+
+	UnitName=ARM_T1_DEF_Mine5;
+	Objectname=ARM_T1_DEF_Mine5;
+	Script=ARM_T1_DEF_Mine5.lua;
+
+	SoundCategory=MINE3;
+
+	Category=ARM MINE LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=4420;
+	BuildCostMetal=78;
+	BuildTime=4375;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=15;
+
+
+
+	// combat
+  FireState=2;
+  
+	Kamikaze=1;
+	KamikazeDistance=64;
+	SelfDestructCountdown=1;
+
+	ExplodeAs=ARMMINE5;
+	SelfDestructAs=ARMMINE5;
+
+  
+  
+	// properties
+	MaxDamage=55;
+	HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=55;
+
+
+
+	// other abilities
+	Stealth=1;
+
+	CloakCost=4;
+	Init_Cloaked=1;
+	MinCloakDistance=10;
+
+
+
+  // unit animation
+	FootprintX=1;
+	FootprintZ=1;
+	YardMap=o;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	DefaultMissionType=Standby_Mine;
+	}

@@ -1,0 +1,18 @@
+[FLASH1blue_LONG]
+{
+	usedefaultexplosions=1;
+	[groundflash]
+	{
+		texture=groundring;
+		flashSize = 110;
+		flashAlpha = 1.1;
+		ttl = 32;
+		color = 0.5,0.5,1;
+	}
+	air=1;
+	water=1;
+	ground=1;
+  unit=1;
+  nonunit=1;
+	count=1; 
+}

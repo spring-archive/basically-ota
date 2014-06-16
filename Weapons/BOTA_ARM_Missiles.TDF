@@ -1,0 +1,633 @@
+[ARMVTOL_MISSILE]
+{
+  // used by units
+  // ARM_T1_AIR_FreedomFighter
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+
+	Tolerance=8000;
+
+	Tracks=1;
+
+
+  // visuals
+	Model=missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rocklit3;
+	SoundHit=xplosml2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=70;
+
+	Weapontimer=5;
+
+	WeaponVelocity=480;
+	StartVelocity=420;
+	WeaponAcceleration=146;
+	Turnrate=16384;
+
+
+  // stats
+	Range=630;
+	Reloadtime=5;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=130;
+	}
+}
+
+
+[ARMKBOT_MISSILE]
+{
+  // used by units
+  // ARM_T1_BOT_Jethro
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+
+	Turret=1;
+	Tolerance=9000;
+
+	Tracks=1;
+
+
+  // visuals
+	Model=missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=rocklit1;
+	SoundHit=xplosml2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=70;
+
+	Weapontimer=5;
+
+	WeaponVelocity=650;
+	StartVelocity=450;
+	WeaponAcceleration=101;
+	Turnrate=17000;//33000
+
+
+  // stats
+	Range=804;
+	Reloadtime=2.4;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=42;
+	//ArmLandAir=83;
+	//CoreLandAir=83;
+	}
+}
+
+
+[ARMRL_MISSILE]
+{
+  // used by units
+  // ARM_T1_DEF_Defender
+  // ARM_T1_SEADEF_Defender
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+
+	Turret=1;
+	Tolerance=10000;
+
+	Tracks=1;
+
+
+  // visuals
+	Model=missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=rockhvy2;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=70;
+
+	Weapontimer=5;
+
+	WeaponVelocity=660;
+	StartVelocity=470;
+	WeaponAcceleration=154;
+	Turnrate=20000;
+
+
+  // stats
+	Range=820;
+	Reloadtime=2;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=68;
+  planes=68; // armor group needed only for defense range
+	}
+}
+
+
+[ARMAH_WEAPON]
+{
+  // used by units
+  // ARM_T1_HOV_Swatter
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+
+	Turret=1;
+	Tolerance=10000;
+
+	Tracks=1;
+
+
+  // visuals
+	Model=missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=rockhvy2;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=70;
+
+	Weapontimer=5;
+
+	WeaponVelocity=690;
+	StartVelocity=420;
+	WeaponAcceleration=164;
+	Turnrate=50000;
+
+
+  // stats
+	Range=820;
+	Reloadtime=2.1;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=49;
+	}
+}
+
+
+[ARMSEAP_WEAPON3]
+{
+  // used by units
+  // ARM_T1_SEAPL_Albatross
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+
+	Tolerance=8000;
+
+	Tracks=1;
+
+
+  // visuals
+	Model=missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rocklit3;
+	SoundHit=xplosml2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=70;
+
+	Weapontimer=5;
+
+	WeaponVelocity=480;
+	StartVelocity=420;
+	WeaponAcceleration=146;
+	Turnrate=16384;
+
+
+  // stats
+	Range=610;
+	Reloadtime=3;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=44;
+	//ArmLandAir=130;
+	//CoreLandAir=130;
+	}
+}
+
+
+[ARM_SEAPLANE_FIGHTER_MISSILE]
+{
+  // used by units
+  // ARM_T1_SEAPL_Tornado
+
+
+  // type
+  WeaponType=MissileLauncher;
+
+	Tolerance=8000;
+
+	Tracks=1;
+
+
+  // visuals
+	Model=missile;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rocklit3;
+	SoundHit=xplosml2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;	
+	Firestarter=70;
+
+	Weapontimer=6;
+
+	WeaponVelocity=522;
+	StartVelocity=420;
+	WeaponAcceleration=146;
+	Turnrate=19384;
+
+
+  // stats
+	Range=510;
+	Reloadtime=3;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=50;
+	//ArmLandAir=140;
+	//CoreLandAir=140;
+	}
+}
+
+
+[ARMTRUCK_MISSILE]
+{
+  // used by units
+  // ARM_T1_VEH_Samson
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Turret=1;
+
+	Model=missile;
+
+	Range=800;//600
+	Reloadtime=2.5;
+	Weapontimer=5;
+	WeaponVelocity=540;
+	StartVelocity=450;
+	WeaponAcceleration=141;
+	Turnrate=15000;//30000
+	AreaOfEffect=48;
+	metalpershot=0;
+
+	SoundStart=rockhvy2;
+	SoundHit=xplomed2;
+
+	Firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	Tracks=1;
+	selfprop=1;
+	Smoketrail=1;
+	Tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+  [DAMAGE]
+	{
+	Default=54;//40//62
+	//ArmLandAir=90;
+	//CoreLandAir=90;
+	}
+}
+
+
+[ARM_STEALTH_FIGHTER_MISSILE]
+{
+  // used by units
+  // ARM_T2_AIR_Hawk
+  
+  // type
+  WeaponType=MissileLauncher;
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=112;
+	name=Guided Missiles;
+	rendertype=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	lineofsight=1;
+
+	Model=missile;
+
+	Range=659;
+	Reloadtime=3;
+	Weapontimer=7;
+	WeaponVelocity=559;
+	StartVelocity=450;
+	WeaponAcceleration=130;
+	Turnrate=24384;
+	AreaOfEffect=48;
+	metalpershot=0;
+
+	SoundStart=Rocklit3;
+	SoundHit=xplosml2;
+
+	Firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	Tracks=1;
+	selfprop=1;
+	Smoketrail=1;
+	Tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=70;
+	//ArmLandAir=150;
+	//CoreLandAir=150;
+	}
+}
+
+
+[ARMAMPH_WEAPON2]
+{
+  // used by units
+  // ARM_T2_BOT_Pelican
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=38;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;	
+	Turret=1;
+
+	Model=missile;
+
+	Range=800;//700
+	Reloadtime=2;
+	Weapontimer=5;
+	WeaponVelocity=660;
+	StartVelocity=470;
+	WeaponAcceleration=154;
+	Turnrate=50000;
+	AreaOfEffect=48;
+	metalpershot=0;
+
+	SoundStart=rockhvy2;
+	SoundHit=xplomed2;
+
+	Firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	Tracks=1;
+	selfprop=1;
+	Smoketrail=1;
+	Tolerance=10000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	default=46;
+	//ArmLandAir=97;
+	//CoreLandAir=97;
+	}
+}
+
+
+[ARM_ANTI-AIR_SHIP_MISSILE]
+{
+  // used by units
+  // ARM_T2_SEA_Archer
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=77;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Turret=1;
+
+	Model=missile;
+
+	Range=810;//710
+	Reloadtime=2;
+	Weapontimer=5;
+	WeaponVelocity=450;
+	StartVelocity=430;
+	WeaponAcceleration=121;
+	Turnrate=30000;
+	AreaOfEffect=48;
+	metalpershot=0;
+
+	SoundStart=rockhvy2;
+	SoundHit=xplomed2;
+
+	Firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	Tracks=1;
+	selfprop=1;
+	Smoketrail=1;
+	Tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=57;
+	//ArmLandAir=108;
+	//CoreLandAir=108;
+	}
+}
+
+
+[ARMSHIP_MISSILE]
+{
+  // used by units
+  // ARM_T2_SEA_Ranger
+  
+  
+  // type
+  WeaponType=MissileLauncher;
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=103;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Turret=1;
+
+	Model=missile;
+
+	Range=860;//710
+	Reloadtime=2;
+	Weapontimer=5;
+	WeaponVelocity=450;
+	StartVelocity=430;
+	WeaponAcceleration=121;
+	Turnrate=15000;//30000
+	AreaOfEffect=48;
+	metalpershot=0;
+
+	SoundStart=rockhvy2;
+	SoundHit=xplomed2;
+
+	Firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	Tracks=1;
+	selfprop=1;
+	Smoketrail=1;
+	Tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=57;//57
+	//ArmLandAir=108;
+	//CoreLandAir=108;
+	}
+}

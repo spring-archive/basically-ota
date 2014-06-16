@@ -1,0 +1,84 @@
+[UNITINFO]
+	{
+	// id
+	Name=Millenium;
+	Description=Battleship;
+	Side=ARM;
+
+	UnitName=ARM_T2_SEA_Millenium;
+	Objectname=ARM_T2_SEA_Millenium;
+	Corpse=ARM_T2_SEA_Millenium_dead;
+	SoundCategory=ARM_SHIP;
+  IconType=ship;
+
+	Category=ARM SHIP LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=25914;
+	BuildCostMetal=5505;
+	BuildTime=42730;
+
+
+
+	// movement or placement
+	MovementClass=BIG_SHIP;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	Floater=1;
+
+	MaxVelocity=2;
+	BrakeRate=0.018;
+	Acceleration=0.018;
+	TurnRate=128;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_BATS;
+
+	Weapon2=ARM_BATS;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+	// properties
+	MaxDamage=7720;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+	// unit animation
+	FootprintX=8;
+	FootprintZ=8;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=0.6;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	buildangle=16384;
+	Ovradjust=1;
+	}

@@ -1,0 +1,75 @@
+[UNITINFO]
+	{
+	// id
+	Name=Aircraft Plant;
+	Description=Produces Aircraft;
+	Side=CORE;
+
+	UnitName=CORE_T1_LAB_AircraftPlant;
+	Objectname=CORE_T1_LAB_AircraftPlant.s3o;
+	Script=CORE_T1_LAB_AircraftPlant.lua;
+	Corpse=CORE_T1_LAB_AircraftPlant_dead;
+	SoundCategory=AIRPLANT;
+  IconType=factory;
+
+	Category=CORE PLANT LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1340;
+	BuildCostMetal=830;
+	BuildTime=7180;
+
+	EnergyStorage=100;
+	MetalStorage=100;
+
+
+
+	// movement or placement
+  MoveState=1;
+
+	CanMove=1;
+	CanPatrol=1;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=110;
+
+
+
+	// combat
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+
+
+
+	// properties
+	MaxDamage=1925;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=367;
+
+
+
+	// unit animation
+	FootprintX=7;
+	FootprintZ=6;
+	YardMap=ooooooo ooooooo occccco occccco occccco occccco;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	Ovradjust=1;
+	}

@@ -1,0 +1,36 @@
+[CORE_T2_DEF_FortitudeMissileDefense_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=CORE_T2_DEF_FortitudeMissileDefense_dead;
+	featuredead=CORE_T2_DEF_FortitudeMissileDefense_heap;
+	footprintx=5;
+	footprintz=5;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=1491;
+	damage=656;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[CORE_T2_DEF_FortitudeMissileDefense_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=5x5d;
+	footprintx=5;
+	footprintz=5;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=696;
+	damage=654;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

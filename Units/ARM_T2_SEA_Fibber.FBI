@@ -1,0 +1,86 @@
+[UNITINFO]
+	{
+	// id
+	Name=Fibber;
+	Description=Sonar Jamming Sub;
+	Side=ARM;
+
+	UnitName=ARM_T2_SEA_Fibber;
+	Objectname=ARM_T2_SEA_Fibber;
+	Corpse=ARM_T2_SEA_Fibber_dead;
+	SoundCategory=ARM_JAMSUB;
+  IconType=ship;
+
+	Category=ARM UNDERWATER LEVEL2 NOWEAPON NOTAIR;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2897;
+	BuildCostMetal=295;
+	BuildTime=11048;
+
+	EnergyUse=25;
+
+
+
+	// movement or placement
+	MovementClass=SHIP_SUBMARINE;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=2.4;
+	BrakeRate=0.36;
+	Acceleration=0.2;
+	TurnRate=622;
+
+
+
+	// combat
+	BadTargetCategory=VTOL NOTAIR;
+	NoChaseCategory=VTOL NOTAIR;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=450;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=260;
+
+	SonarDistanceJam=850;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+	// unit animation
+	WaterLine=30;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

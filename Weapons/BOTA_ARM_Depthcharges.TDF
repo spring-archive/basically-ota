@@ -1,0 +1,52 @@
+[ARM_DEPTHCHARGE]
+{
+  // used by units
+  // ARM_T1_SEA_Crusader
+  // ARM_T2_SEA_Conqueror
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=32767;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_DepthCharge;
+
+	ExplosionGenerator=custom:LITTLESPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=110;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=10000;
+
+
+  // stats
+	Range=410;
+	Reloadtime=2.8;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=70;
+	//subs=120;
+	}
+}

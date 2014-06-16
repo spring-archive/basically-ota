@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	// id
+	Name=Storm;
+	Description=Rocket Kbot;
+	Side=CORE;
+
+	UnitName=CORE_T1_BOT_Storm;
+	Objectname=CORE_T1_BOT_Storm.s3o;
+	Corpse=CORE_T1_BOT_Storm_dead;
+	SoundCategory=COR_KBOT;
+  IconType=kbot;
+
+	Category=CORE KBOT LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1056;
+	BuildCostMetal=134;
+	BuildTime=1969;
+
+
+
+	// movement or placement
+	MovementClass=KBOTSTANDARD;
+  MoveState=-1;
+
+	Canmove=1;
+	Canpatrol=1;
+	Canguard=1;
+
+	MaxVelocity=1.35;
+	BrakeRate=0.15;
+	Acceleration=0.09;
+	TurnRate=1003;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORKBOT_ROCKET;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=630;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=464;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

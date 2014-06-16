@@ -1,0 +1,91 @@
+[UNITINFO]
+	{
+	// id
+	Name=Goliath;
+	Description=Very Heavy Assault Tank;
+	Side=CORE;
+
+	UnitName=CORE_T2_VEH_Goliath;
+	Objectname=CORE_T2_VEH_Goliath.s3o;
+	Corpse=CORE_T2_VEH_Goliath_dead;
+	SoundCategory=CORE_TANK;
+  IconType=tank;
+
+	Category=CORE TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=5906;
+	BuildCostMetal=1097;
+	BuildTime=11058;
+
+
+
+	// movement or placement
+	MovementClass=GOLIATH;//HEAVYTANK//TANKSH3
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1;
+	BrakeRate=0.03;
+	Acceleration=0.015;
+	TurnRate=206;
+
+	MaxWaterDepth=12;
+	MaxSlope=16;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=COR_GOL;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=HUGE_UNITEX;
+	SelfDestructAs=HUGE_UNITEX;
+
+
+
+	// properties
+	MaxDamage=3650;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	Mass=3001; // Valkyrie limit is 3000
+
+	SightDistance=420;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=40;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

@@ -1,0 +1,37 @@
+[ARM_T1_ECO_MetalStorage_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ARM_T1_ECO_MetalStorage_dead;
+	featuredead=ARM_T1_ECO_MetalStorage_heap;
+	featurereclamate=smudge01;
+	footprintx=4;
+	footprintz=4;
+	height=40;
+	blocking=1;
+	hitdensity=100;
+	metal=244;
+	damage=265;//1063
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ARM_T1_ECO_MetalStorage_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=4x4e;
+	footprintx=4;
+	footprintz=4;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=122;
+	damage=265;//1063
+	reclaimable=1;
+
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

@@ -1,0 +1,17 @@
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+
+[NOWEAPON] // this seems to be needed for Spring to work
+{
+	range=16;
+
+	[DAMAGE]
+  {
+  default=0;
+  }
+}

@@ -1,0 +1,92 @@
+[UNITINFO]
+	{
+	// id
+	Name=Construction Vehicle;
+	Description=Tech Level 1;
+	Side=ARM;
+
+	UnitName=ARM_T1_VEH_Constructor;
+	Objectname=ARM_T1_VEH_Constructor;
+	Corpse=ARM_T1_VEH_Constructor_dead;
+	SoundCategory=ARM_CVEHICLE;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1330;
+	BuildCostMetal=209;
+	BuildTime=7051;
+
+	EnergyStorage=50;
+	MetalStorage=50;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.4;
+	BrakeRate=0.08;
+	Acceleration=0.016;
+	TurnRate=250;
+
+	MaxWaterDepth=18;
+	MaxSlope=16;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=60;
+	Builddistance=20;
+
+
+
+	// combat
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=870;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=341;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=24;
+	trackOffset=3;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

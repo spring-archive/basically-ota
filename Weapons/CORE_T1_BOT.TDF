@@ -1,0 +1,72 @@
+[CORKBOT_ROCKET]
+	{
+	ID=121;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=500;//400//700//730//690
+	reloadtime=6.6;//3.7//6.1
+	weapontimer=2;
+	weaponvelocity=250;
+	startvelocity=250;
+	weaponacceleration=120;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	smokedelay=.1;
+	selfprop=1;
+	smoketrail=1;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=220;//100//250
+		}
+	}
+
+[CORE_THUD]
+	{
+	ID=55;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+	minbarrelangle=-35;
+
+	range=590;//320//403//500//690//630//650//530
+	reloadtime=2.5;//1.9//2.4//3.4//1.9
+	weaponvelocity=270;//210//270//305
+	areaofeffect=48;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+	explosiongenerator=custom:MARY_SUE;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=100; //105//80//95
+		}
+	}

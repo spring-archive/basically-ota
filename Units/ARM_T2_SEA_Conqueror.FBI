@@ -1,0 +1,91 @@
+[UNITINFO]
+	{
+	// id
+	Name=Conqueror;
+	Description=Cruiser;
+	Side=ARM;
+
+	UnitName=ARM_T2_SEA_Conqueror;
+	Objectname=ARM_T2_SEA_Conqueror;
+	Corpse=ARM_T2_SEA_Conqueror_dead;
+	SoundCategory=ARM_SHIP;
+  IconType=ship;
+
+	Category=ARM SHIP LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=10760;
+	BuildCostMetal=2149;
+	BuildTime=16789;
+
+
+
+	// movement or placement
+	MovementClass=MEDIUM_SHIP;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	Floater=1;
+
+	MaxVelocity=2.5;
+	BrakeRate=0.05;
+	Acceleration=0.032;
+	TurnRate=256;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_CRUS;
+
+	Weapon2=ARM_DEPTHCHARGE;
+	wsec_badTargetCategory=NOTSUB;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=4450;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=600;
+	SonarDistance=425;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+
+
+
+	// unit animation
+	FootprintX=6;
+	FootprintZ=6;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	buildangle=16384;
+	Ovradjust=1;
+	}

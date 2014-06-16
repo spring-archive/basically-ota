@@ -1,0 +1,64 @@
+[CORLEVLR_WEAPON]
+	{
+	ID=172;
+	name=Light Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=500;//260//455
+	reloadtime=1.73;
+	weaponvelocity=280;
+	areaofeffect=84;
+	soundstart=canlite3;
+	soundhit=xplosml3;
+
+
+	tolerance=2000;
+	
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+	explosiongenerator=custom:PLASMA_Expl;
+
+	[DAMAGE]
+		{
+		default=280;//180
+		}
+	}
+
+[CORE_LIGHTCANNON]
+	{
+	ID=51;
+	name=Light Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=420;//240
+	reloadtime=1.43;
+	weaponvelocity=350;//170
+	areaofeffect=32;
+	soundstart=canlite3;
+	soundhit=xplosml3;
+
+	explosiongenerator=custom:TANKSHOT_Expl;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=70;//50//75
+		}
+	}

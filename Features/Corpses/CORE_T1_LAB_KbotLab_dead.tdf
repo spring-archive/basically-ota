@@ -1,0 +1,36 @@
+[CORE_T1_LAB_KbotLab_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=CORE_T1_LAB_KbotLab_dead;
+	featuredead=CORE_T1_LAB_KbotLab_heap;
+	footprintx=6;
+	footprintz=6;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=544;
+	damage=2519;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[CORE_T1_LAB_KbotLab_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=6x6b;
+	footprintx=6;
+	footprintz=6;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=272;
+	damage=2547;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Lurker;
+	Description=Submarine;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEA_Lurker;
+	Objectname=ARM_T1_SEA_Lurker;
+	Corpse=ARM_T1_SEA_Lurker_dead;
+	SoundCategory=ARM_SUB;
+  IconType=ship;
+
+	Category=ARM UNDERWATER LEVEL1 WEAPON NOTAIR;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=3724;
+	BuildCostMetal=1151;
+	BuildTime=9894;
+
+
+
+	// movement or placement
+	MovementClass=SHIP_SUBMARINE;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.3;
+	BrakeRate=0.18;
+	Acceleration=0.015;
+	TurnRate=256;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_TORPEDO;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=610;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=196;
+	SonarDistance=605;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+
+
+
+	// unit animation
+	WaterLine=30;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

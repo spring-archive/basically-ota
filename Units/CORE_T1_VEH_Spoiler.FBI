@@ -1,0 +1,92 @@
+[UNITINFO]
+	{
+	// id
+	Name=Spoiler;
+	Description=Mine Layer Vehicle;
+	Side=CORE;
+
+	UnitName=CORE_T1_VEH_Spoiler;
+	Objectname=CORE_T1_VEH_Spoiler;
+	Corpse=CORE_T1_VEH_Spoiler_dead;
+	SoundCategory=CORE_CVEHICLE;
+  IconType=tank;
+
+	Category=CORE TANK LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1117;
+	BuildCostMetal=187;
+	BuildTime=1740;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=0;
+	CanGuard=0;
+
+	MaxVelocity=1.1;
+	BrakeRate=0.2;
+	Acceleration=0.01;
+	TurnRate=230;
+
+	MaxWaterDepth=0;
+	MaxSlope=16;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=120;
+	Builddistance=70;
+
+  CanAssist=0;
+	CanReclaim=0;
+  CanRepair=0;
+
+
+
+	// combat
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=1400;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=254;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=24;
+	trackOffset=3;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

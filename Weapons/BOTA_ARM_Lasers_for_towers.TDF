@@ -1,0 +1,167 @@
+[ARM_TOWER_LIGHT_LASER]
+{
+  // used by units
+  // ARM_T1_DEF_LLT
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+	Tolerance=500;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=7;
+  RGBColor=0.8 0 0; // reddish
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0.4 0.4; // white-reddish
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfir3;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=30;
+
+	WeaponVelocity=900;
+
+
+  // costs
+	EnergyPerShot=10;
+
+
+  // stats
+	Range=512;
+	Reloadtime=0.52;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=72;
+	}
+}
+
+
+[ARM_TOWER_HEAVY_LASER]
+{
+  // used by units
+  // ARM_T1_DEF_Sentinel
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+	Tolerance=500;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=10;
+  RGBColor=0 0.8 0; // greenish
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.4 0.9 4; // green-whiteish
+
+
+  // sounds
+	SoundStart=Lasrmas2;
+	SoundHit=lasrhit1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=90;
+
+	WeaponVelocity=900;
+
+
+  // costs
+	EnergyPerShot=75;
+
+
+  // stats
+	Range=685;
+	Reloadtime=0.965;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=240;
+	}
+}
+
+
+[ARM_FLOATING_TOWER_HEAVY_LASER]
+{
+  // used by units
+  // ARM_T1_SEADEF_Stingray
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+	Tolerance=500;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=12;
+  RGBColor=0 0.8 0; // greenish
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.4 0.9 4; // green-whiteish
+
+
+  // sounds
+	SoundStart=Lasrmas2;
+	SoundHit=lasrhit1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=90;
+
+	WeaponVelocity=900;
+
+
+  // costs
+	EnergyPerShot=75;
+
+
+  // stats
+	Range=730;
+	Reloadtime=1.1;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=240;
+	}
+}

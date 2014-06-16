@@ -1,0 +1,17 @@
+[ARM_T1_HOV_Swatter_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ARM_T1_HOV_Swatter_dead;
+	footprintx=3;
+	footprintz=3;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=96;
+	damage=75;//300
+	reclaimable=1;
+	featurereclamate=smudge01;
+  seqnamereclamate=tree1reclamate;
+	}

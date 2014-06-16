@@ -1,0 +1,98 @@
+[UNITINFO]
+	{
+	// id
+	Name=Albatross;
+	Description=Torpedo Seaplane;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEAPL_Albatross;
+	Objectname=ARM_T1_SEAPL_Albatross;
+	Corpse=ARM_T1_SEAPL_Albatross_dead;
+	SoundCategory=ARM_SEAPLN;
+  IconType=aircraft;
+
+	Category=ARM VTOL LEVEL1 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=9619;
+	BuildCostMetal=257;
+	BuildTime=22825;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=100;
+
+	MaxVelocity=10.4;
+	BrakeRate=4;
+	Acceleration=0.37;
+	TurnRate=452;
+
+	MaxWaterDepth=255;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARMSEAP_WEAPON1;
+	wpri_badTargetCategory=VTOL;
+
+	Weapon2=ARMSEAP_WEAPON2;
+	wsec_badTargetCategory=VTOL;	
+
+	Weapon3=ARMSEAP_WEAPON3;
+
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=MEDIUM_UNIT;
+
+
+
+	// properties
+	MaxDamage=316;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+  // other abilities
+  CanSubmerge=1;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	Amphibious=1;
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	BankScale=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	MoveRate1=8;
+	attackrunlength=100;
+	}

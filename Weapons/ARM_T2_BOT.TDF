@@ -1,0 +1,153 @@
+[GAUSS]
+	{
+	ID=60;
+	name=Gauss Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	minbarrelangle=-15;
+
+	range=680;
+	reloadtime=1.25;
+	weaponvelocity=600;
+	areaofeffect=12;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+
+	explosiongenerator=custom:GAUSS_Expl;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=120;
+		}
+	}
+
+[ARMMAV_WEAPON]
+	{
+	ID=190;
+	name=Gauss Cannon;
+	rendertype=4;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+	minbarrelangle=-15;
+
+	range=580;
+	reloadtime=0.8;
+	weaponvelocity=680;
+	areaofeffect=8;
+	soundstart=Mavgun2;
+	soundhit=xplomed2;
+
+	tolerance=300;
+
+	explosiongaf=fx;
+	explosionart=explode5;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom1;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplashsm;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=320;
+		}
+	}
+
+[ARMSNIPE_WEAPON]
+	{
+	ID=160;
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=950;//600
+	reloadtime=20;
+	energypershot=1500;
+	weaponvelocity=1200;//1000
+	areaofeffect=8;
+	
+
+	soundstart=annigun1;
+	soundhit=xplolrg1;
+
+	firestarter=90;
+	beamweapon=1;
+	color=144;	/* PURPLE */
+	color2=217;
+
+	
+	explosiongaf=fx;
+	explosionart=explode5;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom1;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplashsm;
+
+	[DAMAGE]
+		{
+		default=1800;//1230//2460//1500//882
+		//CoreSumoKrog=4860;//2460//4860//2859
+		//corkrog=2460;
+		//armcom=615;
+		//corcom=820;
+		//corcan=2810;
+		//corsumo=5000;
+		}
+	CraterMult=0;
+	CraterBoost=0;
+	ImpulseFactor=0;
+	ImpulseBoost=0;
+	LeadLimit=0;
+	LeadBonus=2;
+	HeightBoostFactor=0;
+	}
+
+[LIGHTNING]
+	{
+	ID=26;
+	name=Lightning Gun;
+	rendertype=7;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=310;//180//280//240
+	reloadtime=1.85;//1.45
+	weaponvelocity=400;
+	areaofeffect=8;
+	duration=10;
+	soundtrigger=1;
+
+	soundstart=lghthvy1;
+	soundhit=lashit;
+
+	firestarter=50;
+
+	beamweapon=1;
+	color=118;	/* Yellow */
+	color2=240;//196
+
+	explosiongenerator=custom:LIGHTNING;
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=240;//180//320
+		}
+	}

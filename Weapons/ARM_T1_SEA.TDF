@@ -1,0 +1,27 @@
+[ARM_ROY]
+	{
+	ID=64;
+	name=Heavy Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+	minbarrelangle=-25;
+
+	range=950;//660//1155
+	reloadtime=2;
+	weaponvelocity=380;//300
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=300;
+
+	startsmoke=1;
+	targetMoveError=.15;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=165;
+		}
+	}

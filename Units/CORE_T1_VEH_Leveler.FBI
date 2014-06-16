@@ -1,0 +1,88 @@
+[UNITINFO]
+	{
+	// id
+	Name=Leveler;
+	Description=Riot Tank;
+	Side=CORE;
+
+	UnitName=CORE_T1_VEH_Leveler;
+	Objectname=CORE_T1_VEH_Leveler.s3o;
+	Corpse=CORE_T1_VEH_Leveler_dead;
+	SoundCategory=CORE_TANK;
+  IconType=tank;
+
+	Category=CORE TANK LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1887;
+	BuildCostMetal=292;
+	BuildTime=4209;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH2;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1;
+	BrakeRate=0.19;
+	Acceleration=0.02;
+	TurnRate=220;
+
+	MaxWaterDepth=12;
+	MaxSlope=17;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORLEVLR_WEAPON;
+
+  BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=MEDIUM_UNIT;
+
+
+
+	// properties
+	MaxDamage=425;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=385;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=24;
+	trackOffset=3;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

@@ -1,0 +1,25 @@
+[featureLOS]
+{
+  featureVisibility=2;
+}
+
+[flankingBonus] 
+{
+	defaultMode=0;  // defaults to 1
+} 
+
+[reclaim]
+{
+  reclaimMethod=0;
+}
+
+[Sensors]
+{
+  [Los]
+  {
+  LosMipLevel=3;
+  AirLosMipLevel=4;
+  LosMul=1.0;
+  AirLosMul=1.0;
+  }
+}

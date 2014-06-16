@@ -1,0 +1,76 @@
+[ARM_THUNDER_BOMB]
+{
+  // used by units
+  // ARM_T1_AIR_Thunder
+  
+  
+  // type
+  WeaponType=AircraftBomb;
+
+
+  // visuals
+	Model=BOTA_Bomb-ARM_Shadow;
+
+	ExplosionGenerator=custom:ARMBOMB_Expl;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+
+  // stats
+	Range=1280;
+	Reloadtime=0.14;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=173;
+	}
+}
+
+
+[ARM_PHOENIX_BOMB]
+{
+  // used by units
+  // ARM_T2_AIR_Phoenix
+  
+  
+  // type
+  WeaponType=AircraftBomb;
+
+
+  // visuals
+	Model=BOTA_Bomb-ARM_Phoenix;
+
+	ExplosionGenerator=custom:ARMBOMB_Expl;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+
+  // stats
+	Range=1280;
+	Reloadtime=0.13;
+
+	AreaOfEffect=64;
+
+	[DAMAGE]
+	{
+	Default=215;
+	}
+}

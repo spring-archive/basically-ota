@@ -1,0 +1,90 @@
+[UNITINFO]
+	{
+	// id
+	Name=Avenger;
+	Description=Fighter;
+	Side=CORE;
+
+	UnitName=CORE_T1_AIR_Avenger;
+	Objectname=CORE_T1_AIR_Avenger;
+	Corpse=CORE_T1_AIR_Avenger_dead;
+	SoundCategory=CORE_VTOL;
+  IconType=aircraft;
+
+	Category=CORE VTOL LEVEL1 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=3181;
+	BuildCostMetal=111;
+	BuildTime=9196;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=100;
+
+	MaxVelocity=16;
+	BrakeRate=5;
+	Acceleration=0.41;
+	TurnRate=805;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORVTOL_MISSILE;
+
+	BadTargetCategory=NOTAIR;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=202;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+  // other abilities
+	CanLoopbackAttack=1;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	Ovradjust=1;
+	}

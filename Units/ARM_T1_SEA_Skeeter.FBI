@@ -1,0 +1,83 @@
+[UNITINFO]
+	{
+	// id
+	Name=Skeeter;
+	Description=Scout Ship;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEA_Skeeter;
+	Objectname=ARM_T1_SEA_Skeeter;
+	Corpse=ARM_T1_SEA_Skeeter_dead;
+	SoundCategory=ARM_SHIP;
+  IconType=ship;
+
+	Category=ARM SHIP LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=985;
+	BuildCostMetal=100;
+	BuildTime=2000;
+
+
+
+	// movement or placement
+	MovementClass=SMALL_SHIP;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	Floater=1;
+
+	MaxVelocity=3.8;
+	BrakeRate=0.02;
+	Acceleration=0.1;
+	TurnRate=511;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_SCOUT_LASER;
+
+	Weapon2=ARMKBOT_MISSILE;
+	OnlyTargetCategory2=VTOL;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=360;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=490;
+
+
+
+	// unit animation
+  Waterline=2;
+
+	FootprintX=4;
+	FootprintZ=4;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

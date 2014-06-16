@@ -1,0 +1,71 @@
+[UNITINFO]
+	{
+	// id
+	Name=Light Laser Tower;
+	Description=Light Laser Tower;
+	Side=CORE;
+
+	UnitName=CORE_T1_DEF_LightLaserTower;
+	Objectname=CORE_T1_DEF_LightLaserTower;
+  Script=CORE_T1_DEF_LightLaserTower.lua;
+
+	Corpse=CORE_T1_DEF_LightLaserTower_dead;
+	SoundCategory=LLT;
+  IconType=turret;
+
+	Category=CORE LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1908;
+	BuildCostMetal=195;
+	BuildTime=4724;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_LIGHT_LASER;
+
+	BadTargetCategory=VTOL;
+
+	ExplodeAs=MEDIUM_BUILDINGEX;
+	SelfDestructAs=MEDIUM_BUILDING;
+
+
+
+	// properties
+	MaxDamage=610;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=613;
+
+
+
+	// unit animation
+	FootprintX=2;
+	FootprintZ=2;
+	YardMap=oo oo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	buildangle=32768;
+	Ovradjust=1;
+	}

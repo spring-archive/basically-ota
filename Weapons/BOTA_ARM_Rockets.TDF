@@ -1,0 +1,145 @@
+[ARM_HOVER_ROCKET]
+{
+  // used by units
+  // ARM_T1_HOV_Wombat
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=4000;
+
+
+  // visuals
+	Model=BOTA_ARM_Hover_Rocket;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=1;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+	WeaponVelocity=400;
+	Weaponacceleration=40;
+	Turnrate=24384;
+
+
+  // stats
+	Range=1100;
+	Reloadtime=12;
+
+	AreaOfEffect=140;
+	EdgeEffectiveness=0.75;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}
+
+
+[ARM_SHIP_ROCKET]
+{
+  // used by units
+  // ARM_T2_SEA_Ranger
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=4000;
+
+
+  // visuals
+	Model=BOTA_Rocket;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+	Weaponvelocity=400;
+	WeaponAcceleration=40;
+	Turnrate=24384;
+
+
+  // stats
+	Range=1630;
+	Reloadtime=12;
+
+	AreaOfEffect=215;
+	EdgeEffectiveness=0.50;
+
+	[DAMAGE]
+	{
+	Default=900;
+	}
+}
+
+
+[ARM_VEH_ROCKET]
+{
+  // used by units
+  // ARM_T2_VEH_Merl
+  
+  
+  // type
+  WeaponType=StarburstLauncher;
+
+	Tolerance=4000;
+
+
+  // visuals
+	Model=BOTA_Rocket;
+
+	Smoketrail=1;
+
+
+  // sounds
+	SoundStart=Rockhvy1;
+	SoundHit=xplomed4;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=100;
+
+	Weapontimer=5;
+	Flighttime=10;
+	WeaponVelocity=400;
+	WeaponAcceleration=40;
+	Turnrate=24384;
+
+
+  // stats
+	Range=1200;
+	Reloadtime=12;
+
+	EdgeEffectiveness=0.75;
+	AreaOfEffect=150;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}

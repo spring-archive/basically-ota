@@ -1,0 +1,681 @@
+[CORVTOL_MISSILE]
+{
+  // used by units
+  // CORE_T1_AIR_Avenger
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=109;
+	name=Guided Missiles;
+	rendertype=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	lineofsight=1;
+
+	model=missile;
+
+	range=620;//502
+	reloadtime=5;//3
+	weapontimer=5;
+	weaponvelocity=470;
+	startvelocity=425;
+	weaponacceleration=149;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=136;
+	}
+}
+
+
+[CORKBOT_MISSILE]
+{
+  // used by units
+  // CORE_T1_BOT_Crasher
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=101;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=800;//590//690
+	reloadtime=2.5;//2.5
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=450;
+	weaponacceleration=104;
+	turnrate=17000;//33000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=9000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=43;//32
+	//ArmLandAir=80;//48
+	//CoreLandAir=80;
+	}
+}
+
+
+[CORRL_MISSILE]
+{
+  // used by units
+  // CORE_T1_DEF_Pulverizer
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=107;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=820;
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=152;
+	turnrate=20000;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=10000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=67;
+  planes=67; // armor group needed only for defense range
+	}
+}
+
+
+[CORAH_WEAPON]
+{
+  // used by units
+  // CORE_T1_HOV_Slinger
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=199;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=820;
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=660;
+	startvelocity=470;
+	weaponacceleration=154;
+	turnrate=50000;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=10000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=46;
+	//ArmLandAir=107;//97
+	//CoreLandAir=107;//97
+	}
+}
+
+
+[CORFRT_MISSILE]
+{
+  // used by units
+  // CORE_T1_SEADEF_Stinger
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=148;
+	name=Missiles;
+	rendertype=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=700;
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=660;
+	startvelocity=460;
+	weaponacceleration=152;
+	turnrate=50000;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=10000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=45;
+	planes=45; // armor group needed only for defense range
+	}
+}
+
+
+[CORSEAP_WEAPON3]
+{
+  // used by units
+  // CORE_T1_SEAPL_Typhoon
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=98;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=610;//510
+	reloadtime=3;
+	weapontimer=5;
+	weaponvelocity=480;
+	startvelocity=420;
+	weaponacceleration=146;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=44;
+	//ArmLandAir=130;
+	//CoreLandAir=130;
+	}
+}
+
+
+[CORE_SEAPLANE_FIGHTER_MISSILE]
+{
+  // used by units
+  // CORE_T1_SEAPL_Voodoo
+
+
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=76;
+	name=Guided Missiles;
+	rendertype=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	lineofsight=1;
+
+	model=missile;
+
+	range=510;
+	reloadtime=3;
+	weapontimer=6;
+	weaponvelocity=522;
+	startvelocity=420;
+	weaponacceleration=146;
+	turnrate=19384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=50;
+	//ArmLandAir=140;
+	//CoreLandAir=140;
+	}
+}
+
+
+[CORTRUCK_MISSILE]
+{
+  // used by units
+  // CORE_T1_VEH_Slasher
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=105;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=800;//600
+	reloadtime=2.5;
+	weapontimer=5;
+	weaponvelocity=545;
+	startvelocity=450;
+	weaponacceleration=136;
+	turnrate=15000;//30000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=53;//41//61
+	//ArmLandAir=92;
+	//CoreLandAir=92;
+	}
+}
+
+
+[CORE_STEALTH_FIGHTER_MISSILE]
+{
+  // used by units
+  // CORE_T2_AIR_Vamp
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=113;
+	name=Guided Missiles;
+	rendertype=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	lineofsight=1;
+
+	model=missile;
+
+	range=650;
+	reloadtime=3;
+	weapontimer=7;
+	weaponvelocity=550;
+	startvelocity=450;
+	weaponacceleration=131;
+	turnrate=24384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=68;
+	//ArmLandAir=155;
+	//CoreLandAir=155;
+	}
+}
+
+
+[CORSHIP_MISSILE]
+{
+  // used by units
+  // CORE_T2_SEA_MissileFrigate
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=102;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=850;//700
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=450;
+	startvelocity=400;
+	weaponacceleration=121;
+	turnrate=15000;//30000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=62;//62
+	//ArmLandAir=111;
+	//CoreLandAir=111;
+	}
+}
+
+
+[CORE_ANTI-AIR_SHIP_MISSILE]
+{
+  // used by units
+  // CORE_T2_SEA_Shredder
+  
+  
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	ID=178;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	model=missile;
+
+	range=710;
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=450;
+	startvelocity=430;
+	weaponacceleration=121;
+	turnrate=30000;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+	{
+	Default=57;
+	//ArmLandAir=108;
+	//CoreLandAir=108;
+	}
+}

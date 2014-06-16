@@ -1,0 +1,71 @@
+[UNITINFO]
+	{
+	// id
+	Name=Cloakable Fusion Powerplant;
+	Description=Produces Energy;
+	Side=ARM;
+
+	UnitName=ARM_T2_ECO_CloakableFusion;
+	Objectname=ARM_T2_ECO_CloakableFusion;
+	Script=ARM_T2_ECO_CloakableFusion.lua;
+	
+	Corpse=ARM_T2_ECO_CloakableFusion_dead;
+	SoundCategory=ARM_FUS;
+  IconType=building_energy_source_big;
+
+	Category=ARM LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=39058;
+	BuildCostMetal=5420;
+	BuildTime=105487;
+
+	EnergyMake=1000;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+	ExplodeAs=ATOMIC_BLAST;
+	SelfDestructAs=NUCLEAR_MISSILE;
+
+
+
+	// properties
+	MaxDamage=3200;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=368;
+
+
+
+	// other abilities
+	CloakCost=450;
+	MinCloakDistance=110;
+	Init_Cloaked=1;
+
+
+
+	// unit animation
+	FootprintX=5;
+	FootprintZ=4;
+	YardMap=ooooo ooooo ooooo ooooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=4096;
+	}

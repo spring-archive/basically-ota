@@ -1,0 +1,95 @@
+[UNITINFO]
+	{
+	// id
+	Name=Scarab;
+	Description=Mobile Anti Missile Defense;
+	Side=ARM;
+
+	UnitName=ARM_T2_VEH_Scarab;
+	Objectname=ARM_T2_VEH_Scarab;
+	Corpse=ARM_T2_VEH_Scarab_dead;
+	SoundCategory=ARM_KBOT;
+  IconType=nuke;
+
+	Category=ARM SPECIAL LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=58800;
+	BuildCostMetal=1437;
+	BuildTime=43068;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	Canmove=1;
+	Canpatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.4;
+	BrakeRate=0.027;
+	Acceleration=0.015;
+	TurnRate=400;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=MOBILE_ANTI_NUCLEAR_MISSILE;
+
+	BadTargetCategory=VTOL NOTAIR;
+	NoChaseCategory=VTOL NOTAIR;
+
+	ExplodeAs=ATOMIC_BLAST;
+	SelfDestructAs=CRAWL_BLASTEX;
+
+
+
+	// properties
+	MaxDamage=780;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=271;
+
+
+
+	// other abilities
+	DamageModifier=0.5;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=50;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=SpidTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=1;
+	SteeringMode=1;
+	ShootMe=1;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	antiweapons=1;
+	DefaultMissionType=Standby;
+	}

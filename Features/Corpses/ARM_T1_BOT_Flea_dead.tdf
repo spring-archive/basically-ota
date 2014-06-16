@@ -1,0 +1,40 @@
+[ARM_T1_BOT_Flea_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ARM_T1_BOT_Flea_dead;
+	featuredead=ARM_T1_BOT_Flea_heap;
+	footprintx=1;
+	footprintz=1;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=17;
+	damage=55;
+	reclaimable=1;
+	featurereclamate=smudge01;
+  seqnamereclamate=tree1reclamate;
+	}
+
+[ARM_T1_BOT_Flea_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=1x1a;
+	footprintx=1;
+	footprintz=1;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=7;
+	damage=26;
+	reclaimable=1;
+
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+
+

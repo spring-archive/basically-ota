@@ -1,0 +1,63 @@
+[UNITINFO]
+	{
+	// id
+	Name=Energy Storage;
+	Description=Increases Energy Storage by 3000;
+	Side=CORE;
+
+	UnitName=CORE_T1_ECO_EnergyStorage;
+	Objectname=CORE_T1_ECO_EnergyStorage;
+	Corpse=CORE_T1_ECO_EnergyStorage_dead;
+	SoundCategory=CORE_ESTOR;
+  IconType=building;
+
+	Category=CORE LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1090;
+	BuildCostMetal=250;
+	BuildTime=8750;
+
+	EnergyStorage=3000;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+	ExplodeAs=CRAWL_BLASTEX;
+	SelfDestructAs=CRAWL_BLASTEX;
+
+
+
+	// properties
+	MaxDamage=1070;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=367;
+
+
+
+	// unit animation
+	FootprintX=4;
+	FootprintZ=4;
+	YardMap=oooo oooo oooo oooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=8196;
+	Ovradjust=1;
+	}

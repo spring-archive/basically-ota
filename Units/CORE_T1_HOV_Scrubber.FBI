@@ -1,0 +1,83 @@
+[UNITINFO]
+	{
+	// id
+	Name=Scrubber;
+	Description=Scout Hovercraft;
+	Side=CORE;
+
+	UnitName=CORE_T1_HOV_Scrubber;
+	Objectname=CORE_T1_HOV_Scrubber;
+	Corpse=CORE_T1_HOV_Scrubber_dead;
+	SoundCategory=CORE_HOVER_SM;
+  IconType=hover;
+
+	Category=CORE HOVER LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1252;
+	BuildCostMetal=72;
+	BuildTime=3547;
+
+
+
+	// movement or placement
+	MovementClass=TANKHOVER3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanHover=1;
+
+	MaxVelocity=3.7;
+	BrakeRate=0.05;
+	Acceleration=0.1;
+	TurnRate=310;
+
+	MaxWaterDepth=0;
+	MaxSlope=16;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_SCOUT_LASER;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=240;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=560;
+
+
+
+	// unit animation
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

@@ -1,0 +1,140 @@
+[ARMBOMB_Expl] //Blue explosions for ARM - Quanto
+{
+	usedefaultexplosions=1;	
+	[groundflash]
+	{
+		texture=groundring;
+		flashSize = 70;   //270
+		flashAlpha = 2;
+		circleGrowth = 12;
+		circleAlpha = .3;
+		ttl = 13;          //16
+		color = 0.4, 0.2, 1;
+	}
+
+   [pop1]
+   {
+   class=heatcloud;
+      [properties]
+            {
+	    texture=2explo;//bluenovaexplo
+            heat = 10;
+            maxheat = 10;
+            heatFalloff = 0.8;
+            size = 0.5;
+            sizeGrowth = 5;
+            pos = r-2 r2, 5, r-2 r2;
+            speed=0, 0, 0;
+            }
+	}
+	[pikes]
+	{
+		class=explspike;
+		[properties]
+		{
+			dir=-15 r30,-15 r30,-15 r30;
+			width=50;
+			length=150;
+			alpha=0.99;
+			alphadecay=0.05;
+			color=.4 .7 0.9;
+
+		}
+	}
+	[glow]
+	{
+      		class=heatcloud;
+                [properties]
+      		{
+			ageSpeed=0.005;		
+			texture=sparkexplogs;
+	      		heat = 12;
+	      		maxheat = 12;
+	      		heatFalloff = 5;
+	      		size = 10;
+	      		sizeGrowth= 30;
+	      		speed = 0, 0, 0;
+			color=.4 .7 0.9;
+	      		pos = 0, 5, 0;
+      		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+         air=1;
+         water=1;
+         ground=1;
+         count=1;
+}
+
+
+[CORBOMB_Expl] //Green explosions for COR
+{
+	usedefaultexplosions=1;	
+	[groundflash]
+	{
+		texture=groundring;
+		flashSize = 70;   //270
+		flashAlpha = 2;
+		circleGrowth = 12;
+		circleAlpha = .3;
+		ttl = 13;          //16
+		color = 0.5, 1, 0.1;
+	}
+
+   [pop1]
+   {
+   class=heatcloud;
+      [properties]
+            {
+	    texture=3explo;//green explosion
+            heat = 10;
+            maxheat = 10;
+            heatFalloff = 0.8;
+            size = 0.5;
+            sizeGrowth = 5;
+            pos = r-2 r2, 5, r-2 r2;
+            speed=0, 0, 0;
+            }
+	}
+	[pikes]
+	{
+		class=explspike;
+		[properties]
+		{
+			dir=-15 r30,-15 r30,-15 r30;
+			width=50;
+			length=150;
+			alpha=0.99;
+			alphadecay=0.05;
+			color=.4 1 0.1;
+
+		}
+	}
+	[glow]
+	{
+      		class=heatcloud;
+                [properties]
+      		{
+			ageSpeed=0.005;		
+			texture=sparkexplogs;
+	      		heat = 12;
+	      		maxheat = 12;
+	      		heatFalloff = 5;
+	      		size = 10;
+	      		sizeGrowth= 30;
+	      		speed = 0, 0, 0;
+	      		pos = 0, 5, 0;
+			color=.4 1 0.1;
+      		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+         air=1;
+         water=1;
+         ground=1;
+         count=1;
+}

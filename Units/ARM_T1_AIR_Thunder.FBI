@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Thunder;
+	Description=Bomber;
+	Side=ARM;
+
+	UnitName=ARM_T1_AIR_Thunder;
+	Objectname=ARM_T1_AIR_Thunder;
+	corpse=ARM_T1_AIR_Thunder_dead;
+	SoundCategory=ARM_VTOL;
+  IconType=aircraft;
+
+	Category=ARM VTOL LEVEL1 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=5496;
+	BuildCostMetal=130;
+	BuildTime=10155;
+
+
+
+	// movement or placement
+	MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=200;
+
+	MaxVelocity=10;
+	BrakeRate=1.3;
+	Acceleration=0.08;
+	TurnRate=356;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_THUNDER_BOMB;
+
+	NoChaseCategory=UNDERWATER;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=320;
+	HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=512;
+
+
+
+  // unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+  
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	altfromsealevel=1;
+	attackrunlength=120;
+	Ovradjust=1;
+	}

@@ -1,0 +1,76 @@
+[UNITINFO]
+	{
+	// id
+	Name=Shipyard;
+	Description=Produces Ships;
+	Side=ARM;
+
+	UnitName=ARM_T1_LAB_Shipyard;
+	Objectname=ARM_T1_LAB_Shipyard;
+	Corpse=ARM_T1_LAB_Shipyard_dead;
+	SoundCategory=SHIPYARD;
+  IconType=factory;
+
+	Category=ARM PLANT LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=805;
+	BuildCostMetal=875;
+	BuildTime=5050;
+
+	EnergyStorage=100;
+	MetalStorage=100;
+
+
+
+	// movement or placement
+  MoveState=1;
+
+	CanMove=1;
+	CanPatrol=1;
+
+	MinWaterDepth=20;//30
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=140;
+
+
+
+	// combat
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+
+
+
+	// properties
+	MaxDamage=2290;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=365;
+
+
+
+	// unit animation
+	WaterLine=1;
+
+	FootprintX=8;
+	FootprintZ=8;
+	YardMap=wCCCCCCw CCCCCCCC CCCCCCCC CCCCCCCC CCCCCCCC CCCCCCCC CCCCCCCC wCCCCCCw;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	NoShadow=1;
+	Ovradjust=1;
+	}

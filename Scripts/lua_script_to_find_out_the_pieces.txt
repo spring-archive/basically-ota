@@ -1,0 +1,3 @@
+for k, v in pairs(Spring.GetUnitPieceMap(unitID)) do
+	Spring.Echo('piece ' .. k)
+end

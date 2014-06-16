@@ -1,0 +1,365 @@
+[ARM_TORPEDO]
+{
+  // used by units
+  // ARM_T1_SEA_Lurker
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=32767;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;
+	Turnrate=4000;
+
+
+  // stats
+	Range=500;
+	Reloadtime=4;
+
+	AreaOfEffect=16;	
+
+	[DAMAGE]
+	{
+	Default=518;
+	//subkillers=170;
+	}
+}
+
+
+[COAX_TORPEDO]
+{
+  // used by units
+  // ARM_T1_SEADEF_TorpedoLauncher
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=1;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;
+	Turnrate=3000;
+
+  // stats
+	Range=500;
+	Reloadtime=2.6;
+
+	AreaOfEffect=16;
+	
+	[DAMAGE]
+	{
+	Default=400;
+	}
+}
+
+
+[ARMSEAP_WEAPON1]
+{
+  // used by units
+  // ARM_T1_SEAPL_Albatross
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=12000;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=5;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=15000;
+
+
+  // stats
+	Range=480;
+	Reloadtime=6;
+
+	Burst=2;
+	BurstTime=0.35;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}
+
+
+[ARMSEAP_WEAPON2]
+{
+  // used by units
+  // ARM_T1_SEAPL_Albatross
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=12000;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=5;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=15000;
+
+
+  // stats
+	Range=480;
+	Reloadtime=6;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=400;
+	}
+}
+
+
+[ARMAIR_TORPEDO]
+{
+  // used by units
+  // ARM_T2_AIR_Lancet
+
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=6000;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=5;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=10000;
+
+  // stats
+	Range=400;
+	Reloadtime=8.5;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=750;
+	//subs=1000;
+	}
+}
+
+
+[ARMSMART_TORPEDO]
+{
+  // used by units
+  // ARM_T2_SEA_Piranha
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=32767;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=10000;
+
+
+  // stats
+	Range=550;
+	Reloadtime=2.3;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=200;
+	//subs=1060;//760
+	}
+}
+
+
+[ARMATL_TORPEDO]
+{
+  // used by units
+  // ARM_T2_SEADEF_AdvancedTorpedoLauncher
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=1;
+	Tolerance=1167;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_AdvancedTorpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=90;
+	StartVelocity=60;
+	WeaponAcceleration=20;
+	Turnrate=45500;
+
+
+  // stats
+	Range=970;
+	Reloadtime=4.5;
+
+	AreaOfEffect=16;	
+
+	[DAMAGE]
+	{
+	Default=1000;
+	}
+}

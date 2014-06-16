@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Voodoo;
+	Description=Seaplane Fighter;
+	Side=CORE;
+
+	UnitName=CORE_T1_SEAPL_Voodoo;
+	Objectname=CORE_T1_SEAPL_Voodoo;
+	Corpse=CORE_T1_SEAPL_Voodoo_dead;
+	SoundCategory=COR_SEAPLN;
+  IconType=aircraft;
+
+	Category=CORE VTOL LEVEL1 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=6524;
+	BuildCostMetal=282;
+	BuildTime=14857;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=100;//70
+
+	MaxVelocity=14.1;
+	BrakeRate=4.5;
+	Acceleration=0.48;
+	TurnRate=712;
+
+	MaxWaterDepth=255;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_SEAPLANE_FIGHTER_MISSILE;
+
+	Weapon2=CORE_SEAPLANE_FIGHTER_MISSILE;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=MEDIUM_UNIT;
+
+
+
+	// properties
+	MaxDamage=200;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	amphibious=1;
+	CanLoopbackAttack=1;
+	canSubmerge=1;
+	}

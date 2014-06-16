@@ -1,0 +1,138 @@
+[COMMANDER_LASER]
+{
+  // used by units
+  // ARM_Commander
+  // ARM_T2_BOT_DecoyCommander
+  // CORE_Commander
+  // CORE_T2_BOT_DecoyCommander
+
+
+  // type
+	WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+	Duration=0.05;
+  HardStop=1;
+  
+  Thickness=20;
+  RGBColor=0.8 0 0; // reddish
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.8 0.8 0; // yellowish
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfir1;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	FireStarter=70;
+
+	Weaponvelocity=700;
+
+
+  // stats
+	Range=290;
+	Reloadtime=0.85;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	default=95;
+	}
+}
+
+
+[DISINTEGRATOR]
+{
+  // used by units
+  // ARM_Commander
+  // CORE_Commander
+
+
+  // type
+  //weapontype detected from the name as Dgun
+
+	Turret=1;
+	CommandFire=1;
+
+
+  // visuals
+	Model=BOTA_Disintegrator_Gun;
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=disigun1;
+	SoundHit=xplomas2;
+
+
+  // costs
+	EnergyPerShot=400;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+	Firestarter=70;
+
+	NoExplode=1;
+
+	WeaponVelocity=242;
+
+
+  // stats
+	Range=290;
+	ReloadTime=1.2;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	default=30000;
+	}
+}
+
+
+[COMMANDER_EXPLOSION]
+{
+  // type
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+
+  // visuals
+  ExplosionGenerator=custom:ARGHNUKE_FX;
+
+
+  // sounds
+	SoundStart=largegun;
+	SoundHit=xplonuk4;
+
+
+  // behaviour
+	WeaponVelocity=250;
+
+
+  // stats
+	Range=380;
+	Reloadtime=3.6;
+
+	AreaOfEffect=950;
+	EdgeEffectiveness=0.75;
+
+	[DAMAGE]
+	{
+	default=9999;
+	}
+}

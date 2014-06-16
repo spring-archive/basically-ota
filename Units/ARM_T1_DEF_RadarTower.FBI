@@ -1,0 +1,71 @@
+[UNITINFO]
+	{
+	// id
+	Name=Radar Tower;
+	Description=Radar Tower;
+	Side=ARM;
+
+	UnitName=ARM_T1_DEF_RadarTower;
+	Objectname=ARM_T1_DEF_RadarTower;
+	Script=ARM_T1_DEF_RadarTower.lua;
+	
+	Corpse=ARM_T1_DEF_RadarTower_dead;
+	SoundCategory=ARM_RADAR;
+  IconType=building_radar_sonar;
+
+	Category=ARM SPECIAL LEVEL1 NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=750;
+	BuildCostMetal=49;
+	BuildTime=1137;
+
+  EnergyUse=5;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+  // combat
+	ExplodeAs=SMALL_BUILDINGEX;
+	SelfDestructAs=SMALL_BUILDING;
+
+
+
+	// properties
+	MaxDamage=51;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+  
+	SightDistance=652;
+	RadarDistance=1890;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+  // unit animation
+	FootprintX=2;
+	FootprintZ=2;
+	YardMap=oo oo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=8192;
+	Ovradjust=1;
+	}

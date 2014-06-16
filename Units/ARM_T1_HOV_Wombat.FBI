@@ -1,0 +1,82 @@
+[UNITINFO]
+	{
+	// id
+	Name=Wombat;
+	Description=Hovercraft Rocket Launcher;
+	Side=ARM;
+
+	UnitName=ARM_T1_HOV_Wombat;
+	Objectname=ARM_T1_HOV_Wombat;
+	Corpse=ARM_T1_HOV_Wombat_dead;
+	SoundCategory=ARM_HOVER_MID;
+  IconType=hover;
+
+	Category=ARM HOVER LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=3131;
+	BuildCostMetal=325;
+	BuildTime=17933;
+
+
+
+	// movement or placement
+	MovementClass=TANKHOVER3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanHover=1;
+
+	MaxVelocity=2.3;
+	BrakeRate=0.09;
+	Acceleration=0.03;
+	TurnRate=240;
+
+	MaxWaterDepth=0;
+	MaxSlope=16;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_HOVER_ROCKET;
+
+	OnlyTargetCategory1=NOTAIR;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=450;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=280;
+
+
+
+	// unit animation
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

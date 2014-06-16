@@ -1,0 +1,102 @@
+[INTIMIDATOR]
+{
+  // used by units
+  // type
+  WeaponType=Cannon;
+
+	Turret=1;
+	Ballistic=1;
+
+
+  // visuals
+  Size=40;
+  RGBColor=1.0 0.5 0;
+  Intensity=0.2;
+
+	ExplosionGenerator=custom:LRPC_Expl;
+
+
+  // sounds
+	SoundStart=xplonuk3;
+	SoundHit=xplonuk1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	Tolerance=300;
+
+	WeaponVelocity=800;
+
+	Accuracy=600;
+
+
+  // costs
+	EnergyPerShot=12000;
+
+
+  // stats
+	Range=5120;
+	Reloadtime=23;
+
+	AreaOfEffect=100;
+
+	[DAMAGE]
+	{
+	Default=1800;
+	}
+}
+
+
+[BUZZSAW]
+{
+  // used by units
+  // type
+  WeaponType=Cannon;
+
+	Turret=1;
+	Ballistic=1;
+
+
+  // visuals
+  Size=20;
+  RGBColor=1.0 0.5 0;
+  Intensity=0.2;
+
+	ExplosionGenerator=custom:LRPC_Expl;
+
+
+  // sounds
+	SoundStart=xplonuk4;
+	SoundHit=xplonuk1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	Tolerance=300;
+
+	WeaponVelocity=800;
+
+	Accuracy=700;
+
+
+  // costs
+	EnergyPerShot=4000;
+
+
+  // stats
+	Range=4096;
+	Reloadtime=1.2;
+
+	AreaOfEffect=120;
+
+	[DAMAGE]
+  {
+	Default=450;
+	}
+}

@@ -1,0 +1,36 @@
+[CORE_T1_ECO_GeothermalPowerplant_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=CORE_T1_ECO_GeothermalPowerplant_dead;
+	featuredead=CORE_T1_ECO_GeothermalPowerplant_heap;
+	footprintx=4;
+	footprintz=4;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=404;
+	damage=186;//744
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[CORE_T1_ECO_GeothermalPowerplant_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=4x4b;
+	footprintx=4;
+	footprintz=4;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=202;
+	damage=194;//744
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

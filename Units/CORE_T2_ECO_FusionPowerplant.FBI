@@ -1,0 +1,63 @@
+[UNITINFO]
+	{
+	// id
+	Name=Fusion Powerplant;
+	Description=Produces Energy;
+	Side=CORE;
+
+	UnitName=CORE_T2_ECO_FusionPowerplant;
+	Objectname=CORE_T2_ECO_FusionPowerplant;
+	Corpse=CORE_T2_ECO_FusionPowerplant_dead;
+	SoundCategory=CORE_FUS;
+  IconType=building_energy_source_big;
+
+	Category=CORE LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=37865;
+	BuildCostMetal=5004;
+	BuildTime=94281;
+
+	EnergyMake=1050;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+	ExplodeAs=ATOMIC_BLAST;
+	SelfDestructAs=NUCLEAR_MISSILE;
+
+
+
+	// properties
+	MaxDamage=3000;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=367;
+
+
+
+	// unit animation
+	FootprintX=5;
+	FootprintZ=5;
+	YardMap=ooooo ooooo ooooo ooooo ooooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=16384;
+	Ovradjust=1;
+	}

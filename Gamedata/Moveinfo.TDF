@@ -1,0 +1,212 @@
+[CLASS0]
+	{
+	Name=SMALL_SHIP;
+
+	FootprintX=4;
+	FootprintZ=4;
+
+	MinWaterDepth=5;
+
+
+	// ARM_T1_SEA_Constructor
+	// ARM_T1_SEA_Crusader
+	// ARM_T1_SEA_Skeeter
+	// ARM_T2_SEA_Archer
+	// ARM_T2_SEA_Escort
+	// CORE_T1_SEA_Constructor
+	// CORE_T1_SEA_Enforcer
+	// CORE_T1_SEA_Searcher
+	// CORE_T2_SEA_Phantom
+	// CORE_T2_SEA_Shredder
+	}
+
+
+[CLASS1]
+	{
+	Name=MEDIUM_SHIP;
+
+	FootprintX=6;
+	FootprintZ=6;
+
+	MinWaterDepth=10;
+
+
+	// ARM_T1_SEA_Hulk
+	// ARM_T2_SEA_Conqueror
+	// ARM_T2_SEA_Ranger
+	// CORE_T1_SEA_Envoy
+	// CORE_T2_SEA_Executioner
+	// CORE_T2_SEA_MissileFrigate
+	}
+
+
+[CLASS2]
+	{
+	Name=BIG_SHIP;
+
+	FootprintX=8;
+	FootprintZ=8;
+
+	MinWaterDepth=20;
+
+
+	// ARM_T2_SEA_Colossus
+	// ARM_T2_SEA_Millenium
+	// CORE_T2_SEA_Hive
+	// CORE_T2_SEA_Warlord
+	}
+
+
+[CLASS3]
+	{
+	Name=SHIP_SUBMARINE; // odd naming needed for spring to identify the class as sea movement
+
+	FootprintX=3;
+	FootprintZ=3;
+
+	MinWaterDepth=15;
+	subMarine=1;
+
+
+	// ARM_T1_SEA_Lurker
+	// ARM_T2_SEA_AdvancedConstructor
+	// ARM_T2_SEA_Fibber
+	// ARM_T2_SEA_Piranha
+	// CORE_T1_SEA_Snake
+	// CORE_T2_SEA_AdvancedConstructor
+	// CORE_T2_SEA_Leviathan
+	// CORE_T2_SEA_Shark
+	}
+
+
+[CLASS4]
+	{
+	Name=COMMANDER;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+	MaxWaterDepth=400;
+	MaxSlope=50;
+
+
+  // ARM_Commander
+  // ARM_T2_BOT_DecoyCommander
+  // CORE_Commander
+  // CORE_T2_BOT_DecoyCommander
+	}
+
+
+[CLASS5]
+	{
+	Name=TANKSH3;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=20;
+	MaxSlope=16;  
+	}
+
+[CLASS6] // TANKS AND KBOTS USE THIS ONE
+	{
+	Name=TANKSH2;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=20;
+	MaxSlope=20;
+	}
+
+[CLASS7]
+	{
+	Name=SPID3;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=24;
+	}
+
+
+[CLASS8]
+	{
+	Name=TANKHOVER3;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxSlope=15;
+	BadSlope=15;
+	MaxWaterSlope=255;
+	BadWaterSlope=255;
+	}
+
+[CLASS9]
+	{
+	Name=KBOTSTANDARD;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=18;
+	MaxSlope=36;
+	}
+
+[CLASS10]
+	{
+	Name=KBOTBAD;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=16;
+	MaxSlope=24;//32
+	}
+
+[CLASS11]
+	{
+	Name=KBOTGOOD;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=20;
+	MaxSlope=42;
+	}
+
+[CLASS12]
+	{
+	Name=AMPHTANK;
+	FootprintX=3;//2
+	FootprintZ=3;//2
+	MaxWaterDepth=250;
+	MaxSlope=32;
+	MaxWaterSlope=455;
+	CrushStrength=190;
+	}
+
+[CLASS13]
+	{
+	Name=KROGOTH;
+	FootprintX=6;
+	FootprintZ=6;
+	MaxWaterDepth=50;
+	MaxSlope=32;
+	CrushStrength=1000;
+	}
+
+[CLASS14]
+	{
+	Name=HEAVYTANK;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=16;
+	MaxSlope=16;
+	CrushStrength=250;
+	}
+
+[CLASS15]
+	{
+	Name=CRAWLING_BOMB;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=200;
+	}
+
+[CLASS16]
+	{
+	Name=GOLIATH;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=16;
+	MaxSlope=16;
+	CrushStrength=500;
+	}

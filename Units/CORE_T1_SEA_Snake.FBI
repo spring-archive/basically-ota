@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Snake;
+	Description=Submarine;
+	Side=CORE;
+
+	UnitName=CORE_T1_SEA_Snake;
+	Objectname=CORE_T1_SEA_Snake;
+	Corpse=CORE_T1_SEA_Snake_dead;
+	SoundCategory=CORE_SUB;
+  IconType=ship;
+
+	Category=CORE UNDERWATER LEVEL1 WEAPON NOTAIR;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=3902;
+	BuildCostMetal=1199;
+	BuildTime=9729;
+
+
+
+	// movement or placement
+	MovementClass=SHIP_SUBMARINE;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1;
+	BrakeRate=0.2;
+	Acceleration=0.03;
+	TurnRate=256;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_TORPEDO;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=590;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=196;
+	SonarDistance=700;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+
+
+
+	// unit animation
+	WaterLine=20;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

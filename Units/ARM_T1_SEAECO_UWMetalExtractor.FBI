@@ -1,0 +1,72 @@
+[UNITINFO]
+	{
+	// id
+	Name=Underwater Metal Extractor;
+	Description=Extracts Metal;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEAECO_UWMetalExtractor;
+	Objectname=ARM_T1_SEAECO_UWMetalExtractor;
+	Script=ARM_T1_SEAECO_UWMetalExtractor.lua;
+	
+	Corpse=ARM_T1_SEAECO_UWMetalExtractor_dead;
+	SoundCategory=ARM_UWMEX;
+  IconType=building;
+
+	Category=ARM LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1274;
+	BuildCostMetal=97;
+	BuildTime=4175;
+
+  EnergyUse=5;
+
+	ExtractsMetal=0.001;
+
+
+
+	// movement or placement
+	MinWaterDepth=19;
+	MaxSlope=24;
+
+
+
+	// combat
+	ExplodeAs=SMALL_BUILDINGEX;
+	SelfDestructAs=SMALL_BUILDING;
+
+
+
+	// properties
+	MaxDamage=330;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=245;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+	// unit animation
+	FootprintX=3;
+	FootprintZ=3;
+	YardMap=ooo ooo ooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=8192;
+	}

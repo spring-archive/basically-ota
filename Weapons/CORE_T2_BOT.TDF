@@ -1,0 +1,108 @@
+[CORAMPH_WEAPON1]
+	{
+	ID=159;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+	minbarrelangle=-35;
+
+	range=402;//230
+	reloadtime=1.9;
+	weaponvelocity=210;
+	areaofeffect=48;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=80; //105
+		}
+	}
+
+[CORE_MORT]
+	{
+	ID=46;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+	minbarrelangle=-35;
+
+	range=1000;//655//1146
+	reloadtime=2.45;//1.45
+	weaponvelocity=400;//290
+	areaofeffect=36;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+	minbarrelangle=-35;
+
+
+	explosiongaf=fx;
+	explosionart=explode3;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=105;//55
+		}
+	}
+
+[FLAMETHROWER]
+	{
+	ID=1;
+	name=Flame Thrower;
+	rendertype=5;
+	//ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+	lineofsight=1;//needed i think
+
+	range=260;//160//240//220
+	reloadtime=1.2;//1.2//.68
+	weapontimer=1;
+	weaponvelocity=150;//188//110//130
+	areaofeffect=42;//32
+	burst=17;//17
+	burstrate=.04;//.4
+	sprayangle=1024;//1024
+	randomdecay=0;//.3
+	soundstart=Flamhvy1;
+	soundhit=burn02;
+	firestarter=100;
+	groundbounce=1;
+	smokedelay=1;
+	startsmoke=0;
+	endsmoke=1;
+	tolerance=200;
+	guidance=1;//dunno why it's needed
+
+	[DAMAGE]
+		{
+		default=16;//10//20
+		//firethrower=2;
+		}
+	}

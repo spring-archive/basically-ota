@@ -1,0 +1,86 @@
+[UNITINFO]
+	{
+	// id
+	Name=Turtle;
+	Description=Transport Hovercraft;
+	Side=CORE;
+
+	UnitName=CORE_T1_HOV_Turtle;
+	Objectname=CORE_T1_HOV_Turtle;
+	Corpse=CORE_T1_HOV_Turtle_dead;
+	SoundCategory=CORE_HOVER_BIG;
+  IconType=hover;
+
+	Category=CORE HOVER LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=7541;
+	BuildCostMetal=650;
+	BuildTime=19587;
+
+
+
+	// movement or placement
+	MovementClass=TANKHOVER3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanHover=1;
+
+	MaxVelocity=2.3;
+	BrakeRate=0.017;
+	Acceleration=0.03;
+	TurnRate=128;
+
+	MinWaterDepth=12;
+
+
+
+	// combat
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=1080;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=438;
+
+
+
+	// other abilities
+	CanLoad=1;
+	TransportSize=6;
+	TransportCapacity=5;
+	TransportMaxUnits=6;
+
+
+
+	// unit animation
+	Waterline=4;
+
+	FootprintX=4;
+	FootprintZ=4;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	buildangle=16384;
+	}

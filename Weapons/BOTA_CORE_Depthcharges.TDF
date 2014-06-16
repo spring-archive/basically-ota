@@ -1,0 +1,52 @@
+[CORE_DEPTHCHARGE]
+{
+  // used by units
+  // CORE_T1_SEA_Enforcer
+  // CORE_T2_SEA_Executioner
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=32767;
+
+	Tracks=1;
+	Waterweapon=1;
+
+
+  // visuals
+	Model=BOTA_DepthCharge;
+
+	ExplosionGenerator=custom:LITTLESPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=10000;
+
+
+  // stats
+	Range=400;
+	Reloadtime=2.6;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=80;
+	//subs=130;
+	}
+}

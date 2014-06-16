@@ -1,0 +1,484 @@
+[CORE_SCOUT_LASER]
+{
+  // used by units
+  // CORE_T1_HOV_Scrubber
+  // CORE_T1_VEH_Weasel
+  // CORE_T1_SEA_Searcher
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+  Tolerance=500;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.06;
+  HardStop=1;
+
+  Thickness=7;
+  RGBColor=0.6 0.3 0; // orange
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0.4 0; // even more orange
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfir1;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	WeaponVelocity=800;
+
+
+  // stats
+	Range=305;
+	Reloadtime=0.8;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=18;
+	}
+}
+
+
+[CORE_HURRICANE_LASER]
+	{
+  // used by units
+  // CORE_T2_AIR_Hurricane
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.04;
+  HardStop=1;
+
+  Thickness=6;
+  RGBColor=0.6 0.2 0; // red-orange
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0.3 0; // red-orange
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrlit1;
+	SoundHit=lashit;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	WeaponVelocity=800;
+
+
+  // stats
+	Range=600;
+	Reloadtime=0.39;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=15;
+	}
+}
+
+
+[CORE_LASER]
+{
+  // used by units
+  // CORE_T1_BOT_Ak
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.02;
+  HardStop=1;
+
+  Thickness=2;
+  RGBColor=0.8 0 0; // reddish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.9 0.4 0.4; // white-reddish
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfir1;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	weaponvelocity=800;
+
+
+  // stats
+	Range=271;
+	Reloadtime=0.7;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=44;
+	}
+}
+
+
+[GATOR_LASER]
+{
+  // used by units
+  // CORE_T1_VEH_Instigator
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.02;
+  HardStop=1;
+
+  Thickness=2;
+  RGBColor=0.8 0 0; // reddish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.9 0.4 0.4; // white-reddish
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrlit3;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	WeaponVelocity=800;
+
+
+  // stats
+	Range=270;
+	Reloadtime=1;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=70;
+	}
+}
+
+
+[CORFAST_WEAPON]
+{
+  // used by units
+  // CORE_T2_BOT_Freaker
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.02;
+  HardStop=1;
+
+  Thickness=3;
+  RGBColor=0.8 0 0; // reddish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.9 0.4 0.4; // white-reddish
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfast;
+	SoundHit=lashit;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	Tolerance=1000;
+
+	weaponvelocity=800;
+
+
+  // stats
+	Range=315;
+	Reloadtime=0.6;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=57;
+	}
+}
+
+
+[CORAMPH_WEAPON2]
+{
+  // used by units
+  // CORE_T2_BOT_Gimp
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=10;
+  RGBColor=0 0.8 0; // greenish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.4 0.9 4; // green-whiteish
+
+
+  // sounds
+	SoundStart=lasrhvy3;
+	SoundHit=lasrhit1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=90;
+
+	Tolerance=300;
+
+	WeaponVelocity=700;
+
+
+  // costs
+	EnergyPerShot=100;
+
+
+  // stats
+	Range=525;
+	Reloadtime=1.05;
+
+	AreaOfEffect=12;
+
+	[DAMAGE]
+	{
+	Default=90;
+	}
+}
+
+
+[CORSUMO_WEAPON]
+{
+  // used by units
+  // CORE_T2_BOT_Sumo
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=12;
+  RGBColor=0 0.8 0; // greenish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.4 0.9 4; // green-whiteish
+
+
+  // sounds
+	SoundStart=lasrhvy3;
+	SoundHit=lasrhit1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=90;
+
+	WeaponVelocity=700;
+
+  // costs
+	EnergyPerShot=100;
+
+
+  // stats
+	Range=600;
+	Reloadtime=1.05;
+
+	AreaOfEffect=19;
+
+	[DAMAGE]
+	{
+	Default=330;
+	}
+}
+
+
+[CORE_CANLASER]
+	{
+  // used by units
+  // CORE_T2_BOT_TheCan
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=10;
+  RGBColor=0 0.8 0; // greenish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.4 0.9 4; // green-whiteish
+
+
+  // sounds
+	SoundStart=lasrhvy3;
+	SoundHit=lasrhit1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=90;
+
+	WeaponVelocity=700;
+
+
+  // costs
+	EnergyPerShot=75;
+
+
+  // stats
+	Range=520;
+	Reloadtime=0.95;
+
+	AreaOfEffect=18;
+
+	[DAMAGE]
+	{
+	Default=220;
+	}
+}
+
+
+[CORE_BATSLASER]
+{
+  // used by units
+  // CORE_T2_SEA_Warlord
+
+
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+
+
+  // visuals
+	Duration=0.15;
+  HardStop=1;
+
+  Thickness=10;
+  RGBColor=0 0.8 0; // greenish
+
+  CoreThickness=0.5;
+  RGBCOlor2=0.4 0.9 4; // green-whiteish
+
+
+  // sounds
+	SoundStart=Lasrmas2;
+	SoundHit=lasrhit1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=90;
+
+	Tolerance=500;
+
+	WeaponVelocity=700;
+
+
+  // costs
+	energypershot=75;
+
+
+  // stats
+	Range=810;
+	Reloadtime=1.1;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=159;
+	}
+}

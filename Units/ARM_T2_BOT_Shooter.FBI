@@ -1,0 +1,98 @@
+[UNITINFO]
+	{
+	// id
+	Name=Shooter;
+	Description=Sniper Kbot;
+	Side=ARM;
+
+	UnitName=ARM_T2_BOT_Shooter;
+	Objectname=ARM_T2_BOT_Shooter;
+	Corpse=ARM_T2_BOT_Shooter_dead;
+	SoundCategory=ARM_KBOT;
+  IconType=kbot;
+
+	Category=ARM KBOT LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=14727;
+	BuildCostMetal=935;
+	BuildTime=28137;
+
+
+
+	// movement or placement
+	MovementClass=KBOTGOOD;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.5;
+	BrakeRate=0.15;
+	Acceleration=0.1;
+	TurnRate=1216;
+
+	MaxWaterDepth=22;
+	MaxSlope=14;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARMsnipe_weapon;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=320;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=508;
+
+
+
+	// other abilities
+	CloakCost=250;
+	CloakCostMoving=750;
+	mincloakdistance=40;
+
+
+
+	// unit animation
+	Upright=1;
+	//SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

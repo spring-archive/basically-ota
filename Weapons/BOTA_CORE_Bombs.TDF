@@ -1,0 +1,76 @@
+[CORE_SHADOW_BOMB]
+{
+  // used by units
+  // CORE_T1_AIR_Shadow
+  
+  
+  // type
+  WeaponType=AircraftBomb;
+
+
+  // visuals
+	Model=BOTA_Bomb-CORE_Shadow;
+
+	ExplosionGenerator=custom:CORBOMB_Expl;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+
+  // stats
+	Range=1280;
+	Reloadtime=0.14;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	Default=165;//150
+	}
+}
+
+
+[CORE_HURRICANE_BOMB]
+{
+  // used by units
+  // CORE_T2_AIR_Hurricane
+  
+  
+  // type
+  WeaponType=AircraftBomb;
+
+
+  // visuals
+	model=BOTA_Bomb-CORE_Hurricane;
+
+	ExplosionGenerator=custom:CORBOMB_Expl;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+
+  // stats
+	Range=1280;
+	Reloadtime=0.13;
+
+	AreaOfEffect=64;
+
+	[DAMAGE]
+	{
+	Default=217;
+	}
+}

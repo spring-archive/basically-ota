@@ -1,0 +1,92 @@
+[UNITINFO]
+	{
+	// id
+	Name=Pyro;
+	Description=Assault Kbot;
+	Side=CORE;
+
+	UnitName=CORE_T2_BOT_Pyro;
+	Objectname=CORE_T2_BOT_Pyro;
+	Corpse=CORE_T2_BOT_Pyro_dead;
+	SoundCategory=COR_KBOT;
+  IconType=kbot;
+
+	Category=CORE KBOT LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1600;//2200
+	BuildCostMetal=210;//260
+	BuildTime=3750;
+
+
+
+	// movement or placement
+	MovementClass=KBOTSTANDARD;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.7;
+	BrakeRate=0.18;
+	Acceleration=0.1;
+	TurnRate=950;
+
+	MaxWaterDepth=25;
+	MaxSlope=17;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=FLAMETHROWER;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=CORPYRO_BLAST;
+	SelfDestructAs=CORPYRO_SUICIDE;
+
+
+
+	// properties
+	MaxDamage=700;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=429;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

@@ -1,0 +1,36 @@
+[ARM_T1_LAB_HovercraftPlatform_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ARM_T1_LAB_HovercraftPlatform_dead;
+	featuredead=ARM_T1_LAB_HovercraftPlatform_heap;
+	footprintx=8;
+	footprintz=7;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=1005;
+	damage=2601;
+	reclaimable=1;
+	featurereclamate=smudge01;
+  seqnamereclamate=tree1reclamate;
+	}
+
+[ARM_T1_LAB_HovercraftPlatform_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=7x7a;
+	footprintx=8;
+	footprintz=7;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=442;
+	damage=2300;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

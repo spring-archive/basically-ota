@@ -1,0 +1,91 @@
+[UNITINFO]
+	{
+	// id
+	Name=Typhoon;
+	Description=Torpedo Seaplane;
+	Side=CORE;
+
+	UnitName=CORE_T1_SEAPL_Typhoon;
+	Objectname=CORE_T1_SEAPL_Typhoon;
+	Corpse=CORE_T1_SEAPL_Typhoon_dead;
+	SoundCategory=COR_SEAPLN;
+  IconType=aircraft;
+
+	Category=CORE VTOL LEVEL1 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=7785;
+	BuildCostMetal=365;
+	BuildTime=23698;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=100;
+
+	MaxVelocity=10.5;
+	BrakeRate=4;
+	Acceleration=0.36;
+	TurnRate=512;
+
+	MaxWaterDepth=255;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORSEAP_WEAPON1;
+	wpri_badTargetCategory=VTOL;
+
+	Weapon2=CORSEAP_WEAPON2;
+	wsec_badTargetCategory=VTOL;	
+
+	Weapon3=CORSEAP_WEAPON3;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=MEDIUM_UNIT;
+
+
+
+	// properties
+	MaxDamage=310;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	attackrunlength=100;
+	amphibious=1;
+	canSubmerge=1;
+	}

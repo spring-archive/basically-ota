@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	// id
+	Name=Thud;
+	Description=Artillery Kbot;
+	Side=CORE;
+
+	UnitName=CORE_T1_BOT_Thud;
+	Objectname=CORE_T1_BOT_Thud;
+	Corpse=CORE_T1_BOT_Thud_dead;
+	SoundCategory=COR_KBOT;
+  IconType=kbot;
+
+	Category=CORE KBOT LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1161;
+	BuildCostMetal=147;
+	BuildTime=2171;
+
+
+
+	// movement or placement
+	MovementClass=KBOTSTANDARD;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.33;
+	BrakeRate=0.18;
+	Acceleration=0.09;
+	TurnRate=999;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_THUD;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=660;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=430;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

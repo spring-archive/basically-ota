@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	// id
+	Name=Bulldog;
+	Description=Heavy Assault Tank;
+	Side=ARM;
+
+	UnitName=ARM_T2_VEH_Bulldog;
+	Objectname=ARM_T2_VEH_Bulldog;
+	Corpse=ARM_T2_VEH_Bulldog_dead;
+	SoundCategory=ARM_TANK;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2994;
+	BuildCostMetal=467;
+	BuildTime=8675;
+
+
+
+	// movement or placement
+	MovementClass=HEAVYTANK;//TANKBH3
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.6;
+	BrakeRate=0.009;
+	Acceleration=0.04;
+	TurnRate=300;
+
+	MaxWaterDepth=100;
+	MaxSlope=11;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_BULL;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=HUGE_UNITEX;
+	SelfDestructAs=HUGE_UNITEX;
+
+
+
+	// properties
+	MaxDamage=2819;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=455;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=40;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

@@ -1,0 +1,70 @@
+[UNITINFO]
+	{
+	// id
+	Name=Big Bertha;
+	Description=Long Range Plasma Cannon;
+	Side=ARM;
+
+	UnitName=ARM_T2_DEF_BigBertha;
+	Objectname=ARM_T2_DEF_BigBertha.s3o;
+	Script=ARM_T2_DEF_BigBertha.lua;
+	
+	Corpse=ARM_T2_DEF_BigBertha_dead;
+	SoundCategory=ARM_BRTHA;
+  IconType=turret;
+
+	Category=ARM LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=124680;
+	BuildCostMetal=6184;
+	BuildTime=65185;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=BIG_BERTHA;
+	OnlyTargetCategory1=NOTAIR;
+
+	ExplodeAs=ATOMIC_BLAST;
+	SelfDestructAs=ATOMIC_BLAST;
+
+
+
+	// properties
+	MaxDamage=1800;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=367;
+
+
+
+	// unit animation
+	FootprintX=4;
+	FootprintZ=4;
+	YardMap=oooo oooo oooo oooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	buildangle=4096;
+	Ovradjust=1;
+	}

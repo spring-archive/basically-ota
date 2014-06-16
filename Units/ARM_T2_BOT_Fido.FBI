@@ -1,0 +1,92 @@
+[UNITINFO]
+	{
+	// id
+	Name=Fido;
+	Description=Assault Kbot;
+	Side=ARM;
+
+	UnitName=ARM_T2_BOT_Fido;
+	Objectname=ARM_T2_BOT_Fido;
+	Corpse=ARM_T2_BOT_Fido_dead;
+	SoundCategory=ARM_KBOT;
+  IconType=kbot;
+
+	Category=ARM KBOT LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2556;
+	BuildCostMetal=358;
+	BuildTime=9227;
+
+
+
+	// movement or placement
+	MovementClass=KBOTBAD;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=2.1;
+	BrakeRate=0.3;
+	Acceleration=0.27;
+	TurnRate=900;
+
+	MaxWaterDepth=12;
+	MaxSlope=14;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=GAUSS;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=900;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=429;
+
+
+
+	// unit animation
+	Upright=0;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=10;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

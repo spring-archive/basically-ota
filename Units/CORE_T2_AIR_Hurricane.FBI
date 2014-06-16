@@ -1,0 +1,100 @@
+[UNITINFO]
+	{
+	// id
+	Name=Hurricane;
+	Description=Strategic Bomber;
+	Side=CORE;
+
+	UnitName=CORE_T2_AIR_Hurricane;
+	Objectname=CORE_T2_AIR_Hurricane;
+	Corpse=CORE_T2_AIR_Hurricane_dead;
+	SoundCategory=CORE_VTOL;
+  IconType=aircraft;
+
+	Category=CORE VTOL LEVEL2 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=8050;
+	BuildCostMetal=220;
+	BuildTime=16269;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=220;
+
+	MaxVelocity=10.1;
+	BrakeRate=0.5;
+	Acceleration=0.05;
+	TurnRate=256;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_HURRICANE_BOMB;
+	OnlyTargetCategory1=NOTAIR;
+
+	Weapon2=CORE_HURRICANE_LASER;
+	OnlyTargetCategory2=VTOL;
+
+	NoChaseCategory=UNDERWATER;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=480;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+	// other abilities
+	CanDropFlare=1;
+	FlareReload=4;
+	FlareEfficieny=0.3;
+	FlareDelay=0.3;
+	FlareDropVector=0 -.4 -1.3;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	attackrunlength=290;
+	altfromsealevel=1;
+	Ovradjust=1;
+	}

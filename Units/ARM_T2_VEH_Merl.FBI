@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Merl;
+	Description=Mobile Rocket Launcher;
+	Side=ARM;
+
+	UnitName=ARM_T2_VEH_Merl;
+	Objectname=ARM_T2_VEH_Merl;
+	Corpse=ARM_T2_VEH_Merl_dead;
+	SoundCategory=ARM_VEHICLE;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2746;
+	BuildCostMetal=462;
+	BuildTime=8592;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.3;
+	BrakeRate=0.029;
+	Acceleration=0.017;
+	TurnRate=430;
+
+	MaxWaterDepth=12;
+	MaxSlope=16;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_VEH_ROCKET;
+	OnlyTargetCategory1=NOTAIR;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=540;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=410;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=40;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

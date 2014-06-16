@@ -1,0 +1,70 @@
+[CORPLAS_WEAPON]
+	{
+	ID=138;
+	name=Immolator;  
+	rendertype=4;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=560;
+	reloadtime=0.8;
+	weaponvelocity=310;
+	areaofeffect=140;
+	soundstart=cannon3;
+	soundhit=xplosml4;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+	explosiongenerator=custom:PLASMA_Expl;
+
+	[DAMAGE]
+		{
+		Default=40;
+		}
+	}
+
+[CORFIXED_GUN]
+	{
+	ID=71;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=1500;
+	reloadtime=2.8;
+	weaponvelocity=460;
+	areaofeffect=85;
+	soundstart=cannhvy5;
+	soundhit=xplomed2;
+
+	accuracy=300;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=320;
+		}
+	}

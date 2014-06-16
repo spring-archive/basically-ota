@@ -1,0 +1,98 @@
+[UNITINFO]
+	{
+	// id
+	Name=Spectre;
+	Description=Radar Jammer;
+	Side=CORE;
+
+	UnitName=CORE_T2_BOT_Spectre;
+	Objectname=CORE_T2_BOT_Spectre;
+	Corpse=CORE_T2_BOT_Spectre_dead;
+	SoundCategory=CORE_JAM;
+  IconType=kbot;
+
+	Category=CORE KBOT LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1453;
+	BuildCostMetal=70;
+	BuildTime=5439;
+
+	EnergyUse=10;
+
+
+
+	// movement or placement
+	MovementClass=KBOTSTANDARD;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.3;
+	BrakeRate=0.12;
+	Acceleration=0.1;
+	TurnRate=945;
+
+	MaxWaterDepth=112;
+	MaxSlope=32;
+
+
+
+	// combat
+	BadTargetCategory=VTOL NOTAIR;
+	NoChaseCategory=VTOL NOTAIR;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=310;
+  HideDamage=1;
+	Idletime=2200;
+	Idleautoheal=.5;
+
+	SightDistance=200;
+
+	RadarDistanceJam=590;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+	// unit animation
+	Upright=1;
+	SmoothAnim=1;
+
+	leaveTracks=1;
+	trackWidth=22;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+
+	FootprintX=1;
+	FootprintZ=1;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

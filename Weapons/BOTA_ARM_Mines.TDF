@@ -1,0 +1,228 @@
+[armmine1]
+{
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	name=Level 1 Mine;
+	ballistic=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=160;
+
+	edgeeffectiveness=0.1;
+
+	shakemagnitude=0;
+	shakeduration=0;
+
+	soundstart=largegun;
+	soundhit=exmine1;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom2;
+
+	[DAMAGE]
+	{
+	Default=400;
+	}
+}
+
+
+[armmine2]
+{
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	name=Blast Mine;
+	ballistic=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=200;
+
+	edgeeffectiveness=0.05;
+
+	shakemagnitude=0;
+	shakeduration=0;
+
+	soundstart=largegun;
+	soundhit=exmine2;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}
+
+
+[armmine3]
+{
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	name=Focal Mine;
+	ballistic=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=130;
+
+	edgeeffectiveness=0.1;
+
+	shakemagnitude=0;
+	shakeduration=0;
+
+	soundstart=largegun;
+	soundhit=exmine3;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	[DAMAGE]
+	{
+	Default=1200;
+	}
+}
+
+
+[armmine4]
+{
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	name=Wide Blast Mine;
+	ballistic=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=180;
+
+	edgeeffectiveness=0.05;
+
+	shakemagnitude=0;
+	shakeduration=0;
+
+	soundstart=largegun;
+	soundhit=exmine4;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	[DAMAGE]
+	{
+	Default=1500;
+	}
+}
+
+
+[armmine5]
+{
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	name=Whap Mine;
+	ballistic=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=150;
+
+	edgeeffectiveness=0.1;
+
+	shakemagnitude=0;
+	shakeduration=0;
+
+	soundstart=largegun;
+	soundhit=exmine4;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	[DAMAGE]
+	{
+	Default=4000;
+	}
+}
+
+
+[armmine6]
+{
+  // used by units
+  // type
+  // visuals
+  // sounds
+  // behaviour
+  // costs
+  // stats
+	name=Nuclear Mine;
+	ballistic=1;
+
+	range=700;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=700;
+
+	edgeeffectiveness=0.15;
+
+	shakemagnitude=0;
+	shakeduration=0;
+
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	explosiongenerator=custom:MINI_NUCLEAR_Expl;
+
+	[DAMAGE]
+	{
+	Default=9000;
+	}
+}

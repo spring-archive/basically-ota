@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	// id
+	Name=Seahawk;
+	Description=Airborne Sonar;
+	Side=ARM;
+
+	UnitName=ARM_T2_AIR_Seahawk;
+	Objectname=ARM_T2_AIR_Seahawk;
+  Corpse=ARM_T2_AIR_Seahawk_dead;
+	SoundCategory=ARM_SEASONAR;
+  IconType=aircraft;
+
+	Category=ARM VTOL LEVEL2 NOWEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=7624;
+	BuildCostMetal=139;
+	BuildTime=10064;
+
+	EnergyUse=12;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=220;
+
+	MaxVelocity=9.5;
+	BrakeRate=4;
+	Acceleration=0.06;
+	TurnRate=365;
+
+	MaxWaterDepth=255;
+	MaxSlope=10;
+
+
+
+	// combat
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=540;
+  HideDamage=1;
+	Idletime=2200;
+	Idleautoheal=.5;
+
+	SightDistance=612;
+	SonarDistance=1505;
+
+
+
+	// other abilities
+	ActivateWhenBuilt=1;
+	OnOffable=1;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	altfromsealevel=1;
+	amphibious=1;
+	}

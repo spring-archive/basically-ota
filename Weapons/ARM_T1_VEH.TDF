@@ -1,0 +1,59 @@
+[EMG]
+	{
+	ID=16;
+	name=E.M.G.;
+	rendertype=4;	/* 2D bitmap */
+	color=2;		/* EMG bitmap shell, its a hack */
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+//	model=plasma;
+
+	range=255;
+	reloadtime=0.4;
+	weapontimer=1;
+	weaponvelocity=400;
+	sprayangle=768;
+	areaofeffect=8;
+	burst=4;
+	burstrate=.1;
+	soundstart=armsml2;
+	soundhit=lasrhit1;
+	soundtrigger=1;
+	tolerance=6000;
+	explosiongenerator=custom:FLASH1white;
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=14;
+		}
+	}
+
+[ARM_LIGHTCANNON]
+	{
+	ID=50;
+	name=Light Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=420;//240
+	reloadtime=1.33;
+	weaponvelocity=350;//170
+	areaofeffect=32;
+	soundstart=canlite3;
+	soundhit=xplosml3;
+
+	explosiongenerator=custom:TANKSHOT_Expl;
+	startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=70;//50//75
+		}
+	}

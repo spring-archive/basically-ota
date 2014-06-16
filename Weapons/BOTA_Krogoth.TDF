@@ -1,0 +1,34 @@
+[KROGOTH_ARM_CANNON]
+{
+  // used by units
+  // CORE_T3_BOT_Krogoth
+  
+
+  // type
+  WeaponType=EmgCannon;
+
+	Turret=1;
+
+
+  // sounds
+	SoundStart=Krogun1;
+	SoundHit=xplomed2;
+
+
+  // behaviour
+	Tolerance=500;
+
+	WeaponVelocity=700;
+
+
+  // stats
+	Range=525;
+	Reloadtime=1.6;
+
+	AreaOfEffect=48;
+
+	[DAMAGE]
+	{
+	default=480;
+	}
+}

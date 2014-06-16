@@ -1,0 +1,100 @@
+[BIG_BERTHA]
+{
+  // used by units
+  // type
+  WeaponType=Cannon;
+
+	Turret=1;
+	Ballistic=1;
+
+
+  // visuals
+  Size=40;
+  RGBColor=1.0 0.5 0;
+  Intensity=0.2;
+
+	ExplosionGenerator=custom:LRPC_Expl;
+
+
+  // sounds
+	SoundStart=xplonuk4;
+	SoundHit=xplonuk1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	Tolerance=300;
+
+	WeaponVelocity=800;
+
+	Accuracy=500;
+
+  // costs
+	EnergyPershot=9000;
+
+
+  // stats
+	Range=4608;
+	Reloadtime=20;
+
+	AreaOfEffect=80;
+
+	[DAMAGE]
+	{
+	Default=1500;
+	}
+}
+
+
+[VULCAN]
+{
+  // used by units
+  // type
+  WeaponType=Cannon;
+
+	Turret=1;
+	Ballistic=1;
+
+
+  // visuals
+  Size=20;
+  RGBColor=1.0 0.5 0;
+  Intensity=0.2;
+
+	ExplosionGenerator=custom:LRPC_Expl;
+
+
+  // sounds
+	SoundStart=xplonuk4;
+	SoundHit=xplonuk1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=1;
+
+	Tolerance=300;
+
+	WeaponVelocity=800;
+
+	Accuracy=700;
+
+
+  // costs
+	EnergyPerShot=4000;
+
+
+  // stats
+	Range=3584;
+	Reloadtime=1;
+
+	AreaOfEffect=100;
+
+	[DAMAGE]
+	{
+	Default=400;
+	}
+}

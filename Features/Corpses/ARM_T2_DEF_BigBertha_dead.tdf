@@ -1,0 +1,36 @@
+[ARM_T2_DEF_BigBertha_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ARM_T2_DEF_BigBertha_dead;
+	featuredead=ARM_T2_DEF_BigBertha_heap;
+	footprintx=3;
+	footprintz=3;
+	height=40;
+	blocking=1;
+	hitdensity=100;
+	metal=4147;
+	damage=360;//1440
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ARM_T2_DEF_BigBertha_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=3x3e;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=2074;
+	damage=360;//1440
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

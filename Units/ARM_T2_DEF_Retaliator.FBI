@@ -1,0 +1,68 @@
+[UNITINFO]
+	{
+	// id
+	Name=Retaliator;
+	Description=Nuclear Missile Launcher;
+	Side=ARM;
+
+	UnitName=ARM_T2_DEF_Retaliator;
+	Objectname=ARM_T2_DEF_Retaliator;
+	Corpse=ARM_T2_DEF_Retaliator_dead;
+	SoundCategory=NUC;
+  IconType=nuke;
+
+	Category=ARM SPECIAL LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=140134;
+	BuildCostMetal=3010;
+	BuildTime=118453;
+
+
+
+	// movement or placement
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=NUCLEAR_MISSILE;
+
+	BadTargetCategory=VTOL;
+
+	ExplodeAs=ATOMIC_BLASTEX;
+	SelfDestructAs=NUCLEAR_MISSILE;
+
+
+
+	// properties
+	MaxDamage=3079;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=350;
+
+
+
+	// unit animation
+	FootprintX=5;
+	FootprintZ=5;
+	YardMap=oooo oooo oooo oooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	ShootMe=1;
+	buildangle=8192;
+	Ovradjust=1;
+	}

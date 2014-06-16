@@ -1,0 +1,17 @@
+[CORE_T1_SEADEF_FloatingDragonsTeeth_dead]
+	{
+	world=allworld;
+	description=Floating Dragon's Teeth;
+	category=dragonteeth;
+	object=CORE_T1_SEADEF_FloatingDragonsTeeth;
+	footprintx=2;
+	footprintz=2;
+	height=100;
+	blocking=1;
+	hitdensity=100;
+	metal=14;
+	damage=300;//3500
+	reclaimable=1;
+	autoreclaimable=0;
+	nodrawundergray=1;
+	}

@@ -1,0 +1,95 @@
+[UNITINFO]
+	{
+	// id
+	Name=Jeffy;
+	Description=Fast Scout Vehicle;
+	Side=ARM;
+
+	UnitName=ARM_T1_VEH_Jeffy;
+	Objectname=ARM_T1_VEH_Jeffy;
+	Corpse=ARM_T1_VEH_Jeffy_dead;
+	SoundCategory=ARM_VEHICLE;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL1 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=564;
+	BuildCostMetal=37;
+	BuildTime=1465;
+
+
+
+	// movement or placement
+	MovementClass=KBOTBAD;//TANKSH2
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=3.4;
+	BrakeRate=0.06;
+	Acceleration=0.04;
+	TurnRate=499;
+
+	MaxWaterDepth=12;
+	MaxSlope=18;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARM_SCOUT_LASER;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=79;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=543;
+	RadarDistance=800;
+
+
+
+  // other abilities
+  ActivateWhenBuilt=1;
+  
+  
+  
+	// unit animation
+	leaveTracks=1;
+	trackWidth=24;
+	trackOffset=3;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Ovradjust=1;
+	}

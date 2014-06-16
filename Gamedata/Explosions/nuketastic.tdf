@@ -1,0 +1,742 @@
+[LONDON]
+{
+	// INITIAL SPARK EFFECT
+	[flamey]
+	{
+      		class=heatcloud;
+                [properties]
+      		{
+		texture=burn;
+      		heat = 40;
+      		maxheat = 40;
+      		heatFalloff = 1;
+      		size = 1;
+      		sizeGrowth = 5;
+      		speed = 0, 0, 0;
+      		pos = 0, 5, 0;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=2;
+	}
+        [center]
+   		{
+      		class=heatcloud;
+                [properties]
+      		{
+		texture=burn;
+      		heat = 25;
+      		maxheat = 25;
+      		heatFalloff = 1;
+      		size = 1;
+      		sizeGrowth = 10;
+      		speed = 0, 1, 0;
+      		pos = r-3 r3, 5, r-3 r3;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=2;
+	}
+	[pikes]
+	{
+		class=explspike;
+		[properties]
+		{
+			dir=-15 r30,-15 r30,-15 r30;
+			width=150;
+			length=550;
+			alpha=0.99;
+			alphadecay=0.08;
+			color=1.0,1.0,1.0;
+
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=20; 
+	}
+	// THE REAL FX DOWN HERE
+	[shroom] 
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;  
+		delay=50;				  
+		explosionGenerator=custom:ZOE;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[glow] 
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;  
+		delay=0 i20;				  
+		explosionGenerator=custom:LONDON_GLOW;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=3;
+	}
+
+	[dustring] 
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;  
+		delay=50;				  
+		explosionGenerator=custom:LONDON_FLAMES;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	/*[smolder] 
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;  
+		delay=240 i15;				  
+		explosionGenerator=custom:LONDON_SMOLDER;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=45;
+	}*/
+	[groundflash]
+	{
+		flashSize = 3000;
+		flashAlpha = 3;
+		circleGrowth = 6;
+		circleAlpha = 3;
+		ttl = 270;
+		color = 1,0.8,0.7;
+	}
+}
+
+[LONDON_GLOW]
+{
+	[glow]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.0;
+			pos=0, 2, 0;
+			emitVector=-0, 1, 0;
+			gravity=0, 0.00, 0;
+			colorMap= 0 0 0 0.01   1 1 0.8 0.9              0 0 0 0.01;
+			Texture=diamondstar;
+			airdrag=1;
+			particleLife=60;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=1;
+			particleSpeedSpread=0;
+			particleSize=1200;
+			particleSizeSpread=10;
+			emitRot=0;
+			emitRotSpread=180;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+		[groundflash]
+	{
+		flashsize=1000;
+		flashalpha=1;
+		circlegrowth=0;
+		circlealpha=1;
+		ttl=150;
+		color=1,0.7,0.4;
+	}
+}
+
+[LONDON_FLAMES]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.0, 0.001 r-0.002;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.5  0.9 0.9 0 0.5  0.9 0.9 0 0.5     0.9 0.9 0 0.5     0.9 0.9 0 0.5       0.8 0.8 0.1 0.5       0.7 0.7 0.2 0.5      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=180;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=12;
+			particleSpeedSpread=2;
+			particleSize=40;
+			particleSizeSpread=20;
+			emitRot=90;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=120;
+	}
+}
+
+[LONDON_SMOLDER]
+{
+	[SMOKIN]
+	{
+	class=CSphereParticleSpawner;
+	[properties]
+      		{
+		sizeGrowth=0 r0.075;
+		sizeMod=1.0;
+		pos=0, 4, 0;
+		emitVector=0, 1, 0;
+		gravity=0, 0, 0;
+		colorMap=1 1 0.8 0.9      1 0.75 0.5 0.9     1 0.5 0.3 0.9    0.75 0.75 0.5 0.9    0.9 0.9 0.9 0.9    0 0 0 0.01;
+		Texture=smokesmall;
+		airdrag=0.995;
+		particleLife=150;
+		particleLifeSpread=30;
+		numParticles=20;
+		particleSpeed=2.5;
+		particleSpeedSpread=1.25;
+		particleSize=70;
+		particleSizeSpread=16;
+		emitRot=80;
+		emitRotSpread=10;
+		directional=0;
+		useAirLos=1;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=1;
+   	}
+}
+
+/////////////////// ZOE ///////////////////////
+[ZOE]
+{
+	[solange] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0, 0, 0;   
+		delay=0 i200;				  
+		explosionGenerator=custom:SOLANGE;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+//	[transtheora] 
+//	{
+//	    class=CExpGenSpawner;
+//		[properties]
+//		{
+//		pos=0, 0, 0;   
+//		delay=200 i200;				  
+//		explosionGenerator=custom:TRANSTHEORA;
+//		}
+//	air=1;
+//	water=1;
+//	ground=1;
+//	count=1;
+//	}
+//	[theora] 
+//	{
+//	    class=CExpGenSpawner;
+//		[properties]
+//		{
+//		pos=0, 0, 0;   
+//		delay=400 i200;				  
+//		explosionGenerator=custom:THEORA;
+//		}
+//	air=1;
+//	water=1;
+//	ground=1;
+//	count=2;
+//	}
+	[cap] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-10 r20, 0 i5, -10 r20;
+		delay=0 i4;				  
+		explosionGenerator=custom:ZOE_CAP;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=50;
+	}
+	[cap2] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-10 r20, 300 i5, -10 r20;
+		delay=200 i4;				  
+		explosionGenerator=custom:ZOE_CAP2;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=50;
+	}
+	[cap3] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-10 r20, 600 i5, -10 r20;
+		delay=400 i4;				  
+		explosionGenerator=custom:ZOE_CAP3;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=50;
+	}
+		[cap4] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-10 r20, 863 i5, -10 r20;
+		delay=540 i8;	//570 i 8			  
+		explosionGenerator=custom:ZOE_CAP4;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=25;
+	}
+//		[ring] 
+//	{
+//	    class=CExpGenSpawner;
+//		[properties]
+//		{
+//		pos=-10 r20, 450 i3, -10 r20;
+//		delay=340 i4;					  
+//		explosionGenerator=custom:ZOE_RING;
+//		}
+//	air=1;
+//	water=1;
+//	ground=1;
+//	count=10;
+//	}
+}
+[ZOE_CAP]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.0, 0.001 r-0.002;
+			colorMap= 0 0 0  0.01   0.9 0.9 0.9 0.5  0.9 0.9 0.9 0.5  0.9 0.9 0.9 0.5     0.9 0.9 0.9 0.5     0.9 0.9 0.9 0.5       0.8 0.8 0.8 0.5       0.7 0.7 0.7 0.5      0.5 0.5 0.5 0.5   0.5 0.5 0.5 0.5   0.5 0.5 0.5 0.5    0.5 0.5 0.5 0.5   0 0 0 0.01;
+			Texture=flame;
+			airdrag=0.96;
+			particleLife=80;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=12;
+			particleSpeedSpread=0;
+			particleSize=60;
+			particleSizeSpread=60;
+			emitRot=85;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=10;
+	}
+}
+[ZOE_CAP2]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=-0.1;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.05, 0.001 r-0.002;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.5  0.9 0.9 0 0.5  0.9 0.9 0 0.5     0.9 0.9 0 0.5     0.9 0.9 0 0.5       0.8 0.8 0.1 0.5       0.7 0.7 0.2 0.5      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=80;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=10;
+			particleSpeedSpread=0;
+			particleSize=70;
+			particleSizeSpread=70;
+			emitRot=85;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+	[socks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.0, 0.001 r-0.002;
+			colorMap= 0 0 0  0.01   0.9 0.9 0.9 0.5  0.9 0.9 0.9 0.5  0.9 0.9 0.9 0.5     0.9 0.9 0.9 0.5     0.9 0.9 0.9 0.5       0.8 0.8 0.8 0.5       0.7 0.7 0.7 0.5      0.5 0.5 0.5 0.5   0.5 0.5 0.5 0.5   0.5 0.5 0.5 0.5    0.5 0.5 0.5 0.5   0 0 0 0.01;
+			Texture=flame;
+			airdrag=0.96;
+			particleLife=80;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=10;
+			particleSpeedSpread=0;
+			particleSize=70;
+			particleSizeSpread=70;
+			emitRot=85;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+[ZOE_CAP3]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=-0.1;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.05, 0.001 r-0.002;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.5  0.9 0.9 0 0.5  0.9 0.9 0 0.5     0.9 0.9 0 0.5     0.9 0.9 0 0.5       0.8 0.8 0.1 0.5       0.7 0.7 0.2 0.5      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=60;
+			particleLifeSpread=40;
+			numParticles=1;
+			particleSpeed=8;
+			particleSpeedSpread=0;
+			particleSize=55;
+			particleSizeSpread=55;
+			emitRot=85;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=5;
+	}
+	[smoke]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.00, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01	1 0.7 0.3 0.4	1 0.7 0.3 .5 	1 0.7 0.3 .8 	1 0.7 0.5 1 	1 0.8 0.6 1     1 0.8 0.6 .9     1 0.8 0.6 .9     1 0.8 0.6 .9      0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.98;
+			particleLife=90;
+			particleLifeSpread=40;
+			numParticles=1;
+			particleSpeed=8;
+			particleSpeedSpread=0;
+			particleSize=60;
+			particleSizeSpread=60;
+			emitRot=85;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=5;
+	}
+}
+[ZOE_CAP4]
+{
+	[smoke]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.00, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01 1 0.8 0.6 .9     0.8 0.8 0.8 .8        0.8 0.8 0.8 .8  0.6 0.6 0.6 .6  0.4 0.4 0.4 .4  0.2 0.2 0.2 .2  0.1 0.1 0.1 .1  0.05 0.05 0.05 .05  0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.98;
+			particleLife=400;
+			particleLifeSpread=40;
+			numParticles=1;
+			particleSpeed=8 i-2.5;
+			particleSpeedSpread=0;
+			particleSize=120 i12;
+			particleSizeSpread=20;
+			emitRot=90;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+[ZOE_RING]
+{
+		[smoke]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.00, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01	1 0.7 0.3 0.6	1 0.7 0.5 1 	1 0.7 0.5 1 	1 0.7 0.5 1 	1 0.8 0.6 1     1 0.8 0.6 1     1 0.8 0.6 1     0.8 0.8 0.8 1        0.8 0.8 0.8 1  0.8 0.8 0.8 1  0.8 0.8 0.8 1  0.8 0.8 0.8 1  0.8 0.8 0.8 1  0.8 0.8 0.8 1 0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.96;
+			particleLife=790;
+			particleLifeSpread=40;
+			numParticles=1;
+			particleSpeed=24;
+			particleSpeedSpread=0;
+			particleSize=60;
+			particleSizeSpread=60;
+			emitRot=85;
+			emitRotSpread=0;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=10;
+	}
+}
+
+///////////////// SOLANGE //////////////////////////
+
+[SOLANGE]
+{
+	[NW] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=5 r10, i5, -5 r10;    
+		delay=0  i4;				  
+		explosionGenerator=custom:SOLANGE_PILLAR;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=150;
+	}
+}
+[SOLANGE_PILLAR]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.01 r-0.02, 0.001 r-0.002;
+			colorMap= 0 0 0 0.01   0.9 0.9 0 0.5     0.9 0.9 0 0.5       0.8 0.8 0.1 0.5       0.7 0.7 0.2 0.5      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.97;
+			particleLife=200;
+			particleLifeSpread=200;
+			numParticles=1;
+			particleSpeed=1.5;
+			particleSpeedSpread=1.5;
+			particleSize=50;
+			particleSizeSpread=50;
+			emitRot=90;
+			emitRotSpread=10;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+//////////////////// THEORA /////////////////////
+
+[THEORA]
+{
+	[NW] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=5 r10, i5, -5 r10;    
+		delay=0  i5;				  
+		explosionGenerator=custom:THEORA_PILLAR;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+}
+[THEORA_PILLAR]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.01 r-0.02, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01   0.8 0.8 0.8 1       0.8 0.8 0.8 1      0.8 0.8 0.8 1       0.8 0.8 0.8 1      0.8 0.8 0.8 1      0.8 0.8 0.8 1       0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=100;
+			particleLifeSpread=100;
+			numParticles=1;
+			particleSpeed=3;
+			particleSpeedSpread=3;
+			particleSize=45;
+			particleSizeSpread=45;
+			emitRot=120;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+[TRANSTHEORA]
+{
+	[NW] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=5 r10, i5, -5 r10;    
+		delay=0  i5;				  
+		explosionGenerator=custom:TRANSTHEORA_PILLAR;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=100;
+	}
+}
+[TRANSTHEORA_PILLAR]
+{
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0.001 r-0.002, 0.01 r-0.02, 0.001 r-0.002;
+			colorMap=  0 0 0  0.01     1 0.6 0 1 	1 0.7 0.3 1 	1 0.7 0.5 1 	1 0.8 0.6 1     0.8 0.8 0.8 1       0 0 0 0.01;
+			Texture=smokesmall;
+			airdrag=0.97;
+			particleLife=100;
+			particleLifeSpread=100;
+			numParticles=1;
+			particleSpeed=3;
+			particleSpeedSpread=3;
+			particleSize=25;
+			particleSizeSpread=25;
+			emitRot=90;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[OFFSETLONDON]
+{
+	[BASEGOBOOM_HURRAY] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-0, -100, 0;
+		delay=0;			
+		explosionGenerator=custom:LONDON;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}

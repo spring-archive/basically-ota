@@ -1,0 +1,187 @@
+See /Licenses directory for the licenses themselves. Please note that some define their license as "GPL v2 or later". Since there is now a version 3 of GPL they are covered by that version instead. Those not stating "or later" are covered by the version specified.
+
+-- Models:
+- By Mr. D
+CORE Commander
+CORE Copperhead
+CORE Croc
+CORE Diplomat
+CORE Goliath
+CORE Informer
+CORE Instigator
+CORE Leveler
+CORE Pillager
+CORE Raider
+CORE Reaper
+CORE Slasher
+CORE Weasel
+CORE Tech 1 vehicle lab
+CORE Tech 1 vehicle constructor
+CORE Tech 1 Aircraft Lab
+
+- By Cremuss
+ARM Annihilator
+ARM Fusion powerplant
+ARM Energy storage
+ARM Solar collector
+ARM Wind generator
+
+- By Beherith
+CORE Ak             - licensed under Creative Commons Attribution Share Alike 3.0 (CC-BY-SA 3.0)
+CORE Storm          - licensed under Creative Commons Attribution Share Alike 3.0 (CC-BY-SA 3.0)
+
+- By bobthedinosaur
+CORE Wind generator - open rights?
+
+
+-- Scripts
+- By Master-Athmos
+CORE T1 Aircraft lab
+
+- By MDV
+ARM Annihilator
+
+- from Complete Annihilation?
+ARM Big Bertha
+ARM Energy storage
+ARM Fusion powerplant
+ARM Wind generator
+
+
+
+Updated ARM T1 Kbot buildPics by ismo and released into public domain
+
+
+
+[Lua widgets] (copypasted from the widgets with a little cleanup):
+
+"AdvPlayersList"
+		author    = "Marmoth"
+		date      = "Juli 14, 2008"
+		license   = "GNU GPL, v2 or later"
+
+"Attack AoE"
+    author    = "Evil4Zerggin"
+    date      = "26 September 2008"
+    license   = "GNU LGPL, v2.1 or later"
+
+"Auto First Build Facing",
+    author    = "zwzsg with lotsa help from #lua channel",
+    date      = "October 26, 2008",
+    license   = "Free",
+
+"BA Waypoint Dragger"
+		author    = "Kloot"
+		date      = "Aug. 8, 2007 [updated Aug. 14, 2009]"
+		license   = "GNU GPL v2"
+
+"Blast Radius",
+		author    = "very_bad_soldier",
+		date      = "April 7, 2009",
+		license   = "GNU GPL v2",
+
+"Bomber control"
+		author	  = "dizekat"
+		date	    = "2010-02-04"
+		license	  = "GPL v2 or later"
+
+"CustomFormations2",
+		author    = "Niobium", -- Based on 'Custom Formations' by jK and gunblob
+		version   = "v3.0",
+		date      = "Mar, 2010",
+		license   = "GNU GPL, v2 or later",
+
+"Defense Range"
+		author    = "very_bad_soldier"
+		date      = "October 21, 2007"
+		license   = "GNU GPL v2"
+
+"Dgun Helper 1.2"
+    author    = "TheFatController"
+    date      = "January 24, 2009"
+    license   = "MIT/X11"
+
+"Ghost Radar",
+		author    = "very_bad_soldier",
+		date      = "July 21, 2008",
+		license   = "GNU GPL v2",
+
+"Ghost Site",
+		author    = "very_bad_soldier",
+		date      = "April 7, 2009",
+		license   = "GNU GPL v2",
+
+"HealthBars"
+    author    = "jK"
+    date      = "Jun, 2009"
+    license   = "GNU GPL, v2 or later"
+
+"Improved MetalMakers"
+    author    = "TheFatController, [LCC]jK"
+    date      = "July 15, 2007"
+    license   = "GNU GPL, v2 or later"
+
+"Pause Screen",
+		author    = "very_bad_soldier",
+		date      = "2009.08.16",
+		license   = "GNU GPL v2",
+
+"Point Tracker",
+    author    = "Evil4Zerggin",
+    date      = "29 December 2008",
+    license   = "GNU LGPL, v2.1 or later",
+
+"Prospector",
+		author = "Evil4Zerggin",
+		date = "9 January 2009",
+		license = "GNU LGPL, v2.1 or later",
+
+"Select n Center!",
+    author    = "quantum and Evil4Zerggin and zwzsg",
+    date      = "19 April 2008",
+    license   = "GNU GPL, v2 or later",
+
+"SelectionHalo"
+    author    = "jK"
+    date      = "Feb, 2009"
+    license   = "GNU GPL, v2 or later"
+
+"Specific Unit Reclaimer"
+    author    = "Google Frog"
+    date      = "May 12, 2008"
+    license   = "GNU GPL, v2 or later"
+
+"Start Point Remover",
+    author    = "TheFatController and jK",
+    date      = "Jul 11, 2007",
+    license   = "GNU GPL, v2 or later",
+
+"Transport AI"
+    author    = "Licho"
+    date      = "1.11.2007"
+    license   = "GNU GPL, v2 or later"
+
+"Unit Marker",
+		author    = "very_bad_soldier",
+		date      = "October 21, 2007",
+		license   = "GNU GPL v2",
+
+"Unit Stats",
+		author    = "Niobium",
+		date      = "Jan 11, 2009",
+		license   = "GNU GPL, v2 or later",
+
+
+
+
+[Lua gadgets] (copypasted from the gadgets with a little cleanup):
+
+"Spawn"
+		author    = "Tobi Vollebregt",
+		date      = "January, 2010",
+		license   = "GNU GPL, v2 or later",
+
+"UnitEStallDisable",
+    author    = "Licho",
+    date      = "23.7.2007",
+    license   = "GNU GPL, v2 or later",

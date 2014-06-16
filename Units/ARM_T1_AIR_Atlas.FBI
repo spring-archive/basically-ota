@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	// id
+	Name=Atlas;
+	Description=VTOL Transport;
+	Side=ARM;
+
+	UnitName=ARM_T1_AIR_Atlas;
+	Objectname=ARM_T1_AIR_Atlas;
+	corpse=ARM_T1_AIR_Atlas_dead;
+	SoundCategory=ARM_VTOL;
+  IconType=aircraft;
+  
+	Category=ARM VTOL LEVEL1 NOWEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2479;
+	BuildCostMetal=107;
+	BuildTime=5500;
+
+
+
+	// movement or placement
+	MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	canguard=1;
+
+	CanFly=1;
+	CruiseAlt=90;
+
+	MaxVelocity=8;
+	BrakeRate=3;
+	Acceleration=0.2;
+	TurnRate=288;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+  // combat
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=210;
+	HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=225;
+
+
+
+	// other abilities
+	CanLoad=1;
+	TransportSize=3;
+	TransportCapacity=1;
+	TransportMass=3000;
+
+
+
+  // unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	Maneuverleashlength=1280;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	Ovradjust=1;
+	SteeringMode=1;
+	}

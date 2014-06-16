@@ -1,0 +1,426 @@
+[CORE_TORPEDO]
+{
+  // used by units
+  // CORE_T1_SEA_Snake
+
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=32767;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo2;
+	SoundHit=xplodep3;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;
+	Turnrate=4000;
+
+
+  // stats
+	Range=500;
+	Reloadtime=4;
+
+	AreaOfEffect=16;	
+
+	[DAMAGE]
+	{
+	Default=546;
+	//subkillers=191;
+	}
+}
+
+
+[COAX_TORPEDO]
+{
+  // used by units
+  // CORE_T1_SEADEF_TorpedoLauncher
+
+
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=1;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;
+	Turnrate=3000;
+
+
+  // stats
+	Range=500;
+	Reloadtime=2.6;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=400;
+	}
+}
+
+
+[CORSEAP_WEAPON1]
+{
+  // used by units
+  // CORE_T1_SEAPL_Typhoon
+
+
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=12000;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;	
+
+	Weapontimer=5;
+
+	WeaponVelocity=2;
+	StartVelocity=2;
+	WeaponAcceleration=15;
+	Turnrate=15000;
+
+
+  // stats
+	Range=480;
+	Reloadtime=6;
+
+	AreaOfEffect=16;
+
+	Burst=2;
+	Bursttime=0.35;
+
+	[DAMAGE]
+	{
+	Default=600;
+	}
+}
+
+
+[CORSEAP_WEAPON2]
+{
+  // used by units
+  // CORE_T1_SEAPL_Typhoon
+
+
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=12000;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;	
+
+	Weapontimer=5;
+
+	WeaponVelocity=2;
+	StartVelocity=2;
+	WeaponAcceleration=15;	
+	Turnrate=15000;
+
+
+  // stats
+	Range=480;
+	Reloadtime=6;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=400;
+	}
+}
+
+
+[CORAIR_TORPEDO]
+{
+  // used by units
+  // CORE_T2_AIR_Titan
+
+
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=6000;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=bombrel;
+	SoundHit=xplodep2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=5;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=10000;
+
+
+  // stats
+	Range=400;
+	Reloadtime=9;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=780;
+	//subs=1100;
+	}
+}
+
+
+[CORSSUB_WEAPON]
+{
+  // used by units
+  // CORE_T2_SEA_Leviathan
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=37152;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo2;
+	SoundHit=xplodep3;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=60;
+	WeaponAcceleration=15;
+	Turnrate=38000;
+
+
+  // stats
+	Range=750;
+	Reloadtime=5.8;
+
+	AreaOfEffect=5;	
+
+	[DAMAGE]
+	{
+	Default=812;
+	//subkillers=300;
+	//armatl=150;
+	//coratl=150;
+	//armtl=250;
+	//cortl=250;
+	//armsubk=80;
+	//corshark=90;
+	}
+}
+
+
+[CORSMART_TORPEDO]
+{
+  // used by units
+  // CORE_T2_SEA_Shark
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=0;
+	Tolerance=32767;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_Torpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo2;
+	SoundHit=xplodep3;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=100;
+	StartVelocity=100;
+	WeaponAcceleration=15;	
+	Turnrate=10000;
+
+
+  // stats
+	Range=550;
+	Reloadtime=2.28;
+
+	AreaOfEffect=16;
+
+	[DAMAGE]
+	{
+	Default=210;
+	//subs=1100;//800
+	}
+}
+
+
+[CORATL_TORPEDO]
+{
+  // used by units
+  // CORE_T2_SEADEF_AdvancedTorpedoLauncher
+  
+  
+  // type
+  WeaponType=TorpedoLauncher;
+
+	Turret=1;
+	Tolerance=2767;
+
+	Tracks=1;
+	WaterWeapon=1;
+
+
+  // visuals
+	Model=BOTA_AdvancedTorpedo;
+
+	ExplosionGenerator=custom:KERSPLUNK;
+
+
+  // sounds
+	SoundStart=torpedo1;
+	SoundHit=xplodep1;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+
+	Weapontimer=3;
+
+	WeaponVelocity=85;
+	StartVelocity=50;
+	WeaponAcceleration=10;
+	Turnrate=30500;
+
+
+  // stats
+	Range=900;
+	Reloadtime=4.4;
+
+	AreaOfEffect=16;	
+
+	[DAMAGE]
+	{
+	Default=1000;
+	}
+}

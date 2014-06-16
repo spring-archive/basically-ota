@@ -1,0 +1,97 @@
+[UNITINFO]
+	{
+	// id
+	Name=Construction Seaplane;
+	Description=Tech Level 1;
+	Side=ARM;
+
+	UnitName=ARM_T1_SEAPL_Constructor;
+	Objectname=ARM_T1_SEAPL_Constructor;
+  Corpse=ARM_T1_SEAPL_Constructor_dead;
+	SoundCategory=ARM_CVTOL;
+  IconType=aircraft;
+
+	Category=ARM VTOL LEVEL1 NOWEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=5368;
+	BuildCostMetal=395;
+	BuildTime=10970;
+
+	EnergyStorage=50;
+	MetalStorage=50;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=70;
+
+	MaxVelocity=6.5;
+	BrakeRate=1.5;
+	Acceleration=0.05;
+	TurnRate=120;
+
+	MaxWaterDepth=255;
+	MaxSlope=10;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=55;
+	Builddistance=20;
+
+
+
+	// combat
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNIT;
+
+
+
+	// properties
+	MaxDamage=200;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleaAtoHeal=.5;
+
+	SightDistance=490;
+
+
+
+  // other abilities
+	CanSubmerge=1;
+
+
+
+	// unit animation
+	Collide=1;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=0.8;
+	BankScale=1.5;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	Ovradjust=1;
+	Amphibious=1;
+	}

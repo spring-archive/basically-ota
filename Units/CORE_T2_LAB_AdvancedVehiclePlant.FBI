@@ -1,0 +1,76 @@
+[UNITINFO]
+	{
+	// id
+	Name=Adv. Vehicle Plant;
+	Description=Produces Advanced Vehicles;
+	Side=CORE;
+
+	UnitName=CORE_T2_LAB_AdvancedVehiclePlant;
+	Objectname=CORE_T2_LAB_AdvancedVehiclePlant;
+	Corpse=CORE_T2_LAB_AdvancedVehiclePlant_dead;
+	SoundCategory=TANKPLANT;
+  IconType=factory;
+
+	Category=CORE PLANT LEVEL2 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=8020;
+	BuildCostMetal=2047;
+	BuildTime=19910;
+
+	EnergyStorage=200;
+	MetalStorage=200;
+
+
+
+	// movement or placement
+  MoveState=1;
+
+	Canmove=1;
+	Canpatrol=1;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// nanolathing
+	Builder=1;
+	WorkerTime=240;
+
+
+
+	// combat
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+
+
+
+	// properties
+	MaxDamage=3580;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=367;
+
+
+
+	// unit animation
+	FootprintX=8;
+	FootprintZ=6;
+	YardMap=oooooooo oooooooo ooccccoo ooccccoo ooccccoo ooccccoo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=1024;
+	sortbias=0;
+	Ovradjust=1;
+	}

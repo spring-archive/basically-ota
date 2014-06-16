@@ -1,0 +1,62 @@
+[UNITINFO]
+	{
+	// id
+	Name=Underwater Metal Storage;
+	Description=Increases Metal Storage by 1500;
+	Side=CORE;
+
+	UnitName=CORE_T1_SEAECO_UWMetalStorage;
+	Objectname=CORE_T1_SEAECO_UWMetalStorage;
+	Corpse=CORE_T1_SEAECO_UWMetalStorage_dead;
+	SoundCategory=CORE_MSTOR;
+  IconType=building;
+
+	Category=CORE LEVEL1 NOWEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=1523;
+	BuildCostMetal=350;
+	BuildTime=3874;
+
+	MetalStorage=1500;
+
+
+
+	// movement or placement
+	MaxSlope=20;
+	MinWaterDepth=40;
+
+
+
+	// combat
+	ExplodeAs=SMALL_BUILDINGEX;
+	SelfDestructAs=SMALL_BUILDING;
+
+
+
+	// properties
+	MaxDamage=1750;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=227;
+
+
+
+	// unit animation
+	FootprintX=4;
+	FootprintZ=4;
+	YardMap=ooo ooo ooo;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	buildangle=8192;
+	}

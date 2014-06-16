@@ -1,0 +1,264 @@
+[ARM_FLEA_LASER]
+{
+  // used by units
+  // ARM_T1_BOT_Flea
+
+
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+	Tolerance=500;
+
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.01;
+  HardStop=1;
+
+  Thickness=3;
+  RGBColor=0.6 0 0; // red
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0 0; // even more red
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfir3;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=30;
+
+	WeaponVelocity=900;
+
+
+  // stats
+	Range=420;
+	Reloadtime=0.8;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=8;
+	}
+}
+
+
+[ARM_SCOUT_LASER]
+{
+  // used by units
+  // ARM_T1_HOV_Skimmer
+  // ARM_T1_SEA_Skeeter
+  // ARM_T1_VEH_Jeffy
+
+
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+  Tolerance=500;
+  
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.04;
+  HardStop=1;
+
+  Thickness=5;
+  RGBColor=0.6 0 0; // red
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0 0; // even more red
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfir1;
+	SoundHit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;	
+	Firestarter=50;
+
+	WeaponVelocity=900;
+
+
+  // stats
+	Range=315;
+	Reloadtime=1;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=23;
+	}
+}
+
+
+[ARM_PHOENIX_LASER]
+{
+  // used by units
+  // ARM_T2_AIR_Phoenix
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+  Tolerance=500;
+  
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.02;
+  HardStop=1;
+
+  Thickness=3;
+  RGBColor=0.6 0 0; // red
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0 0; // even more red
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrlit1;
+	SoundHit=lashit;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	WeaponVelocity=900;
+
+
+  // stats
+	Range=600;
+	Reloadtime=0.4;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=16;
+	}
+}
+
+
+[ARM_PELICAN_LASER]
+{
+  // used by units
+  // ARM_T2_BOT_Pelican
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+  Tolerance=500;
+  
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.06;
+  HardStop=1;
+
+  Thickness=7;
+  RGBColor=0.6 0 0; // red
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0 0; // even more red
+
+
+  // sounds
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=20;
+
+	WeaponVelocity=900;
+
+
+  // stats
+	Range=360;
+	Reloadtime=0.9;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=70;
+	}
+}
+
+
+[ARM_ZIPPER_LASER]
+{
+  // used by units
+  // ARM_T2_BOT_Zipper
+  
+  
+  // type
+  WeaponType=LaserCannon;
+
+	Turret=1;
+  Tolerance=500;
+  
+
+  // visuals
+  LodDistance=4000;
+
+	Duration=0.05;
+  HardStop=1;
+
+  Thickness=5;
+  RGBColor=0.6 0 0; // red
+
+  CoreThickness=0.3;
+  RGBCOlor2=0.9 0 0; // even more red
+
+
+  // sounds
+	SoundTrigger=1;
+	SoundStart=lasrfast;
+	SoundHit=lashit;
+
+
+  // behaviour
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	Firestarter=50;
+
+	WeaponVelocity=900;
+
+
+  // stats
+	Range=367;
+	Reloadtime=0.8;
+
+	AreaOfEffect=8;
+
+	[DAMAGE]
+	{
+	Default=46;
+	}
+}

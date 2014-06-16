@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	// id
+	Name=Phalanx;
+	Description=Mobile Flak Vehicle;
+	Side=ARM;
+
+	UnitName=ARM_T2_VEH_Phalanx;
+	Objectname=ARM_T2_VEH_Phalanx;
+	Corpse=ARM_T2_VEH_Phalanx_dead;
+	SoundCategory=ARM_VEHICLE;
+  IconType=tank;
+
+	Category=ARM TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=10500;
+	BuildCostMetal=830;
+	BuildTime=20380;
+
+
+
+	// movement or placement
+	MovementClass=TANKSH3;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.43;
+	BrakeRate=0.012;
+	Acceleration=0.03;
+	TurnRate=511;
+
+	MaxWaterDepth=12;
+	MaxSlope=16;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=ARMyork_GUN;
+	OnlyTargetCategory1=VTOL;
+
+  NoChaseCategory=NOTAIR;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=621;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=525;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=27;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=10;
+	Ovradjust=1;
+	}

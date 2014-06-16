@@ -1,0 +1,88 @@
+[UNITINFO]
+	{
+	// id
+	Name=Crock;
+	Description=Amphibious Tank;
+	Side=CORE;
+
+	UnitName=CORE_T2_VEH_Crock;
+	Objectname=CORE_T2_VEH_Crock.s3o;
+	Corpse=CORE_T2_VEH_Crock_dead;
+	SoundCategory=CORE_TANK;
+  IconType=tank;
+
+	Category=CORE TANK LEVEL2 WEAPON NOTAIR NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=2910;
+	BuildCostMetal=350;
+	BuildTime=6119;
+
+
+
+	// movement or placement
+	MovementClass=AMPHTANK;
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	MaxVelocity=1.4;
+	BrakeRate=0.008;
+	Acceleration=0.01;
+	TurnRate=320;
+
+	MaxWaterDepth=255;
+	MaxSlope=16;
+
+
+
+	// combat
+  FireState=2;
+
+	Weapon1=CORE_MEDIUMCANNON;
+
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=2044;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=400;
+
+
+
+	// unit animation
+	leaveTracks=1;
+	trackWidth=40;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+
+	FootprintX=2;
+	FootprintZ=2;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	}

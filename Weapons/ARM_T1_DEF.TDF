@@ -1,0 +1,35 @@
+[ARMFIXED_GUN]
+	{
+	ID=70;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	turret=1;
+
+	range=1550;
+	reloadtime=3;
+	weaponvelocity=470;
+	areaofeffect=64;
+	soundstart=cannhvy5;
+	soundhit=xplomed2;
+
+	accuracy=300;
+
+	explosiongaf=fx;
+	explosionart=explode2;
+
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+
+	startsmoke=1;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=360;
+		}
+	}

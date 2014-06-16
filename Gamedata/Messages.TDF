@@ -1,0 +1,59 @@
+//
+// Generated with TAS Modit v2.2 Beta
+//
+
+[MESSAGES]
+{
+	[Team%i(%s) is no more]
+	{
+		tr1=Team%i (%s) kisses goats;
+		tr2=Team%i (%s) requires more Vespene Gas;
+		tr3=Team%i (%s) must've been an Arm player;
+		tr4=Team%i (%s) should consider playing Command & Conquer professionally;
+		tr5=Team%i (%s) got a visit from the mess-up fairy;
+		tr6=Team%i (%s) took one for the team;
+		tr7=Team%i (%s) could not resist the power of the Dark Side;
+		tr8=Team%i (%s) was, in fact, the droid you're looking for;
+		tr9=Team%i (%s) just got T-Bagged;
+		tr10=Team%i (%s) wears a red shirt;
+		tr11=Team%i (%s) 01010011 01110101 01000011 01101011 01110011!;
+		tr12=Team%i (%s) was the potato in a meatgrinder;
+		tr13=Team%i (%s) should've filed a coversheet on his TPS report;
+		tr14=Team%i (%s) found the path of least resistance;
+		tr15=Team%i (%s) had a mind so fine that no idea could violate it;
+		tr16=Team%i (%s) was wrapped in tuna fish and dropped into a pit of starving cats;
+		tr17=Team%i (%s) just got pkked;
+		tr18=Team%i (%s) needed to watch his Comm.  Wait, should've expanded.  Wait!  Should've built some of those moving things with the guns on them!;
+		tr19=Team%i (%s) should've ragequit;
+		tr20=Team%i (%s) needed more Flashspam!;
+		tr21=Team%i (%s) should've gone with Cybran;
+		tr22=Team%i (%s) should've chosen Shadow Priest;
+		tr23=Team%i (%s) wins at life^-1;
+		tr24=Team%i (%s) bit the big chalupa;
+		tr25=Team%i (%s) has a sadomasochistic robot fetish;
+		tr26=Team%i (%s) got stomped;
+		tr27=Team%i (%s) had his life changed forever by a tragic leg shaving accident;
+		tr28=Team%i (%s) has gone to that big hamster wheel in the sky;
+                tr28=Team%i (%s) played versus Chris Taylor;
+                tr28=Team%i (%s) didn't use Old Spice;
+                tr28=Team%i (%s) thought he could fly;
+		tr29=Team%i (%s) suffered a quantum-phase-inducer-photon-interchange-conduit-warp-resonance-integrity-breach-failure-cascade-pulse;
+		tr30=Team%i (%s) flatlined;
+                tr31=Team%i (%s) is at one with the Force;
+		tr32=Team%i (%s) didn't wear their protective goggles;
+		tr33=Team%i (%s) got a terminal case of rust;
+		tr34=Team%i (%s) was defeated, but the soul still burns;
+		tr35=Team%i (%s) kicked the oxygen habit;
+                tr36=Team%i (%s) tried to make an advanced fusion;
+                tr37=Team%i (%s) didn't collect enough coins;
+                tr38=Team%i (%s) was carried away by the Valkyries;
+                tr39=Team%i (%s) took the stairway to heaven;
+                tr40=Team%i (%s) went down the rabbit hole;
+                tr41=Team%i (%s) had an alien burst out of his chest;
+                tr42=Team%i (%s) had bad karma;
+                tr43=Team%i (%s) didn't spot the atlas;
+                tr44=Team%i (%s) should go back to gold farming;
+                tr45=Team%i (%s) accidently the whole game;
+                tr46=Team%i (%s) confused 1 with 0;
+	}
+}

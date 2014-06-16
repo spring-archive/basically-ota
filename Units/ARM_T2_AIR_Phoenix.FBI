@@ -1,0 +1,98 @@
+[UNITINFO]
+	{
+	// id
+	Name=Phoenix;
+	Description=Strategic Bomber;
+	Side=ARM;
+
+	UnitName=ARM_T2_AIR_Phoenix;
+	Objectname=ARM_T2_AIR_Phoenix;
+	Corpse=ARM_T2_AIR_Phoenix_dead;
+	SoundCategory=ARM_VTOL;
+  IconType=aircraft;
+
+	Category=ARM VTOL LEVEL2 WEAPON NOTSUB;
+
+
+
+	// costs, makes, uses, storage
+	BuildCostEnergy=7624;
+	BuildCostMetal=209;
+	BuildTime=16064;
+
+
+
+	// movement or placement
+  MoveState=-1;
+
+	CanMove=1;
+	CanPatrol=1;
+	CanGuard=1;
+
+	CanFly=1;
+	CruiseAlt=220;
+
+	MaxVelocity=10;
+	BrakeRate=4;
+	Acceleration=0.06;
+	TurnRate=365;
+
+	MaxWaterDepth=0;
+	MaxSlope=10;
+
+
+
+	// combat
+	Weapon1=ARM_PHOENIX_BOMB;
+	OnlyTargetCategory1=NOTAIR;
+
+	Weapon2=ARM_PHOENIX_LASER;
+	OnlyTargetCategory2=VTOL;
+
+	NoChaseCategory=UNDERWATER;
+
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+
+	// properties
+	MaxDamage=470;
+  HideDamage=1;
+	IdleTime=2200;
+	IdleAutoHeal=.5;
+
+	SightDistance=612;
+
+
+
+	// other abilities
+	CanDropFlare=1;
+	FlareReload=4;
+	FlareEfficieny=0.3;
+	FlareDelay=0.3;
+	FlareDropVector=0 -.4 -1.3;
+
+
+
+	// unit animation
+	Collide=0;
+
+	FootprintX=3;
+	FootprintZ=3;
+
+
+
+	// what are these? or more importantly, do they work/have meaning?
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SteeringMode=1;
+	ShootMe=1;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	attackrunlength=180;
+	altfromsealevel=1;
+	Ovradjust=1;
+	}
