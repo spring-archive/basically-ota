@@ -2,7 +2,7 @@ local versionNumber = "1.0"
 
 function widget:GetInfo()
 	return {
-	name = "Mousecursors - XTA",
+	name = "Mousecursors - BOTA",
 	desc = "Make cursors relevant to action",
 	author = "Jools",
 	date = "Oct, 2013",

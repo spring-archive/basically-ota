@@ -66,6 +66,10 @@ unitList["XTA"] = {} --initialize table
 unitList["XTA"]["arm_retaliator"] = {}
 unitList["XTA"]["core_silencer"] = {}
 
+unitList["BOTA"] = {} --initialize table
+unitList["BOTA"]["ARM_T2_DEF_Retaliator"] = {}
+unitList["BOTA"]["CORE_T2_DEF_Silencer"] = {}
+
 --End
 
 local upper                 = string.upper
