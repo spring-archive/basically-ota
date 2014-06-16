@@ -1,3 +1,0 @@
-hotspot topleft
-frame  anims/cursorpickup_0.png  5
-

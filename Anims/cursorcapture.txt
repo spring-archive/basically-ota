@@ -1,3 +1,0 @@
-hotspot topleft
-frame  anims/cursorcapture_0.png  5
-

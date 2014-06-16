@@ -1,3 +1,0 @@
-hotspot topleft
-frame  anims/cursorunload_0.png  5
-

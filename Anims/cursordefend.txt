@@ -1,3 +1,0 @@
-hotspot topleft
-frame  anims/cursordefend_0.png  5
-

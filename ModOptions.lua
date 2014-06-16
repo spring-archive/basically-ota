@@ -25,36 +25,27 @@
 
 local options =
 {
-  {
-    key    = 'GameMode',
-    name   = 'Game end condition',
-    desc   = 'Determines what condition triggers the defeat of a player',
-    type   = 'list',
-    def    = '0',
-    items  =
-    {
-      {
-        key  = '0',
-        name = 'Kill everything',
-        desc = 'The player will lose only after all units of the player will be killed',
-      },
-      {
-        key  = '1',
-        name = 'Commander ends',
-        desc = 'The player will lose when his commander will be dead',
-      },
-      {
-        key  = '2',
-        name = 'Commander lineage ends',
-        desc = 'This is a stricter form of commander ends\nevery unit will inherit the lineage from the player whom built it\neven if shared, when the commander dies the unit will still die',
-      },
-      {
-        key  = '3',
-        name = 'Infinite',
-        desc = 'Game will never end',
-      },
-    },
-  },
+	{
+    key    = 'botagame',
+    name   = 'Main options',
+    desc   = 'Main game options',
+    type   = 'section',
+	},
+
+	{
+		key="gamemode",
+		name="Game End Mode",
+		desc="What it takes to eliminate a player or team\nkey: mode",
+		type="list",
+		section= 'botagame',
+		def=2,
+		items={
+			{key="commander", name="Commander Ends", desc="Player will die if commander is killed"},
+			{key="comends", name="Team Commander Ends", desc="Team will die if commanders of all players are killed."},
+			{key="killall", name="Kill all enemy players", desc="Kill all enemies. Player will die if they have no units left."},
+			{key="team", name="Kill all enemy units", desc="Kill all enemies. Dead players are retained until whole team dies"},
+		},
+	},
 
   {
     key    = 'StartingResources',
@@ -63,6 +54,15 @@ local options =
     type   = 'section',
   },
 
+  {
+		key		= "debugmode",
+		name	= "Debug Mode",
+		desc	= "Enable debugging mode. Will allow /cheat by default, and load gadget profiler.\nkey: debugmode",
+		type	= "bool",
+		section	= 'botagame',
+		def		= false,
+	},
+  
   {
     key    = 'StartMetal',
     name   = 'Starting metal',

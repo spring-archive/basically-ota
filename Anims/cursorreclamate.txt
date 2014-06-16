@@ -1,3 +1,0 @@
-hotspot topleft
-frame  anims/cursorreclamate_0.png  5
-

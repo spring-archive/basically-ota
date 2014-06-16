@@ -38,8 +38,12 @@
 
 	ExplodeAs=ATOMIC_BLAST;
 	SelfDestructAs=ATOMIC_BLAST;
-
-
+	canattack=1;
+	canguard=1;
+	canstop=1;
+	firestandorders=1;
+	standingfireorder=2;
+	defaultmissiontype=GUARD_NOMOVE;
 
 	// properties
 	MaxDamage=1800;

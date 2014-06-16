@@ -6,8 +6,8 @@ return
   game = "Basically OTA",
   shortGame = "BOTA",
   mutator = "development",
-  version = "1.7 (Beta 10.2)",
+  version = "1.7.11",
 
-  url = BLANK,
+  url = "https://code.google.com/p/basically-ota/",
   modtype = "1",
 }
