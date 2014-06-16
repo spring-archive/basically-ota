@@ -2,7 +2,7 @@ local versionNumber = "v2.3"
 
 function widget:GetInfo()
   return {
-    name      = "Point Tracker - BOTA",
+    name      = "Point Tracker",
     desc      = versionNumber .. " Tracks recently placed map points.",
     author    = "Evil4Zerggin",
     date      = "29 December 2008",

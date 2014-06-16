@@ -1,4 +1,4 @@
-local versionNumber = "1.2"
+local versionNumber = "1.3"
 
 function widget:GetInfo()
 	return {
@@ -48,10 +48,23 @@ config["buttonYPer"] = 0.765
 
 --Game Config ------------------------------------
 local unitList = {}
+unitList["BA"] = {} --initialize table
+unitList["BA"]["armsilo"] = {}
+unitList["BA"]["corsilo"] = {}
 
-unitList["BOTA"] = {} --initialize table
-unitList["BOTA"]["arm_t2_def_retaliator"] = {}
-unitList["BOTA"]["core_t2_def_silencer"] = {}
+unitList["ADVBA"] = {} --initialize table
+unitList["ADVBA"]["armsilo"] = {}
+unitList["ADVBA"]["corsilo"] = {}
+unitList["ADVBA"]["armtabi"] = {}
+unitList["ADVBA"]["corflu"] = {}
+
+unitList["CA"] = {} --initialize table
+unitList["CA"]["armsilo"] = {}
+unitList["CA"]["corsilo"] = {}
+
+unitList["XTA"] = {} --initialize table
+unitList["XTA"]["arm_retaliator"] = {}
+unitList["XTA"]["core_silencer"] = {}
 
 --End
 
@@ -179,12 +192,11 @@ function widget:Update()
 				if ( numStockPQue > 0 ) then
 					highProgress = max( highProgress, buildPercent )
 				end
+				if ( numStockpiled > highestLoadCount ) then
+					intConfig["nextNuke"] = unitID
+					highestLoadCount = numStockpiled
+				end
 			end			
-			
-			if ( numStockpiled > highestLoadCount ) then
-				intConfig["nextNuke"] = unitID
-				highestLoadCount = numStockpiled
-			end
 		end
 		
 		printDebug("HighProgress: " .. highProgress )
@@ -306,6 +318,13 @@ end
 
 function widget:UnitFinished( unitID, unitDefID, unitTeam )
 	if ( unitTeam == spGetMyTeamID() ) then
+		addPossibleNuke( unitID, unitDefID )
+	end
+end
+
+function widget:UnitTaken( unitID, unitDefID, unitTeam, newTeam )
+	
+	if ( newTeam == spGetMyTeamID() ) then
 		addPossibleNuke( unitID, unitDefID )
 	end
 end
@@ -456,7 +475,7 @@ function CheckSpecState()
 	local _, _, spec, _, _, _, _, _ = spGetPlayerInfo(playerID)
 		
 	if ( spec == true ) then
-		spEcho("<Nuke Icon> Spectator mode. Widget removed.")
+		Spring.Log("widget", LOG.INFO, "<Nuke Icon> Spectator mode. Widget removed.")
 		widgetHandler:RemoveWidget()
 		return false
 	end

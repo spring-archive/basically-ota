@@ -9,7 +9,7 @@
 	Objectname=ARM_T1_AIR_Constructor;
 	corpse=ARM_T1_AIR_Constructor_dead;
 	SoundCategory=ARM_CVTOL;
-  IconType=aircraft;
+	IconType=aircraft;
 
 	Category=ARM VTOL LEVEL1 NOWEAPON NOTSUB;
 

@@ -8,7 +8,7 @@
 	UnitName=ARM_Commander;
 	Objectname=ARM_Commander;
 	SoundCategory=ARM_COM;
-  IconType=commander;
+	IconType=commander;
 
 	Category=ARM COMMANDER LEVEL10 WEAPON NOTAIR NOTSUB;
 

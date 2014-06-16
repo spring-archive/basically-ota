@@ -1,4 +1,4 @@
-local versionNumber = "v1.9"
+local versionNumber = "v1.92"
 
 function widget:GetInfo()
 	return {
@@ -74,16 +74,12 @@ local MAP_SIZE_Z_SCALED = MAP_SIZE_Z / METAL_MAP_SQUARE_SIZE
 local once
 local vsx, vsy
 
-local function GetRealTextWidth(text)
-	return glGetTextWidth(text) * vsx / vsy * 1.33333333
-end
-
 ------------------------------------------------
 --helpers
 ------------------------------------------------
 
 local function DrawTextWithBackground(text, x, y, size, opt)
-	local width = GetRealTextWidth(text) * size
+	local width = (glGetTextWidth(text) * size) + 8
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL)
 	
 	glColor(0.25, 0.25, 0.25, 0.75)
@@ -99,17 +95,19 @@ local function DrawTextWithBackground(text, x, y, size, opt)
 		glRect(x, y, x + width, y + size * TEXT_CORRECT_Y)
 	end
 	
-	glText(text, x, y, size, opt)
+	glColor(1, 1, 1, 0.85)
+	
+	glText(text, x+4, y, size, opt)
 	
 end
 
 local function SetupMexDefInfos() 
 	local minExtractsMetal
 	
-	local armMexDef = UnitDefNames["armmex"]
+	local armMexDef = UnitDefNames["arm_metal_extractor"]
 	
 	if armMexDef and armMexDef.extractsMetal > 0 then
-		defaultDefID = UnitDefNames["armmex"].id
+		defaultDefID = UnitDefNames["arm_metal_extractor"].id
 		minExtractsMetal = 0
 	end
 	
@@ -119,7 +117,7 @@ local function SetupMexDefInfos()
 		if (extractsMetal > 0) then
 			mexDefInfos[unitDefID] = {}
 			mexDefInfos[unitDefID][1] = extractsMetal
-			mexDefInfos[unitDefID][2] = unitDef.extractSquare
+			--mexDefInfos[unitDefID][2] = unitDef.extractSquare
 			if (unitDef.xsize % 4 == 2) then
 				mexDefInfos[unitDefID][3] = true
 			end
@@ -166,6 +164,7 @@ local function IntegrateMetal(mexDefInfo, x, z, forceUpdate)
 	local square = mexDefInfo[2]
 	local result = 0
 	
+	--[[
 	if (square) then
 		for i = startX, endX do
 			for j = startZ, endZ do
@@ -175,6 +174,7 @@ local function IntegrateMetal(mexDefInfo, x, z, forceUpdate)
 			end
 		end
 	else
+	--]]
 		for i = startX, endX do
 			for j = startZ, endZ do
 				local cx, cz = (i + 0.5) * METAL_MAP_SQUARE_SIZE, (j + 0.5) * METAL_MAP_SQUARE_SIZE
@@ -187,7 +187,7 @@ local function IntegrateMetal(mexDefInfo, x, z, forceUpdate)
 				end
 			end
 		end
-	end
+	--end
 	
 	extraction = result * mult
 end
@@ -260,7 +260,7 @@ function widget:DrawScreen()
 	if (not coords) then return end
 	
 	IntegrateMetal(mexDefInfo, coords[1], coords[3], forceUpdate)
-	DrawTextWithBackground("\255\255\255\255Metal extraction: " .. strFormat("%.2f", extraction), mx, my, textSize)
+	DrawTextWithBackground("\255\255\255\255Metal extraction: " .. strFormat("%.2f", extraction), mx, my, textSize, "d")
 	glColor(1, 1, 1, 1)
 end
 
@@ -268,4 +268,3 @@ function widget:ViewResize(viewSizeX, viewSizeY)
 	vsx = viewSizeX
 	vsy = viewSizeY
 end
-
