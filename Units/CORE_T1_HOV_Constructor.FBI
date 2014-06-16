@@ -48,7 +48,7 @@
 	// nanolathing
 	Builder=1;
 	WorkerTime=65;
-	Builddistance=35;
+	Builddistance=128;
 
 
 

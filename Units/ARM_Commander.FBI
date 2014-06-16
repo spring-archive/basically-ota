@@ -42,7 +42,7 @@
 	// nanolathing
 	Builder=1;
 	WorkerTime=300;
-	Builddistance=60;
+	Builddistance=128;
 
 	CanCapture=1;
 
