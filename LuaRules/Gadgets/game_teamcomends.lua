@@ -73,7 +73,6 @@ if (gadgetHandler:IsSyncedCode()) then
 	local dgunTable = {} -- Populated from dgunWeapons; a little better to store weapons in table by id instead of name
 	
 	function gadget:Initialize()
-		Echo("Endmode:",modOptions.gamemode,endmodes[modOptions.gamemode])
 		if not endmodes[modOptions.gamemode] then
 			Spring.SetGameRulesParam("WaitForComends",0)
 			Echo("Team-comends: Removed gadget")
