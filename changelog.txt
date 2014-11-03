@@ -1,3 +1,5 @@
+--  Bota 1.8
+
 ---BOTA 1.7 (Beta 10.2)
 - increased waterline by 10 
 - added energystorage=1050 and metalstorage=1050 parameters to arm and core commander fbi files
